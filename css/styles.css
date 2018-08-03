@@ -1,0 +1,233 @@
+:root {
+	--dark: #191c21;
+	--darker: #0d0f11;
+	--accent1: #5d90dd;
+	--accent2: #d13a3a;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+	-webkit-transition-duration: .4s;
+	   -moz-transition-duration: .4s;
+	    -ms-transition-duration: .4s;
+	     -o-transition-duration: .4s;
+	        transition-duration: .4s;
+}
+h1, h2, h3, h4, p, a {
+	line-height: 1.5;
+}
+h1 {
+	font-size: 9em;
+	font-weight: 500;
+	line-height: 1;
+}
+h2 {
+	font-size: 5em;
+	font-weight: 400;
+}
+h3 {
+	font-size: 3em;
+	font-weight: 300;
+}
+h4 {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+p {
+	font-size: 1em;
+	font-weight: 300;
+}
+a {
+	text-decoration: none;
+	list-style: none;
+	line-height: 1;
+	font-weight: 400;
+}
+@keyframes borderbackgroundPulse {
+	0% {background-color: var(--accent2);}
+	50% {background-color: var(--accent1);}
+	100% {background-color: var(--accent2);}
+}
+.button {
+	color: rgba(255,255,255,1);
+	border: 8px solid rgba(0,0,0,0);
+	padding: 15px 30px;
+	background: none;
+	-webkit-animation-name: borderbackgroundPulse;
+	   -moz-animation-name: borderbackgroundPulse;
+	     -o-animation-name: borderbackgroundPulse;
+	        animation-name: borderbackgroundPulse;
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-transition-duration: .6s;
+	   -moz-transition-duration: .6s;
+	    -ms-transition-duration: .6s;
+	     -o-transition-duration: .6s;
+	        transition-duration: .6s;
+}
+.button:hover {
+	border: 8px solid rgba(255,255,255,0.4);
+	color: white;
+}
+html {
+	max-width: 100%;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+	font-size: 16px;
+}
+body {
+	max-width: 100%;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+	background: var(--dark);
+}
+.gridLines {
+	z-index: -2;
+	top: 0;
+	left: 100px;
+	height: 100vh;
+	width: calc(100vw - 200px);
+	display: flex;
+	position: fixed;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.gridLines .line {
+	width: 2px;
+	height: 100vh;
+	background: var(--darker);
+}
+.pageWrap {
+	
+}
+.pageContent {
+	width: calc(100vw - 200px);
+	margin: 0 100px;
+}
+.headers {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	z-index: 5;
+}
+.headers .left {
+	width: 100px;
+	height: 100vh;
+}
+.headers .right {
+	width: 100px;
+	height: 100vh;
+	margin-left: calc(100vw - 200px);
+}
+.headers .right ul {
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	-webkit-transform-origin: top left;
+	   -moz-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	     -o-transform-origin: top left;
+	        transform-origin: top left;
+	position: absolute;
+	height: 100px;
+	width: 290px;
+	top: 50px;
+	left: 100vw;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.headers .right ul a {
+	text-align: center;
+	color: white;
+}
+.headers .right ul a:hover {
+	color: var(--accent2);
+}
+.lander {
+	height: 100vh;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+@keyframes scrollThrough {
+	0% {margin-left: 0;}
+	50% {margin-left: calc((100vh * 1.27) * -1);}
+	100% {margin-left: 0;}
+}
+.lander h5 {
+	margin-left: 0;
+	color: rgba(255,255,255,0.05);
+	position: fixed;
+	font-size: 100vh;
+	z-index: -3;
+	letter-spacing: -50px;
+	-webkit-animation-name: scrollThrough;
+	   -moz-animation-name: scrollThrough;
+	     -o-animation-name: scrollThrough;
+	        animation-name: scrollThrough;
+	-webkit-animation-duration: 10s;
+	   -moz-animation-duration: 10s;
+	     -o-animation-duration: 10s;
+	        animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+.lander .text {
+	color: white;
+	width: calc((100vw - 200px) * (1/4));
+	margin-left: calc((100vw - 200px) * (1/4));
+}
+.lander .text h4 {
+	margin-bottom: 40px;
+}
+.lander .title {
+	color: white;
+	width: calc((100vw - 200px) * (1/2));
+	
+}
+.lander .title h1 {
+	
+}
+@keyframes colorPulse {
+	0% {color: var(--accent2);}
+	50% {color: var(--accent1);}
+	100% {color: var(--accent2);}
+}
+.lander .title h1 b {
+	color: var(--accent2);
+	-webkit-animation-name: colorPulse;
+	   -moz-animation-name: colorPulse;
+	     -o-animation-name: colorPulse;
+	        animation-name: colorPulse;
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
