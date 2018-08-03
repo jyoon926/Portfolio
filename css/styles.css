@@ -116,26 +116,22 @@ body {
 	width: calc(100vw - 200px);
 	margin: 0 100px;
 }
-.headers {
-	position: fixed;
+.left {
+	width: 100px;
+	height: 100vh;
+	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+}
+.navBar {
+	width: 100px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 5;
 }
-.headers .left {
-	width: 100px;
-	height: 100vh;
-}
-.headers .right {
-	width: 100px;
-	height: 100vh;
-	margin-left: calc(100vw - 200px);
-}
-.headers .right ul {
+.navBar ul {
 	-webkit-transform: rotate(90deg);
 	   -moz-transform: rotate(90deg);
 	    -ms-transform: rotate(90deg);
@@ -157,11 +153,11 @@ body {
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.headers .right ul a {
+.navBar ul a {
 	text-align: center;
 	color: white;
 }
-.headers .right ul a:hover {
+.navBar ul a:hover {
 	color: var(--accent2);
 }
 .lander {
