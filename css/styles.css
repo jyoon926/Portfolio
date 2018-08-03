@@ -1,6 +1,7 @@
 :root {
 	--dark: #191c21;
 	--darker: #0d0f11;
+	--lighter: #21242b;
 	--accent1: #5d90dd;
 	--accent2: #d13a3a;
 }
@@ -14,8 +15,26 @@
 	     -o-transition-duration: .4s;
 	        transition-duration: .4s;
 }
+::selection {
+	background: var(--darker);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html {
+	max-width: 100%;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+	font-size: 17px;
+}
+body {
+	max-width: 100%;
+	-ms-overflow-x: hidden;
+	    overflow-x: hidden;
+	background: var(--dark);
+}
+
 h1, h2, h3, h4, p, a {
-	line-height: 1.5;
 }
 h1 {
 	font-size: 9em;
@@ -23,20 +42,24 @@ h1 {
 	line-height: 1;
 }
 h2 {
-	font-size: 5em;
-	font-weight: 400;
+	font-size: 8em;
+	font-weight: 500;
+	line-height: 1;
 }
 h3 {
-	font-size: 3em;
-	font-weight: 300;
+	font-size: 4em;
+	font-weight: 400;
+	line-height: 1;
 }
 h4 {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 300;
+	line-height: 1;
 }
 p {
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 1.05em;
+	font-weight: 200;
+	line-height: 2;
 }
 a {
 	text-decoration: none;
@@ -44,20 +67,27 @@ a {
 	line-height: 1;
 	font-weight: 400;
 }
-@keyframes borderbackgroundPulse {
-	0% {background-color: var(--accent2);}
-	50% {background-color: var(--accent1);}
-	100% {background-color: var(--accent2);}
-}
 .button {
 	color: rgba(255,255,255,1);
 	border: 8px solid rgba(0,0,0,0);
-	padding: 15px 30px;
+	padding: 11px 26px;
 	background: none;
-	-webkit-animation-name: borderbackgroundPulse;
-	   -moz-animation-name: borderbackgroundPulse;
-	     -o-animation-name: borderbackgroundPulse;
-	        animation-name: borderbackgroundPulse;
+	position: absolute;
+	margin: 4px;
+	z-index: 1;
+}
+.button:hover {
+	background: var(--dark);
+}
+.lander .text .hidden {
+	z-index: 0;
+	position: absolute;
+	margin: 0;
+	padding: 15px 30px;
+	-webkit-animation-name: backgroundPulse;
+	   -moz-animation-name: backgroundPulse;
+	     -o-animation-name: backgroundPulse;
+	        animation-name: backgroundPulse;
 	-webkit-animation-duration: 5s;
 	   -moz-animation-duration: 5s;
 	     -o-animation-duration: 5s;
@@ -71,22 +101,6 @@ a {
 	    -ms-transition-duration: .6s;
 	     -o-transition-duration: .6s;
 	        transition-duration: .6s;
-}
-.button:hover {
-	border: 8px solid rgba(255,255,255,0.4);
-	color: white;
-}
-html {
-	max-width: 100%;
-	-ms-overflow-x: hidden;
-	    overflow-x: hidden;
-	font-size: 16px;
-}
-body {
-	max-width: 100%;
-	-ms-overflow-x: hidden;
-	    overflow-x: hidden;
-	background: var(--dark);
 }
 .gridLines {
 	z-index: -2;
@@ -112,6 +126,51 @@ body {
 .pageWrap {
 	
 }
+.scroll {
+	position: fixed;
+	bottom: 20px;
+	left: 50vw;
+	color: white;
+	background: var(--dark);
+	padding: 8px 13px;
+	margin: 2px;
+	margin-left: -59.42px;
+	-webkit-transition-duration: .2s;
+	   -moz-transition-duration: .2s;
+	    -ms-transition-duration: .2s;
+	     -o-transition-duration: .2s;
+	        transition-duration: .2s;
+	z-index: 1;
+}
+.scroll:hover {
+	background: none;
+}
+.scroll2 {
+	z-index: 0;
+	position: fixed;
+	bottom: 20px;
+	left: 50vw;
+	color: white;
+	-webkit-animation-name: backgroundPulse;
+	   -moz-animation-name: backgroundPulse;
+	     -o-animation-name: backgroundPulse;
+	        animation-name: backgroundPulse;
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	padding: 10px 15px;
+	margin-left: calc((-116.84px / 2) - 3px);
+	-webkit-transition-duration: .2s;
+	   -moz-transition-duration: .2s;
+	    -ms-transition-duration: .2s;
+	     -o-transition-duration: .2s;
+	        transition-duration: .2s;
+}
 .pageContent {
 	width: calc(100vw - 200px);
 	margin: 0 100px;
@@ -127,9 +186,23 @@ body {
 	width: 100px;
 	height: 100vh;
 	position: absolute;
-	top: 0;
 	left: 0;
 	z-index: 5;
+	-webkit-transition-duration: .3s;
+	   -moz-transition-duration: .3s;
+	    -ms-transition-duration: .3s;
+	     -o-transition-duration: .3s;
+	        transition-duration: .3s;
+	-webkit-transition-delay: 0;
+	   -moz-transition-delay: 0;
+	    -ms-transition-delay: 0;
+	     -o-transition-delay: 0;
+	        transition-delay: 0;
+	-webkit-transition-timing-function: ease-in-out;
+	   -moz-transition-timing-function: ease-in-out;
+	    -ms-transition-timing-function: ease-in-out;
+	     -o-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
 }
 .navBar ul {
 	-webkit-transform: rotate(90deg);
@@ -144,7 +217,7 @@ body {
 	        transform-origin: top left;
 	position: absolute;
 	height: 100px;
-	width: 290px;
+	width: 320px;
 	top: 50px;
 	left: 100vw;
 	display: flex;
@@ -166,18 +239,13 @@ body {
 	-webkit-align-items: center;
 	        align-items: center;
 }
-@keyframes scrollThrough {
-	0% {margin-left: 0;}
-	50% {margin-left: calc((100vh * 1.27) * -1);}
-	100% {margin-left: 0;}
-}
 .lander h5 {
 	margin-left: 0;
-	color: rgba(255,255,255,0.05);
-	position: fixed;
+	color: var(--lighter);
+	position: absolute;
 	font-size: 100vh;
 	z-index: -3;
-	letter-spacing: -50px;
+	letter-spacing: -10px;
 	-webkit-animation-name: scrollThrough;
 	   -moz-animation-name: scrollThrough;
 	     -o-animation-name: scrollThrough;
@@ -190,14 +258,24 @@ body {
 	   -moz-animation-iteration-count: infinite;
 	     -o-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
+	-webkit-transition-duration: 0s;
+	   -moz-transition-duration: 0s;
+	    -ms-transition-duration: 0s;
+	     -o-transition-duration: 0s;
+	        transition-duration: 0s;
+	-webkit-transition-delay: 0;
+	   -moz-transition-delay: 0;
+	    -ms-transition-delay: 0;
+	     -o-transition-delay: 0;
+	        transition-delay: 0;
 }
 .lander .text {
 	color: white;
 	width: calc((100vw - 200px) * (1/4));
-	margin-left: calc((100vw - 200px) * (1/4));
+	margin-right: calc((100vw - 200px) * (1/4));
 }
 .lander .text h4 {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 .lander .title {
 	color: white;
@@ -207,17 +285,65 @@ body {
 .lander .title h1 {
 	
 }
-@keyframes colorPulse {
-	0% {color: var(--accent2);}
-	50% {color: var(--accent1);}
-	100% {color: var(--accent2);}
-}
-.lander .title h1 b {
+b {
 	color: var(--accent2);
 	-webkit-animation-name: colorPulse;
 	   -moz-animation-name: colorPulse;
 	     -o-animation-name: colorPulse;
 	        animation-name: colorPulse;
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+.section1 {
+	margin: 100px 0 150px 0;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+}
+.section1 h2 {
+	width: calc((100vw - 200px) / 4);
+	color: white;
+	margin-bottom: 50px;
+}
+.section1 p {
+	color: white;
+	width: calc((100vw - 200px) / 2);
+	margin-bottom: 50px;
+}
+.section1 .skills {
+	width: calc((100vw - 200px) / 2);
+	margin: 0 -100px 0 100px;
+	background: var(--lighter);
+	-webkit-box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	        box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	padding: 60px;
+}
+.section1 .skills h3 {
+	color: #FFF;
+	margin-bottom: 30px;
+}
+.section1 .skills ul {
+	display: table;
+}
+.section1 .skills ul h4 {
+	display: table;
+	color: white;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid;
+	-webkit-animation-name: bbPulse;
+	   -moz-animation-name: bbPulse;
+	     -o-animation-name: bbPulse;
+	        animation-name: bbPulse;
 	-webkit-animation-duration: 5s;
 	   -moz-animation-duration: 5s;
 	     -o-animation-duration: 5s;

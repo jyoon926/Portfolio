@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	    <title>Joseph Yoon | Home</title>
+	    <title>Jacob Yoon | Home</title>
 	    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
 	    <link rel="stylesheet" href="css/styles.css">
 	    <link rel="stylesheet" href="css/menu.css">
-	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	    <script src="js/script.js"></script>
-	    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200, 200i, 300,300i,400,400i,500,500i|IBM+Plex+Sans:300,300i,400,400i,500,500i" rel="stylesheet">
+	    <link rel="stylesheet" href="css/animations.css">
+	    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200, 200i, 300,300i,400,400i,500,500i|IBM+Plex+Sans:200, 300,300i,400,400i,500,500i" rel="stylesheet">
 	</head>
-<body>
+<body> 
 	<div class="pageWrap">
+		<a class="scroll" href="#section1">Scroll Down</a>
+		<a class="scroll2" href="#section1">Scroll Down</a>
 		<div class="gridLines">
 			<div class="line"></div>
 			<div class="line"></div>
@@ -30,18 +31,40 @@
 				</ul>
 			</div>
 			<div class="lander">
-				<h5>HELLO</h5>
+				<h5 class="hello">HELLO.</h5>
 				<div class="text">
-					<h4>A very short description.</h4>
+					<h4>A very short description about who I am.</h4>
 					<a href="#section1" class="button">Learn more about me:</a>
+					<a href="#" class="button hidden">Learn more about me:</a>
 				</div>
 				<div class="title">
 					<h1>I am</h1>
-					<h1>Joseph</h1>
+					<h1>Jacob</h1>
 					<h1>Yoon<b>.</b></h1>
 				</div>
 			</div>
+			<section class="section1" id="section1">
+				<div class="text">
+					<h2>About Me<b>:</b></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="skills">
+					<h3>Skills<b>:</b></h3>
+					<ul>
+						<h4>Illustration</h4>
+						<h4>Web Development</h4>
+						<h4>Graphic Design</h4>
+						<h4>UI/UX Design</h4>
+						<h4>Brand Identity Design</h4>
+					</ul>
+				</div>
+			</section>
 		</div>
 	</div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.scrollspeed.js"></script>
 </body>
 </html>
