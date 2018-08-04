@@ -263,7 +263,7 @@ b {
 	        animation-iteration-count: infinite;
 }
 .section1 {
-	margin: 100px 0 150px 0;
+	margin: 100px 0 200px 0;
 	display: flex;
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
@@ -283,7 +283,7 @@ b {
 }
 .section1 .skills {
 	width: calc((100vw - 200px) / 2);
-	margin: 0 -100px 0 100px;
+	margin: 0 -100px -1000px 100px;
 	background: var(--lighter);
 	-webkit-box-shadow: 0 30px 50px rgba(0,0,0,0.3);
 	        box-shadow: 0 30px 50px rgba(0,0,0,0.3);
@@ -319,4 +319,6 @@ b {
 	   -moz-animation-iteration-count: infinite;
 	     -o-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
+}
+.section2 {
 }
