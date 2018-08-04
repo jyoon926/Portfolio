@@ -1,0 +1,213 @@
+
+.left {
+	width: 100px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.navBar {
+	width: 100px;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	z-index: 5;
+	-webkit-transition-duration: 0s;
+	   -moz-transition-duration: 0s;
+	    -ms-transition-duration: 0s;
+	     -o-transition-duration: 0s;
+	        transition-duration: 0s;
+	-webkit-transition-delay: 0;
+	   -moz-transition-delay: 0;
+	    -ms-transition-delay: 0;
+	     -o-transition-delay: 0;
+	        transition-delay: 0;
+	-webkit-transition-timing-function: ease-in-out;
+	   -moz-transition-timing-function: ease-in-out;
+	    -ms-transition-timing-function: ease-in-out;
+	     -o-transition-timing-function: ease-in-out;
+	        transition-timing-function: ease-in-out;
+}
+.nav {
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	-webkit-transform-origin: top left;
+	   -moz-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	     -o-transform-origin: top left;
+	        transform-origin: top left;
+	position: absolute;
+	height: 100px;
+	width: 320px;
+	top: 50px;
+	left: 100vw;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.nav a {
+	text-align: center;
+	color: white;
+}
+.nav a:hover {
+	color: var(--accent2);
+}
+.contactButton {
+	text-align: center;
+	color: white;
+}
+.contactButton:hover {
+	color: var(--accent2);
+	cursor: pointer;
+}
+.checkbox {
+	opacity: 0;
+}
+
+.contactPopup {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: fixed;
+	-webkit-animation-name: backgroundPulse;
+	   -moz-animation-name: backgroundPulse;
+	     -o-animation-name: backgroundPulse;
+	        animation-name: backgroundPulse;
+	-webkit-animation-duration: 5s;
+	   -moz-animation-duration: 5s;
+	     -o-animation-duration: 5s;
+	        animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+	        box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+	width: calc(100vw - 80px);
+	height: calc(100vh - 80px);
+	top: 40px;
+	left: 30px;
+	margin: 0;
+	padding: 0;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+	color: white;
+	transform: scale(0);
+	-webkit-transform-origin: 100% 285px;
+	   -moz-transform-origin: 100% 285px;
+	    -ms-transform-origin: 100% 285px;
+	     -o-transform-origin: 100% 285px;
+	        transform-origin: 100% 285px;
+	opacity: 0;
+}
+.contactPopup h4 {
+	font-style: italic
+}
+.contactPopup h2 {
+	margin: 10px 0 50px 0;
+}
+.contactPopup ul {
+	width: 250px;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.contactPopup ul a {
+	color: #FFF;
+	background: var(--darker);
+	padding: 15px 35px;
+	-webkit-border-radius: 7px;
+	        border-radius: 7px;
+}
+.contactPopup ul a:hover {
+	background: var(--lighter);
+}
+.contactX {
+	position: absolute;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	top: 50px;
+	right: 50px;
+	height: 23.33px;
+	width: 23.33px;
+	z-index: 11;
+}
+.contactX:hover {
+	cursor: pointer;
+}
+.contactX span {
+	background: white;
+	height: 3px;
+	width: 30px;
+	-webkit-border-radius: 1.5px;
+	        border-radius: 1.5px;
+	position: absolute;
+}
+.contactX .one {
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.contactX .two {
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+.contactXBg {
+	position: absolute;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	top: 50px;
+	right: 50px;
+	height: 50px;
+	width: 50px;
+	background: rgba(0,0,0,0.4);
+	z-index: 10;
+	-webkit-border-radius: 25px;
+	        border-radius: 25px;
+	margin: -13px;
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	     -o-transform: scale(0);
+	        transform: scale(0);
+}
+.contactX:hover ~ .contactXBg {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+}
+.checkbox:checked ~ .contactPopup {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+	left: 40px;
+	opacity: 1;
+}

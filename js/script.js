@@ -7,14 +7,25 @@ $(document).ready(function(){
 	$win.on('scroll', function() {
 		var top = $win.scrollTop();
 		$navBar.css('top', '' + top + 'px');
+		console.log(top);
 	});
 
 	//Parallax Hello
 	var $hello = $('.hello');
 
 	$win.on('scroll', function() {
-		var top = $win.scrollTop()/3;
-		$hello.css('margin-top', '' + top + 'px');
+		var top1 = $win.scrollTop()/3;
+		$hello.css('margin-top', '' + top1 + 'px');
+	});
+
+	//Parallax Skills Box
+	var $skills = $('.skills');
+
+	$win.on('scroll', function() {
+		var top = $win.scrollTop()/4;
+		//var vh = $(window).height();
+		//ar past = (top - vh) / 3;
+		$skills.css('margin-top', '' + top + 'px');
 	});
 
 	//Smooth Scrolling Between Links
