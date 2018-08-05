@@ -6,77 +6,80 @@
 	    <link rel="stylesheet" href="css/styles.css">
 	    <link rel="stylesheet" href="css/menu.css">
 	    <link rel="stylesheet" href="css/animations.css">
+	    <link rel="stylesheet" href="css/perfectScrollbar.css">
 	    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200, 200i, 300,300i,400,400i,500,500i|IBM+Plex+Sans:200, 300,300i,400,400i,500,500i" rel="stylesheet">
 	</head>
-<body> 
-	<a class="scroll" href="#section1">Scroll Down</a>
-	<a class="scroll2" href="#section1">Scroll Down</a>
-	<div class="gridLines">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</div>
-	<div class="pageContent">
-		<div class="left">
-			
+<body class="body">
+	<div id="pageWrap">
+		<a class="scroll" href="#section1">Scroll Down</a>
+		<a class="scroll2" href="#section1">Scroll Down</a>
+		<div class="gridLines">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
 		</div>
-		<div class="navBar">
-			<input type="checkbox" id="checkbox" class="checkbox" id="checkbox">
-			<ul class="nav">
-				<a href="index.html">Home</a>
-				<a href="#">Portfolio</a>
-				<label for="checkbox" class="contactButton">Contact</label>
-			</ul>=
-			<div class="contactPopup">
-				<label for="checkbox" class="contactX">
-					<span class="one line"></span>
-					<span class="two line"></span>
-				</label>
-				<div class="contactXBg"></div>
-				<h4>Contact me</h4>
-				<h2>Let's have a chat.</h2>
-				<ul>
-					<a href="mailto:jacobyoon926@gmail.com">Email</a>
-					<a href="tel:+1-607-262-2344">Phone</a>
-				</ul>
+		<div class="pageContent">
+			<div class="left">
+				
 			</div>
+			<div class="navBar">
+				<input type="checkbox" id="checkbox" class="checkbox" id="checkbox">
+				<ul class="nav">
+					<a href="index.html">Home</a>
+					<a href="#">Portfolio</a>
+					<label for="checkbox" class="contactButton">Contact</label>
+				</ul>=
+				<div class="contactPopup">
+					<label for="checkbox" class="contactX">
+						<span class="one line"></span>
+						<span class="two line"></span>
+					</label>
+					<div class="contactXBg"></div>
+					<h4>Contact me</h4>
+					<h2>Let's have a chat<b class="opposite">.</b></h2>
+					<ul>
+						<a href="mailto:jacobyoon926@gmail.com">Email</a>
+						<a href="tel:+1-607-262-2344">Phone</a>
+					</ul>
+				</div>
+			</div>
+			<div class="lander">
+				<h5 class="hello">HELLO.</h5>
+				<div class="text">
+					<h4>A very short description about who I am.</h4>
+					<a href="#section1" class="button">Learn more about me:</a>
+					<a href="#" class="button hidden">Learn more about me:</a>
+				</div>
+				<div class="title">
+					<h1>Hi<b>,</b> I'm</h1>
+					<h1>Jacob</h1>
+					<h1>Yoon<b>.</b></h1>
+				</div>
+			</div>
+			<section class="section1" id="section1">
+				<div class="text">
+					<h2>About Me<b>:</b></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="skills">
+					<h3>Skills<b>:</b></h3>
+					<ul>
+						<h4>Illustration</h4>
+						<h4>Web Development</h4>
+						<h4>Graphic Design</h4>
+						<h4>UI/UX Design</h4>
+						<h4>Brand Identity Design</h4>
+					</ul>
+				</div>
+			</section>
+			<!--section class="section2" id="section2">
+				<img src="img/splitHead1.svg" class="splitHead1" alt="">
+				<img src="img/splitHead2.svg" class="splitHead2" alt="">
+				<img src="img/splitHead3.svg" class="splitHead3" alt="">
+			</section-->
 		</div>
-		<div class="lander">
-			<h5 class="hello">HELLO.</h5>
-			<div class="text">
-				<h4>A very short description about who I am.</h4>
-				<a href="#section1" class="button">Learn more about me:</a>
-				<a href="#" class="button hidden">Learn more about me:</a>
-			</div>
-			<div class="title">
-				<h1>Hi<b>,</b> I'm</h1>
-				<h1>Jacob</h1>
-				<h1>Yoon<b>.</b></h1>
-			</div>
-		</div>
-		<section class="section1" id="section1">
-			<div class="text">
-				<h2>About Me<b>:</b></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="skills">
-				<h3>Skills<b>:</b></h3>
-				<ul>
-					<h4>Illustration</h4>
-					<h4>Web Development</h4>
-					<h4>Graphic Design</h4>
-					<h4>UI/UX Design</h4>
-					<h4>Brand Identity Design</h4>
-				</ul>
-			</div>
-		</section>
-		<!--section class="section2" id="section2">
-			<img src="img/splitHead1.svg" class="splitHead1" alt="">
-			<img src="img/splitHead2.svg" class="splitHead2" alt="">
-			<img src="img/splitHead3.svg" class="splitHead3" alt="">
-		</section-->
 	</div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
