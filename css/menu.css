@@ -192,6 +192,7 @@ input::placeholder, textarea::placeholder {
 textarea {
     height: 100px;
     resize: none;
+	margin-bottom: 50px;
 }
 textarea::-webkit-scrollbar {
 	width: 2px;
