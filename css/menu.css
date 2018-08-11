@@ -106,16 +106,19 @@
 	padding: 0;
 	-webkit-border-radius: 15px;
 	        border-radius: 15px;
-	color: white;
+	color: var(--dark);
 	transform: scale(0);
 	opacity: 0;
 }
-.contactPopup h4 {
+.contactPopup h5 {
 	font-style: italic;
 	font-size: 2em;
+	font-weight: 300;
 }
-.contactPopup h2 {
-	margin: 0px 0 50px 0;
+.contactPopup h3 {
+	margin: 0px 0 20px 0;
+	font-weight: 500;
+	font-size: 5em;
 }
 .contactPopup h2 b {
 	-webkit-animation-name: colorPulseOpp;
@@ -140,16 +143,87 @@
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.contactPopup ul a {
+#contact {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+#contact fieldset {
+	border: none;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.error {
+	opacity: 0;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 2;
+	font-family: 'IBM Plex Sans', sans-serif;
 	display: table;
-	color: #FFF;
-	background: var(--darker);
-	padding: 15px 35px;
+	position: absolute;
+	margin: -50px 0 0 320px;
+	font-style: italic;
+}
+.errorMessage {
+	margin: -100px 0 0 320px;
+}
+input, textarea {
+	display: table;
+	padding: 14px 0;
+	margin-bottom: 8px;
+	border: none;
+	background: none;
+	border-bottom: 2px solid var(--dark);
+	font-size: 1em;
+    box-sizing: border-box;
+    color: var(--dark);
+    width: 300px;
+}
+input::placeholder, textarea::placeholder {
+	color: var(--dark);
+}
+textarea {
+    height: 100px;
+    resize: none;
+}
+textarea::-webkit-scrollbar {
+	width: 2px;
+	background: transparent;
+	right: 100px;
+}
+textarea::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, var(--accent2), var(--accent1));
+}
+textarea:focus, input:focus {
+    outline: none;
+    background: var(--dark);
+    color: rgba(255,255,255,.7);
+	padding: 14px;
 	-webkit-border-radius: 7px;
 	        border-radius: 7px;
 }
-.contactPopup ul a:hover {
+textarea:focus::placeholder, input:focus::placeholder {
+	color: rgba(255,255,255,.2);
+}
+#contact-submit {
+	color: #FFF;
+	background: var(--dark);
+	padding: 15px 35px;
+	-webkit-border-radius: 7px;
+	        border-radius: 7px;
+	border: none;
+	font-size: 1.05em;
+}
+#contact-submit:hover {
 	background: var(--light);
+	cursor: pointer;
 }
 .contactX {
 	position: absolute;
@@ -158,8 +232,8 @@
 	        justify-content: center;
 	-webkit-align-items: center;
 	        align-items: center;
-	top: 50px;
-	right: 50px;
+	top: 40px;
+	right: 40px;
 	height: 23.33px;
 	width: 23.33px;
 	z-index: 11;
@@ -196,8 +270,8 @@
 	        justify-content: center;
 	-webkit-align-items: center;
 	        align-items: center;
-	top: 50px;
-	right: 50px;
+	top: 40px;
+	right: 40px;
 	height: 50px;
 	width: 50px;
 	background: rgba(0,0,0,0.4);

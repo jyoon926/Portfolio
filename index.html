@@ -6,7 +6,6 @@
 	    <link rel="stylesheet" href="css/styles.css">
 	    <link rel="stylesheet" href="css/menu.css">
 	    <link rel="stylesheet" href="css/animations.css">
-	    <link rel="stylesheet" href="css/perfectScrollbar.css">
 	    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200, 200i, 300,300i,400,400i,500,500i|IBM+Plex+Sans:200, 300,300i,400,400i,500,500i" rel="stylesheet">
 	</head>
 <body class="body">
@@ -37,12 +36,27 @@
 						<span class="two line"></span>
 					</label>
 					<div class="contactXBg"></div>
-					<h4>Contact me</h4>
-					<h2>Let's have a chat<b class="opposite">.</b></h2>
-					<ul>
+					<h5>Contact me</h5>
+					<h3>Let's have a chat<b class="opposite">.</b></h3>
+					<form id="contact" action="https://formspree.io/jacobyoon926@gmail.com" method="POST">
+					    <fieldset>
+							<input class="name" placeholder="Name" type="text" name="Name" tabindex="1" autofocus><p class="errorName error">Invalid</p>
+					    </fieldset>
+					    <fieldset>
+							<input class="email" placeholder="Email Address" name="Email" type="text" tabindex="2"><p class="errorEmail error">Invalid</p>
+					    </fieldset>
+					    <fieldset>
+							<textarea class="message" id="message" name="Message" placeholder="Message" tabindex="5" type="text"></textarea><p class="errorMessage error">Invalid</p>
+					    </fieldset>
+					    <div class="status"></div>
+					    <fieldset>
+							<button type="submit" id="contact-submit" class="submit" data-submit="...Sending">Send</button>
+					    </fieldset>
+					 </form>
+					<!--ul>
 						<a href="mailto:jacobyoon926@gmail.com">Email</a>
 						<a href="tel:+1-607-262-2344">Phone</a>
-					</ul>
+					</ul-->
 				</div>
 			</div>
 			<div class="lander">
@@ -83,6 +97,7 @@
 	</div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
     <script src="js/script.js"></script>
 </body>

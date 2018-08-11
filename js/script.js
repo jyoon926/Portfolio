@@ -73,6 +73,39 @@ $(document).ready(function(){
 	        }
 	    });
 
-	}); 
+	});
+
+	//Contact Form
+	$('.submit').click(function (event) {
+		console.log('clicked')
+
+		var name = $('.name').val()
+		var email = $('.email').val()
+		var message = $('.message').val()
+		$('.errorName').css("opacity", "0")
+		$('.errorEmail').css("opacity", "0")
+		$('.errorMessage').css("opacity", "0")
+
+		if(name.length >= 5) {
+		}
+		else {
+			event.preventDefault()
+			$('.errorName').css("opacity", "1")
+		}
+
+		if(message.length >= 10) {
+		}
+		else {
+			event.preventDefault()
+			$('.errorMessage').css("opacity", "1")
+		}
+
+		if(email.length > 5 && email.includes('@') && email.includes('.')) {
+		}
+		else {
+			event.preventDefault()
+			$('.errorEmail').css("opacity", "1")
+		}
+	})
 
 });
