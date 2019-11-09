@@ -12,6 +12,8 @@ html {
     animation-iteration-count: infinite;
     animation-duration: 8s;
     animation-timing-function: ease;
+    height: 100%;
+    width: 100%;
 }
 .body {
     width: calc(100vw - 50px);
@@ -28,40 +30,15 @@ html {
     0%   { background-color: $accent; }
     50%  { background-color: $secondary; }
     100% { background-color: $accent; }
-  }
-::-webkit-scrollbar:hover {
-    cursor: auto !important;
-}
-#cursorFollower {
-    background: $accent;
-    position: fixed;
-    border-radius: 50%;
-    z-index: -1;
-    transition-duration: 1.75s;
-    transition-timing-function: cubic-bezier(.08,.35,.16,1.02);
-    pointer-events: none;
-    top: -400px;
-    left: calc(50vw - 200px);
-    animation-name: pulse;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
-    animation-timing-function: ease;
-}
-#cursor {
-    background: black;
-    position: fixed;
-    border-radius: 50%;
-    z-index: 99;
-    pointer-events: none;
-    top: -16px;
-    left: calc(50vw - 8px);
 }
 #pageWrap {
     width: 76%;
     padding: 0 12%;
 }
-.hr {
+hr {
     width: 100%;
+    border: 4px solid black;
+
 }
 .home {
     padding: 300px 0 200px 0;
@@ -101,18 +78,20 @@ html {
         .box {
             .image {
                 width: 100%;
-                height: 400px;
+                height: 24vw;
                 //background: $accent;
-                border: 2px solid black;
+                border: 4px solid black;
+                box-sizing: border-box;
             }
             p {
-                font-size: 2.5em;
+                font-size: 2.15vw;
                 padding: 30px;
                 text-align: center;
                 font-weight: 400;
-                border: 2px solid black;
-                margin-top: -2px;
-                width: calc(100% - 60px);
+                border: 4px solid black;
+                margin-top: -4px;
+                box-sizing: border-box;
+                width: calc(100% - 0px);
             }
         }
     }

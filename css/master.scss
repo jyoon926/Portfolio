@@ -12,6 +12,36 @@ $base: #dbdbdb;
 ::-webkit-scrollbar-thumb {
     background: black;
 }
+::-webkit-scrollbar:hover {
+    cursor: auto !important;
+}
+::-webkit-scrollbar-button {
+    height: 25px;
+}
+#cursorFollower {
+    background: $accent;
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    transition-duration: 1.75s;
+    transition-timing-function: cubic-bezier(.08,.35,.16,1.02);
+    pointer-events: none;
+    top: -400px;
+    left: calc(50vw - 200px);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+}
+#cursor {
+    background: black;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 99;
+    pointer-events: none;
+    top: -16px;
+    left: calc(50vw - 8px);
+}
 .t {
     height: 25px;
     width: 100vw;
