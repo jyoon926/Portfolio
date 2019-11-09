@@ -27,7 +27,7 @@
     background-color: #d89501;
   }
   50% {
-    background-color: #2c9962;
+    background-color: #d89501;
   }
   100% {
     background-color: #d89501;
@@ -53,38 +53,6 @@
 
 ::-webkit-scrollbar-button {
   height: 25px;
-}
-
-#cursorFollower {
-  background: #d89501;
-  position: fixed;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transition-duration: 1.75s;
-          transition-duration: 1.75s;
-  -webkit-transition-timing-function: cubic-bezier(0.08, 0.35, 0.16, 1.02);
-          transition-timing-function: cubic-bezier(0.08, 0.35, 0.16, 1.02);
-  pointer-events: none;
-  top: -400px;
-  left: calc(50vw - 200px);
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-#cursor {
-  background: black;
-  position: fixed;
-  border-radius: 50%;
-  z-index: 99;
-  pointer-events: none;
-  top: -16px;
-  left: calc(50vw - 8px);
 }
 
 .t {
@@ -158,6 +126,14 @@ html {
   width: calc(100vw - 50px);
   margin: 25px;
   cursor: none;
+}
+
+.bg {
+  height: calc(100vh - 50px);
+  width: calc(100vw - 50px);
+  margin: 25px;
+  position: fixed;
+  z-index: -2;
   background: #dbdbdb;
 }
 
@@ -251,9 +227,6 @@ html {
 }
 
 @media screen and (max-width: 1100px) {
-  #cursor {
-    display: none !important;
-  }
   #pageWrap {
     width: 84%;
     padding: 0 8%;
@@ -336,5 +309,37 @@ html {
     text-align: center;
     font-size: 1.1em;
   }
+}
+
+#cursorFollower {
+  background: #d89501;
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transition-duration: 1.75s;
+          transition-duration: 1.75s;
+  -webkit-transition-timing-function: cubic-bezier(0.08, 0.35, 0.16, 1.02);
+          transition-timing-function: cubic-bezier(0.08, 0.35, 0.16, 1.02);
+  pointer-events: none;
+  top: -400px;
+  left: calc(50vw - 200px);
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+#cursor {
+  background: black;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
+  top: -16px;
+  left: calc(50vw - 8px);
 }
 /*# sourceMappingURL=styles.css.map */
