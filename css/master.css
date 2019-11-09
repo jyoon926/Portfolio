@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=master.css.map */
+::-webkit-scrollbar {
+  width: 25px;
+  z-index: 101;
+}
+
+::-webkit-scrollbar-track {
+  background: #d89501;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.t {
+  height: 25px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.b {
+  height: 25px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+
+.l {
+  width: 25px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.outline {
+  background: #d89501;
+  position: fixed;
+  z-index: 100;
+}
+
+::-moz-selection {
+  background: black;
+  color: #d89501;
+}
+
+::selection {
+  background: black;
+  color: #d89501;
+}
+/*# sourceMappingURL=master.css.map */

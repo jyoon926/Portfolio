@@ -1,6 +1,40 @@
-$dark: #191c21;
-$darker: #0d0f11;
-$lighter: #20232b;
-$light: #2a2f3d;
-$accent1: #5d90dd;
-$accent2: #d13a3a;
+$accent: #d89501;
+$base: #dbdbdb;
+
+::-webkit-scrollbar {
+    width: 25px;
+    z-index: 101;
+}
+::-webkit-scrollbar-track {
+    background: $accent;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+.t {
+    height: 25px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.b {
+    height: 25px;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+}
+.l {
+    width: 25px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.outline {
+    background: $accent;
+    position: fixed;
+    z-index: 100;
+}
+::selection {
+    background: black;
+    color: $accent;
+}
