@@ -1,4 +1,5 @@
 $accent: #d89501;
+$secondary: #2c9962;
 $base: #dbdbdb;
 
 ::-webkit-scrollbar {
@@ -6,7 +7,7 @@ $base: #dbdbdb;
     z-index: 101;
 }
 ::-webkit-scrollbar-track {
-    background: $accent;
+    background: none;
 }
 ::-webkit-scrollbar-thumb {
     background: black;
@@ -33,6 +34,10 @@ $base: #dbdbdb;
     background: $accent;
     position: fixed;
     z-index: 100;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-timing-function: ease;
 }
 ::selection {
     background: black;

@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #d89501;
+  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,6 +36,14 @@
   background: #d89501;
   position: fixed;
   z-index: 100;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 ::-moz-selection {
@@ -56,15 +64,59 @@
 }
 
 html {
-  background: #dbdbdb;
   overflow-x: hidden;
   font-size: 18px;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .body {
   width: calc(100vw - 50px);
   margin: 25px;
   cursor: none;
+  background: #dbdbdb;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #d89501;
+  }
+  50% {
+    color: #dbdbdb;
+  }
+  100% {
+    color: #d89501;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: #d89501;
+  }
+  50% {
+    color: #dbdbdb;
+  }
+  100% {
+    color: #d89501;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #d89501;
+  }
+  50% {
+    background-color: #2c9962;
+  }
+  100% {
+    background-color: #d89501;
+  }
 }
 
 ::-webkit-scrollbar:hover {
@@ -83,6 +135,14 @@ html {
   pointer-events: none;
   top: -400px;
   left: calc(50vw - 200px);
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 #cursor {
@@ -113,17 +173,6 @@ html {
   line-height: 1.2;
 }
 
-.home p b {
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
-}
-
-.home p b:hover {
-  color: #f5ac0c;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-}
-
 .skills {
   padding: 200px 0;
 }
@@ -136,7 +185,7 @@ html {
 
 .skills .list p {
   font-size: 7vw;
-  text-align: right;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -196,8 +245,7 @@ html {
 }
 
 .bottom h1 a:hover {
-  color: #d89501;
-  text-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .bottom p {

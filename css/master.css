@@ -4,7 +4,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #d89501;
+  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,6 +36,14 @@
   background: #d89501;
   position: fixed;
   z-index: 100;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 ::-moz-selection {
