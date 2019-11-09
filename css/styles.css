@@ -135,6 +135,8 @@ html {
   position: fixed;
   z-index: -2;
   background: #dbdbdb;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 1100px) {
