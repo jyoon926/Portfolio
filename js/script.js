@@ -2,6 +2,7 @@ window.addEventListener('mousemove', cursor);
 var $win = $(window);
 var _cursor = document.getElementById('cursor');
 var _cursorFollower = document.getElementById('cursorFollower');
+var $logo = $('#logo');
 
 function everyTick() {
     cursor();
@@ -31,8 +32,12 @@ function getY(event) //top position
         return event.clientY;
     }
 }
+function getScroll()
+{
+}
 
 var offset = 200;
+
 
 function cursor() {
     _cursor.style.top = getY(event) - 8 + "px";
@@ -48,6 +53,10 @@ function hover() {
 function hoverOut() {
     _cursorFollower.style.transform = "scale(1)";
 }
+
+$win.on('scroll', function(){
+	$logo.css('transform', 'rotate(' + $win.scrollTop()/10 + 'deg)');
+});
 
 window.onload = function load() {
 }
