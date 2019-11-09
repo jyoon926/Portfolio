@@ -2,6 +2,16 @@ $accent: #d89501;
 $secondary: #2c9962;
 $base: #dbdbdb;
 
+@keyframes pulse {
+    0% { color: $accent; }
+    50% { color: $base; }
+    100% { color: $accent; }
+}
+@keyframes pulse {
+    0%   { background-color: $accent; }
+    50%  { background-color: $secondary; }
+    100% { background-color: $accent; }
+}
 ::-webkit-scrollbar {
     width: 25px;
     z-index: 101;
