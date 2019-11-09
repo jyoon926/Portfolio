@@ -1,39 +1,3 @@
-@-webkit-keyframes pulse {
-  0% {
-    color: #d89501;
-  }
-  50% {
-    color: #dbdbdb;
-  }
-  100% {
-    color: #d89501;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    color: #d89501;
-  }
-  50% {
-    color: #dbdbdb;
-  }
-  100% {
-    color: #d89501;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #d89501;
-  }
-  50% {
-    background-color: #d89501;
-  }
-  100% {
-    background-color: #d89501;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 25px;
   z-index: 101;
