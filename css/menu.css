@@ -257,9 +257,6 @@
             transition-duration: .3s;
     text-transform: uppercase;
   }
-  #contact a:last-child {
-    margin-top: 1vw;
-  }
   #contact a:hover {
     text-shadow: 0 0.6vw 1.5vw rgba(0, 0, 0, 0.6);
     -webkit-transform: translateY(-0.6vw);

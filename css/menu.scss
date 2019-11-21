@@ -111,9 +111,6 @@
             margin-bottom: -1vw;
             transition-duration: .3s;
             text-transform: uppercase;
-            &:last-child {
-                margin-top: 1vw;
-            }
             &:hover {
                 //color: $accent;
                 text-shadow: 0 .6vw 1.5vw rgba(0,0,0,0.6);
