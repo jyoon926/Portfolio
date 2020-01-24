@@ -111,6 +111,7 @@ html {
                     transform: translateY(2vw);
                     z-index: 1;
                     background-size: cover;
+                    pointer-events: none;
                 }
                 .i1 { background-image: url(../img/john.png); }
                 .i2 { background-image: url(../img/ihstsa.png); }

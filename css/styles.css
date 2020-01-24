@@ -234,6 +234,7 @@ html {
             transform: translateY(2vw);
     z-index: 1;
     background-size: cover;
+    pointer-events: none;
   }
   .work .list a .i1 {
     background-image: url(../img/john.png);
