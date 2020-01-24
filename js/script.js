@@ -77,6 +77,6 @@ function show(id, value) {
 }
 
 onReady(function () {
-    document.getElementById('preload').style.transform = "scaleY(0)";
+    document.getElementById('preload').style.top = "-100vh";
     show('wrap', true);
 });
