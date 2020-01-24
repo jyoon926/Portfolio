@@ -37,7 +37,7 @@
 }
 
 .outline {
-  background: #d89501;
+  background: #e79f00;
   position: fixed;
   z-index: 100;
   -webkit-animation-name: pulse;
@@ -52,16 +52,16 @@
 
 ::-moz-selection {
   background: black;
-  color: #d89501;
+  color: #e79f00;
 }
 
 ::selection {
   background: black;
-  color: #d89501;
+  color: #e79f00;
 }
 
 #cursorFollower {
-  background: #d89501;
+  background: #e79f00;
   position: fixed;
   border-radius: 50%;
   z-index: -1;
