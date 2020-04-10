@@ -1,110 +1,71 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	    <title>Jacob Yoon | Home</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link rel="stylesheet" href="https://jyoon926.github.io/Heron/css/fonts.css">
-	    <link rel="stylesheet" href="css/styles.css">
-	    <link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
-		<link rel="icon" href="img/icon.png">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151910259-2"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<html lang="en">
+<head>
+    <title>Jacob Yoon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div id="cursor"></div>
 
-			gtag('config', 'UA-151910259-2');
-		</script>
-	</head>
-	<body class="body">
-		<input type="checkbox" id="contact-input" class="contact-input">
-		<div id="contact">
-			<a href="mailto:jacobyoon926@gmail.com">Email Me</a>
-		</div>
-		<label for="contact-input" class="exit">Exit</label>
-		<span id="cursorFollower" style="width: 400px; height: 400px;"></span>
-		<span id="cursor" style="width: 16px; height: 16px;"></span>
-		<span class="t outline"></span>
-		<span class="b outline"></span>
-		<span class="l outline"></span>
-		<div class="bg"></div>
+    <div id="grain"></div>
+    
+    <div id="wrap" class="smooth-scroll">
 
-		<div class="wrap" id="wrap">
-			<a href="https://jacobyoon.cf" id="mobile"><img id="mobilelogo" src="img/Logo.svg" alt=""></a>
-			<div class="left">
-				<a href="https://jacobyoon.cf"><img id="logo" src="img/Logo.svg" alt=""></a>
-				<div class="text">
-					<p class="name">Portfolio of Jacob Yoon</p>
-					<label for="contact-input" class="contact-button">Contact</label>
-				</div>
-			</div>
-			<div class="right">
-				<a href="#home">Home<div></div></a>
-				<a href="#skills">Skills<div></div></a>
-				<a href="#projects">Work<div></div></a>
-			</div>
+        <div id="header">
+            <a class="logo" href=""><img src="img/Logo.svg" alt=""></a>
+            <div class="links">
+                <ul>
+                    <a href="#work">Work</a>
+                    <a href="">About</a>
+                </ul>
+                <ul>
+                    <a href="mailto:jacobyoon926@gmail.com">Email</a>
+                    <a href="https://www.instagram.com/jaacobyoon/" target="none">Instagram</a>
+                </ul>
+            </div>
+        </div>
 
-			<div id="pageWrap">
-				<div class="home" id="home">
-					<p>Hello! I'm <b>Jacob Yoon</b>, and I have a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy.</p>
-				</div>
+        <div id="hero">
+            <h3 id="parallax">Hello! My name is <u>Jacob Yoon</u> and I have a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy.</h3>
+        </div>
 
-				<hr>
+        <div id="page">
+            <div id="about">
+                <h1>Skills</h1>
+                <h4>Web Design, Illustration, Branding, 3D Modeling, Animation, Game Development, Programming</h4>
+            </div>
+            <div id="work">
+                <h1>Work</h1>
+                <!--<h4>Websites</h4>-->
+                <div class="grid">
+                    <a class="container" href="">
+                        <img src="img/john.png" alt="">
+                        <p>John Yoon</p>
+                    </a>
+                    <a class="container" href="">
+                        <img src="img/von-cramm.png" alt="">
+                        <p>Von Cramm</p>
+                    </a>
+                    <a class="container" href="">
+                        <img src="img/joseph.png" alt="">
+                        <p>Joseph Yoon</p>
+                    </a>
+                    <a class="container" href="">
+                        <img src="img/ihstsa.png" alt="">
+                        <p>IHSTSA</p>
+                    </a>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Designed and Developed by Jacob Yoon © 2020</p>
+            </div>
+        </div>
+    </div>
 
-				<div class="skills" id="skills">
-					<h1>Skills</h1>
-					<div class="list">
-						<p>Web Design</p>
-						<p>Illustration</p>
-						<p>Branding</p>
-						<p>Animation</p>
-						<p>Game Development</p>
-						<p>Programming</p>
-					</div>
-				</div>
-
-				<hr>	
-
-				<div class="work" id="projects">
-					<h1>My Work</h1>
-					<div class="list">
-						<hr class="hr">
-						<a href="https://john-yoon.com" target="none">
-							<div class="image i1"></div>
-							<p>John Yoon Personal Website</p>
-						</a>
-						<hr class="hr">
-						<a href="https://ihstsa.us" target="none">
-							<div class="image i2"></div>
-							<p>IHSTSA</p>
-						</a>
-						<hr class="hr">
-						<a href="https://jyoon926.github.io/Von-Cramm/" target="none">
-							<div class="image i3"></div>
-							<p>Von Cramm</p>
-						</a>
-						<hr class="hr">
-						<a href="https://jyoon926.github.io/Joseph-Yoon/" target="none">
-							<div class="image i4"></div>
-							<p>Joseph Yoon Portfolio</p>
-						</a>
-					</div>
-				</div>
-
-				<hr>	
-
-				<div class="bottom">
-					<h1>SEND ME AN <a href="mailto:jacobyoon926@gmail.com">EMAIL</a></h1>
-					<p>Designed and Developed by Jacob Yoon © 2020</p>
-				</div>
-			</div>
-		</div>
-		<div id="preload">
-			<img src="img/Logo.svg" alt="">
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
