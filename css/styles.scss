@@ -25,7 +25,11 @@
 
 //Variables
 $light: #2e3830;
-$dark: #c47f66;
+$dark: rgb(239, 227, 215);
+::selection {
+    background: $dark;
+    color: $light;
+}
 
 //Scrollbar
 ::-webkit-scrollbar {
@@ -34,17 +38,6 @@ $dark: #c47f66;
 }
 ::-webkit-scrollbar-thumb {
     background: $dark;
-}
-
-//Cursor
-#cursor {
-    position: fixed;
-    height: 14px;
-    width: 14px;
-    background: white;
-    border-radius: 50%;
-    z-index: 999;
-    pointer-events: none;
 }
 
 //Main
@@ -59,6 +52,7 @@ $dark: #c47f66;
 }
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
     font-size: 18px;
     scroll-behavior: smooth;
 }
@@ -67,7 +61,7 @@ body {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 8em;
     line-height: 1;
 }
 h2 {
@@ -95,7 +89,7 @@ a {
 }
 @media screen and (max-width: 1100px) {
     h1 {
-        font-size: 5em;
+        font-size: 7em;
         line-height: 1;
     }
     h2 {
@@ -117,7 +111,7 @@ a {
 }
 @media screen and (max-width: 700px) {
     h1 {
-        font-size: 4em;
+        font-size: 6em;
         line-height: 1;
     }
     h2 {
@@ -138,6 +132,33 @@ a {
     }
 }
 
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: $light;
+    z-index: 998;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0 0 1 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 200px;
+    }
+}
+#cursor {
+    position: fixed;
+    height: 14px;
+    width: 14px;
+    background: white;
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+    top: -14px;
+}
 #grain {
     pointer-events: none;
     position: fixed;
@@ -147,6 +168,7 @@ a {
     opacity: .2;
     background-image: url(../img/noise.png);
     z-index: 1000;
+    image-rendering: pixelated;
 }
 
 @keyframes grain {
@@ -165,19 +187,21 @@ a {
 #header {
     position: fixed;
     top: 0; left: 0;
-    width: 100%; height: 120px;
-    background: $light;
+    width: calc(100% - 160px); height: 80px;
+    //background: $light;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 80px;
+    margin: 0 80px;
     z-index: 10;
     transition: top 0.4s;
+    border-bottom: 2px solid $dark;
+    background: linear-gradient(to top, rgba(0,0,0,0), $light);
     .logo {
         img {
-            height: 80px;
+            height: 50px;
             color: $dark;
         }
     }
@@ -187,10 +211,10 @@ a {
         ul {
             display: flex;
             flex-direction: row;
-            &:first-child { margin-right: 80px;}
+            &:first-child { margin-right: 100px;}
             a {
                 color: $dark;
-                font-size: 1.25em;
+                font-size: 1em;
                 margin-left: 40px;
                 text-decoration: none;
                 transition-duration: .3s;
@@ -202,22 +226,38 @@ a {
 }
 
 #hero {
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    padding: 80px;
-    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //position: fixed;
     top: 0;
     color: $dark;
     z-index: -1;
+    padding: 80px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 10vw;
+        margin: 160px 0;
+    }
+    h4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+    }
 }
 
 #page {
     z-index: 1;
-    position: absolute;
-    top: 100vh;
+    //position: absolute;
+    //top: 100vh;
     width: 100%;
 }
 
@@ -256,7 +296,7 @@ a {
             align-items: center;
             img {
                 width: 100%;
-                border-radius: 20px;
+                //border-radius: 20px;
                 transition-duration: .65s;
             }
             p {
