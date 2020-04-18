@@ -55,14 +55,14 @@
 }
 
 html {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden !important;
   font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body {
   background: #2e3830;
+  overflow: hidden;
 }
 
 h1 {
@@ -176,11 +176,12 @@ a {
   position: fixed;
   height: 14px;
   width: 14px;
-  background: white;
+  background: #efe3d7;
   border-radius: 50%;
   z-index: 999;
   pointer-events: none;
-  top: -14px;
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
 }
 
 #grain {
@@ -383,7 +384,7 @@ a {
   top: 0;
   color: #efe3d7;
   z-index: -1;
-  padding: 80px;
+  padding: 80px 80px 80px 80px;
   margin-bottom: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -421,6 +422,9 @@ a {
 #page {
   z-index: 1;
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll !important;
+  scroll-behavior: smooth;
 }
 
 #about {
@@ -445,7 +449,7 @@ a {
   padding: 160px 80px;
 }
 
-#work h1 {
+#work h2 {
   margin-bottom: 80px;
 }
 
@@ -483,19 +487,11 @@ a {
 }
 
 #work .grid .container p {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition-duration: .65s;
-          transition-duration: .65s;
-  font-size: 5em;
-  font-weight: 500;
-  color: #efe3d7;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  display: none;
 }
 
 #work .grid .container:hover img {
-  opacity: .15;
+  opacity: .5;
 }
 
 #work .grid .container:hover p {

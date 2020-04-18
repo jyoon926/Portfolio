@@ -15,8 +15,8 @@ document.addEventListener('mousemove', function(ev){
     document.getElementById('cursor').style.transform = 'translateY(' + (ev.clientY - 7) + 'px)';
     document.getElementById('cursor').style.transform += 'translateX(' + (ev.clientX - 7) + 'px)';
 
-    document.getElementById('cursorFollower').style.transform = 'translateY(' + (ev.clientY - 150) + 'px)';
-    document.getElementById('cursorFollower').style.transform += 'translateX(' + (ev.clientX - 150) + 'px)';
+    //document.getElementById('cursorFollower').style.transform = 'translateY(' + (ev.clientY - 150) + 'px)';
+    //document.getElementById('cursorFollower').style.transform += 'translateX(' + (ev.clientX - 150) + 'px)';
 },false);
 
 $(window).on('scroll', function(){
