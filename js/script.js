@@ -1,5 +1,3 @@
-
-
 //Header
 window.onscroll = function() {
     scrollFunction()
