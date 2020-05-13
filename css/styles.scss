@@ -1,32 +1,20 @@
-//Fonts
-@font-face {
-    font-family: SctoGroteskA;
-    src: url(../fonts/SctoGroteskA-Bold.woff2) format("woff2"), url(../fonts/SctoGroteskA-Bold.woff) format("woff");
-    font-weight: 700;
-    font-display: swap;
-}
-@font-face {
-    font-family: SctoGroteskA;
-    src: url(../fonts/SctoGroteskA-Medium.woff2) format("woff2"), url(../fonts/SctoGroteskA-Medium.woff) format("woff");
-    font-weight: 500;
-    font-display: swap;
-}
-@font-face {
-    font-family: SctoGroteskA;
-    src: url(../fonts/SctoGroteskA-Regular.woff2) format("woff2"), url(../fonts/SctoGroteskA-Regular.woff) format("woff");
-    font-weight: 400;
-    font-display: swap;
-}
-@font-face {
-    font-family: Favorit;
-    src: url(../fonts/favorit-regular-webfont.woff2) format("woff2"), url(../fonts/favorit-regular-webfont.woff) format("woff");
-    font-weight: 400;
-}
-
 //Variables
 $light: #f2e4da;
 $dark: #410807;
 $accent: #68a7b6;
+$gap: 30px;
+.color {
+    color: #410807;
+}
+.background {
+    background: #f2e4da;
+}
+.border-top {
+    border-top: 1px solid $dark;
+}
+.border-bottom {
+    border-bottom: 1px solid $dark;
+}
 ::selection {
     background: $dark;
     color: $light;
@@ -49,16 +37,16 @@ $accent: #68a7b6;
     letter-spacing: -0.02em;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
-    cursor: none;
+    //cursor: none;
 }
 html {
-    overflow: hidden !important;
+    overflow-x: hidden !important;
     font-size: 18px;
     scroll-behavior: smooth;
 }
 body {
     background: $light;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -146,7 +134,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: $light;
     z-index: 98;
@@ -155,10 +143,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #000;
+    padding: 0; margin: 0;
     img {
         max-width: 600px;
         width: calc(100vw - 80px);
+        padding: 0; margin: 0;
     }
 }
 #cursor {
@@ -183,59 +172,94 @@ a {
     transform: translateY(-300px);
     transition-timing-function: ease-out;
 }
+.button {
+    border-bottom: 1px solid $light;
+    transition-duration: .4s;
+    font-size: 1em;
+    line-height: 1;
+    &:hover {
+        border-bottom: 1px solid $dark;
+    }
+}
 #header {
     position: fixed;
     top: 0; left: 0;
-    width: calc(100vw - 8px); height: 80px;
+    width: calc(100vw - 60px); height: 70px;
     //background: $light;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    margin: 0 0;
     z-index: 10;
     transition: top 0.4s;
-    //border-bottom: 2px solid $dark;
-    background: linear-gradient(to top, rgba(0,0,0,0), $light);
-    //background: $light;
-    padding: 0 80px;
+    border-bottom: 1px solid $dark;
+    //background: linear-gradient(to top, rgba(0,0,0,0), $light);
+    background: $light;
+    margin: 0 30px;
     .logo {
-        img {
-            height: 30px;
-            color: $dark;
-        }
+        font-size: 1em;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px;
     }
     .links {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
         ul {
             display: flex;
             flex-direction: row;
-            //&:first-child { margin-right: 100px;}
+            justify-content: flex-start;
             a {
-                color: $dark;
                 font-size: 1em;
                 margin-left: 40px;
                 text-decoration: none;
                 transition-duration: .3s;
+                line-height: 1;
+                padding-top: 3px;
                 &:first-child { margin-left: 0;}
                 &:hover { opacity: .5; }
             }
+            &:last-child {
+                justify-content: flex-end;
+            }
+        }
+        .quarter {
+            width: 25%;
+        }
+        .half {
+            width: 50%;
         }
     }
 }
-
+#icon {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    z-index: 10;
+    img {
+        height: 80px;
+    }
+}
+#page {
+    width: 100vw;
+    padding: 30px;
+    box-sizing: border-box;
+}
 #hero {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    //position: fixed;
+    position: fixed;
     top: 0;
-    color: $dark;
     z-index: -1;
     padding: 80px 80px 0 80px;
     box-sizing: border-box;
@@ -247,54 +271,80 @@ a {
         max-width: 1000px;
     }
 }
-
-#page {
-    z-index: 1;
-    //position: absolute;
-    //top: 100vh;
-    width: 100%;
+#space {
     height: 100vh;
-    overflow-y: scroll !important;
-    scroll-behavior: smooth;
 }
-
+#about {
+    width: 75%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: row; 
+    height: 40vw;   
+    .img {
+        height: 40vw;
+        width: 30vw;
+        background: url('../img/jacob1.jpg');
+        background-size: cover;
+        background-position: center center;
+        filter: grayscale(1);
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: calc(100% - 30vw);
+        padding: 80px 50px;
+        box-sizing: border-box;
+        h5 {
+            font-size: 1.5em;
+            padding-bottom: 30px;
+        }
+    }
+}
+.work-title {
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    padding: 100px 0 30px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+    h2 {
+        max-width: 700px;
+    }
+}
 #work {
     width: 100%;
-    color: $dark;
-    padding: 80px 80px 0 80px;
     box-sizing: border-box;
-    h2 {
-        margin-bottom: 80px;
-    }
-    h4 {
-        margin-bottom: 40px;
-    }
+    padding-bottom: 100px;
     .grid {
         display: grid;
-        grid-gap: 80px;
+        grid-gap: 30px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         .container {
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            box-sizing: border-box;
+            transform: scale(.8);
+            transition-duration: .5s;
             img {
                 width: 100%;
-                //border-radius: 20px;
                 transition-duration: .65s;
             }
             p {
-                display: none;
+                width: 100%;
+                padding: 20px 0;
+                margin-top: 3px;
             }
             &:hover {
-                img {
-                    opacity: .5;
-                }
-                p {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+                transform: scale(1);
             }
         }
     }
@@ -308,74 +358,10 @@ a {
 
 #footer {
     width: 100%;
-    color: $dark;
+    
     box-sizing: border-box;
     padding: 40px 80px;
     p {
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    #cursor {
-        display: none;
-    }
-    #cursor-behind {
-        display: none;
-    }
-    #header {
-        top: 0; left: 0;
-        width: 100vw; height: 60px;
-        padding: 0 40px;
-        .logo {
-            img {
-                height: 20px;
-            }
-        }
-    }
-    
-    #hero {
-        padding: 40px 40px 0 40px;
-        h4 {
-            margin: 120px 0;
-        }
-    }
-    
-    #work {
-        padding: 40px 40px 0 40px;
-        .grid {
-            grid-gap: 40px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-        }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #header {
-        width: 100vw; height: 60px;
-        padding: 0 30px;
-        .logo {
-            img {
-                height: 20px;
-            }
-        }
-        .links ul a {
-            margin-left: 30px;
-            font-size: .9em;
-        }
-    }
-    
-    #hero {
-        padding: 30px 30px 0 30px;
-    }
-    
-    #work {
-        padding: 30px 30px 0 30px;
-        .grid {
-            grid-gap: 30px;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-        }
     }
 }
