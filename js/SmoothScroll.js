@@ -5,14 +5,8 @@ class SmoothScroll {
     this.$ = {
       container: document.querySelector(_containerSelector),
       containerBody: document.querySelector(_containerSelector + '__body'),
-      hitbox: document.querySelector(_containerSelector + '--hitbox'),
-      controlsDuration: document.querySelector('.controls input[type=range]'),
-      controlsEasing: document.querySelectorAll('.controls__radio'),
-      controlsEasingRadio: document.querySelectorAll('.controls input[type=radio]'),
-      duration: document.querySelector('.controls__duration'),
+      hitbox: document.querySelector(_containerSelector + '--hitbox')
     }
-
-    console.log(this.$.controlsEasing)
 
     // Init params
     this.params = {
@@ -70,13 +64,6 @@ class SmoothScroll {
     window.addEventListener('scroll', (event) => { this._handleScroll(event) })
     window.addEventListener('resize', () => { this._handleResize() })
 
-    // Listening mouseup on duration range
-    this.$.controlsDuration.addEventListener('mouseup', () => { this._handleDuration() })
-
-    // Listening mouseup on radio 
-    for(let i = 0; i < this.$.controlsEasing.length; i++) {
-      this.$.controlsEasing[i].addEventListener('mouseup', () => { this._handleEasing(this.$.controlsEasingRadio[i].value) })
-    }
   }
 
   _handleScroll(_event) {
@@ -91,25 +78,6 @@ class SmoothScroll {
     // Update usefull style
     this.$.hitbox.style.height = `${this.params.containerHeight}px`
   }
-
-  _handleDuration() {
-    // Update duration value
-    this.$.duration.innerText = this.$.controlsDuration.value + 'ms'
-
-    // Update duration variable
-    this.params.duration = this.$.controlsDuration.value
-
-    // Update duration
-    this.$.containerBody.style.transition = `transform ${this.params.duration}ms ${this.params.timingFunction}`
-  }
-
-  _handleEasing(_value) {
-    // Update timing function variable
-    this.params.timingFunction = _value
-
-    // Update duration
-    this.$.containerBody.style.transition = `transform ${this.params.duration}ms ${this.params.timingFunction}`
-  }
 }
 
 const params = {
@@ -117,4 +85,4 @@ const params = {
   timingFunction: 'cubic-bezier(0.23, 1, 0.32, 1)'
 }
 
-new SmoothScroll('.cont', params)
+new SmoothScroll('.container', params)

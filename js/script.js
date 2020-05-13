@@ -1,28 +1,19 @@
-window.onload = function load() {
-}
 
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
 
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
+//Header
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        $('#header-line').css("top", "0");
+    } else {
+        $('#header-line').css("top", "-" + ($('#header-line').height() + 1) + "px");
     }
 }
 
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    document.getElementById('loader').style.top = "-100vh";
-    document.getElementsByTagName('html')[0].style.overflowY = "scroll";
-});
-
-
-
+//Cursor
 var offset = 0;
 var halfWidth = window.innerWidth / 2;
 var halfHeight = window.innerHeight / 2;

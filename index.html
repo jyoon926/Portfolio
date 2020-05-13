@@ -16,7 +16,8 @@
     </div>
     <img src="img/cursor.svg" alt="" id="cursor">
 
-    <div id="header" class="border-bottom">
+    <div id="header-line"></div>
+    <div id="header">
         <div class="links">
             <ul class="quarter">
                 <a class="logo color" href="/">Jacob Yoon</a>
@@ -31,55 +32,65 @@
         </div>
     </div>
     <a id="icon" href="/"><img src="img/Icon.svg" alt=""></a>
+    <div id="hero">
+        <h2 class="color">
+            Jacob Yoon is an avid designer and student based in Ithaca, NY.
+        </h2>
+    </div>
 
-    <div id="page">
-        <div id="hero">
-            <h2 class="color">
-                Jacob Yoon is an avid designer and student based in Ithaca, NY.
-            </h2>
-        </div>
-        <div id="space"></div>
-        <div id="about" class="background color border-top">
-            <div class="img"></div>
-            <div class="text">
-                <h5>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. &#9829;</h5>
-                <a class="button color" href="/">Learn More</a>
+    <div class="container">
+        <div class="container__body" style="transition: transform 1000ms cubic-bezier(0.23, 1, 0.32, 1) 0s;">
+            <div id="page">
+                <div id="space"></div>
+                <div id="about" class="background color border-top">
+                    <div class="img"></div>
+                    <div class="text">
+                        <h5>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. &#9829;</h5>
+                        <a class="button color" href="/">Learn More</a>
+                    </div>
+                </div>
+                <div class="work-title background color border-top">
+                    <h1>My Work</h1>
+                </div>
+                <div id="work" class="background color">
+                    <div class="grid">
+                        <a class="parent" href="http://ihstsa.us/" target="none">
+                            <img src="img/ihstsa.png" alt="">
+                            <p class="color border-bottom">IHSTSA</p>
+                        </a>
+                        <a class="parent" href="http://john-yoon.com/" target="none">
+                            <img src="img/john.png" alt="">
+                            <p class="color border-bottom">John Yoon</p>
+                        </a>
+                        <a class="parent" href="https://jyoon926.github.io/Von-Cramm/" target="none">
+                            <img src="img/von-cramm.png" alt="">
+                            <p class="color border-bottom">Von Cramm</p>
+                        </a>
+                        <a class="parent" href="http://josephyoon.ml/" target="none">
+                            <img src="img/joseph.png" alt="">
+                            <p class="color border-bottom">Joseph Yoon</p>
+                        </a>
+                        <a class="parent" href="https://jyoon926.github.io/IHS-Social-Justice-Week/" target="none">
+                            <img src="img/ihs-social-justice-week.png" alt="">
+                            <p class="color border-bottom">IHS Social Justice Week</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="work-title background color border-top">
-            <h1>My Work</h1>
-        </div>
-        <div id="work" class="background color">
-            <div class="grid">
-                <a class="container" href="http://ihstsa.us/" target="none">
-                    <img src="img/ihstsa.png" alt="">
-                    <p class="color border-bottom">IHSTSA</p>
-                </a>
-                <a class="container" href="http://john-yoon.com/" target="none">
-                    <img src="img/john.png" alt="">
-                    <p class="color border-bottom">John Yoon</p>
-                </a>
-                <a class="container" href="https://jyoon926.github.io/Von-Cramm/" target="none">
-                    <img src="img/von-cramm.png" alt="">
-                    <p class="color border-bottom">Von Cramm</p>
-                </a>
-                <a class="container" href="http://josephyoon.ml/" target="none">
-                    <img src="img/joseph.png" alt="">
-                    <p class="color border-bottom">Joseph Yoon</p>
-                </a>
-                <a class="container" href="https://jyoon926.github.io/IHS-Social-Justice-Week/" target="none">
-                    <img src="img/ihs-social-justice-week.png" alt="">
-                    <p class="color border-bottom">IHS Social Justice Week</p>
-                </a>
+            <div class="color" id="footer">
+                <p>Designed and Developed by Jacob Yoon © 2020</p>
             </div>
         </div>
     </div>
-    
-    <div class="color" id="footer">
-        <p>Designed and Developed by Jacob Yoon © 2020</p>
-    </div>
+    <div class="container--hitbox"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            $('#loader').css("top", "-100vh");
+        });
+    </script>
+    <script src="js/SmoothScroll.js"></script>
 </body>
 </html>

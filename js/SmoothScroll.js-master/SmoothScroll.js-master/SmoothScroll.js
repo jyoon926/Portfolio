@@ -6,10 +6,6 @@ class SmoothScroll {
       container: document.querySelector(_containerSelector),
       containerBody: document.querySelector(_containerSelector + '__body'),
       hitbox: document.querySelector(_containerSelector + '--hitbox'),
-      controlsDuration: document.querySelector('.controls input[type=range]'),
-      controlsEasing: document.querySelectorAll('.controls__radio'),
-      controlsEasingRadio: document.querySelectorAll('.controls input[type=radio]'),
-      duration: document.querySelector('.controls__duration'),
     }
 
     console.log(this.$.controlsEasing)
@@ -91,30 +87,4 @@ class SmoothScroll {
     // Update usefull style
     this.$.hitbox.style.height = `${this.params.containerHeight}px`
   }
-
-  _handleDuration() {
-    // Update duration value
-    this.$.duration.innerText = this.$.controlsDuration.value + 'ms'
-
-    // Update duration variable
-    this.params.duration = this.$.controlsDuration.value
-
-    // Update duration
-    this.$.containerBody.style.transition = `transform ${this.params.duration}ms ${this.params.timingFunction}`
-  }
-
-  _handleEasing(_value) {
-    // Update timing function variable
-    this.params.timingFunction = _value
-
-    // Update duration
-    this.$.containerBody.style.transition = `transform ${this.params.duration}ms ${this.params.timingFunction}`
-  }
 }
-
-const params = {
-  duration: 1000,
-  timingFunction: 'cubic-bezier(0.23, 1, 0.32, 1)'
-}
-
-new SmoothScroll('.container', params)
