@@ -344,7 +344,7 @@ a {
 }
 
 #hero {
-  width: 100%;
+  width: calc(100vw - 60px);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +385,7 @@ a {
 
 #space {
   height: 100vh;
+  pointer-events: none;
 }
 
 #about {
