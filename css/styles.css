@@ -1,36 +1,36 @@
 .color {
-  color: #410807;
+  color: #e83c38;
 }
 
 .background {
-  background: #f2e4da;
+  background: #a6d1c9;
 }
 
 .border-top {
-  border-top: 1px solid #410807;
+  border-top: 1px solid #e83c38;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #410807;
+  border-bottom: 1px solid #e83c38;
 }
 
 ::-moz-selection {
-  background: #410807;
-  color: #f2e4da;
+  background: #e83c38;
+  color: #a6d1c9;
 }
 
 ::selection {
-  background: #410807;
-  color: #f2e4da;
+  background: #e83c38;
+  color: #a6d1c9;
 }
 
 ::-webkit-scrollbar {
-  background: #f2e4da;
+  background: #a6d1c9;
   width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #410807;
+  background: #e83c38;
 }
 
 * {
@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  background: #f2e4da;
+  background: #a6d1c9;
   overflow-x: hidden;
 }
 
@@ -155,7 +155,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #f2e4da;
+  background: #a6d1c9;
   z-index: 98;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -185,7 +185,7 @@ a {
   position: fixed;
   height: 14px;
   width: 14px;
-  background: #410807;
+  background: #e83c38;
   border-radius: 50%;
   z-index: 999;
   pointer-events: none;
@@ -210,7 +210,7 @@ a {
 }
 
 .button {
-  border-bottom: 1px solid #f2e4da;
+  border-bottom: 1px solid #a6d1c9;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
   font-size: 1em;
@@ -218,7 +218,7 @@ a {
 }
 
 .button:hover {
-  border-bottom: 1px solid #410807;
+  border-bottom: 1px solid #e83c38;
 }
 
 #header {
@@ -245,8 +245,8 @@ a {
   z-index: 10;
   -webkit-transition: top 0.4s;
   transition: top 0.4s;
-  border-bottom: 1px solid #410807;
-  background: #f2e4da;
+  border-bottom: 1px solid #e83c38;
+  background: #a6d1c9;
   margin: 0 30px;
 }
 
@@ -329,6 +329,7 @@ a {
   left: 30px;
   bottom: 30px;
   z-index: 10;
+  fill: #e83c38;
 }
 
 #icon img {

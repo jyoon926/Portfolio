@@ -1,13 +1,13 @@
 //Variables
-$light: #f2e4da;
-$dark: #410807;
+$light: #a6d1c9;
+$dark: #e83c38;
 $accent: #68a7b6;
 $gap: 30px;
 .color {
-    color: #410807;
+    color: $dark;
 }
 .background {
-    background: #f2e4da;
+    background: $light;
 }
 .border-top {
     border-top: 1px solid $dark;
@@ -241,6 +241,7 @@ a {
     left: 30px;
     bottom: 30px;
     z-index: 10;
+    fill: $dark;
     img {
         height: 80px;
     }
