@@ -40,7 +40,8 @@
   letter-spacing: -0.02em;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  cursor: none;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+          transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 html {

@@ -81,6 +81,8 @@
   background-position: center center;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 #about .text {
@@ -112,7 +114,7 @@
 .work-title {
   width: 100%;
   text-align: center;
-  padding: 250px 0 30px 0;
+  padding: 250px 0 100px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -154,7 +156,9 @@
 #work .grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
+  row-gap: 80px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
@@ -162,7 +166,8 @@
 }
 
 #work .grid .parent {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,8 +183,6 @@
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
 }
@@ -198,8 +201,7 @@
 }
 
 #work .grid .parent:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  opacity: .75;
 }
 
 #work .more {
@@ -210,6 +212,7 @@
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
   margin: auto;
+  margin-top: 80px;
 }
 
 #work .more:hover {
@@ -229,7 +232,7 @@
 @media screen and (max-width: 1000px) {
   #hero {
     width: 100%;
-    padding: 40px 0;
+    padding: 40px;
   }
   #hero h2 {
     display: -webkit-box;
@@ -331,12 +334,7 @@
     grid-gap: 40px;
   }
   #work .grid .parent {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  #work .grid .parent:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    width: 100%;
   }
   #work .more {
     font-size: 1.5em;

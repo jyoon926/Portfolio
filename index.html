@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="icon" href="img/Icon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <div id="loader">
         <img src="img/Logo.svg" alt="" id="loader-img">
     </div>
-    <img src="img/cursor.svg" alt="" id="cursor">
+    <!--<img src="img/cursor.svg" alt="" id="cursor">-->
 
     <div id="header-line"></div>
     <div id="header">
@@ -44,7 +45,7 @@
             <div id="page">
                 <div id="space"></div>
                 <div id="about" class="background color border-top">
-                    <div class="img"></div>
+                    <div class="img" data-aos="flip-down"></div>
                     <div class="text">
                         <h5>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. &#9829;</h5>
                         <a class="button color" href="/">Learn More</a>
@@ -55,31 +56,31 @@
                 </div>
                 <div id="work" class="background color">
                     <div class="grid">
-                        <a class="parent" href="http://ihstsa.us/" target="none">
+                        <a class="parent" href="http://ihstsa.us/" target="none" data-aos="fade-up">
                             <img src="img/ihstsa.png" alt="">
                             <p class="color border-bottom">IHSTSA</p>
                         </a>
-                        <a class="parent" href="http://john-yoon.com/" target="none">
+                        <a class="parent" href="http://john-yoon.com/" target="none" data-aos="fade-up">
                             <img src="img/john.png" alt="">
                             <p class="color border-bottom">John Yoon</p>
                         </a>
-                        <a class="parent" href="https://jyoon926.github.io/Von-Cramm/" target="none">
+                        <a class="parent" href="https://jyoon926.github.io/Von-Cramm/" target="none" data-aos="fade-up">
                             <img src="img/von-cramm.png" alt="">
                             <p class="color border-bottom">Von Cramm</p>
                         </a>
-                        <a class="parent" href="http://josephyoon.ml/" target="none">
+                        <a class="parent" href="http://josephyoon.ml/" target="none" data-aos="fade-up">
                             <img src="img/joseph.png" alt="">
                             <p class="color border-bottom">Joseph Yoon</p>
                         </a>
-                        <a class="parent" href="https://jyoon926.github.io/IHS-Social-Justice-Week/" target="none">
+                        <a class="parent" href="https://jyoon926.github.io/IHS-Social-Justice-Week/" target="none" data-aos="fade-up">
                             <img src="img/ihs-social-justice-week.png" alt="">
                             <p class="color border-bottom">IHS Social Justice Week</p>
                         </a>
                     </div>
-                    <a href="/" class="more color">More Projects</a>
+                    <a href="/" class="more color" data-aos="fade-up" data-aos-offset="10">More Projects</a>
                 </div>
             </div>
-            <div class="color" id="footer">
+            <div class="color" id="footer" data-aos="fade-up" data-aos-offset="10">
                 <p>Designed and Developed by Jacob Yoon © 2020</p>
             </div>
         </div>
@@ -96,5 +97,12 @@
         });
     </script>
     <script src="js/SmoothScroll.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    </script>
 </body>
 </html>
