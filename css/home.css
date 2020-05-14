@@ -136,6 +136,19 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #work .grid {
@@ -187,6 +200,21 @@
 #work .grid .parent:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+#work .more {
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #e83c38;
+  padding: 30px 40px 25px 40px;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  margin: auto;
+}
+
+#work .more:hover {
+  background: #e83c38;
+  color: #ebeded;
 }
 
 @media screen and (max-width: 1100px) {
@@ -310,6 +338,11 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  #work .more {
+    font-size: 1.5em;
+    padding: 25px 35px 21px 35px;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -368,6 +401,11 @@
   #work .grid .parent:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  #work .more {
+    font-size: 1.5em;
+    padding: 20px 35px 15px 35px;
+    margin-top: 60px;
   }
 }
 /*# sourceMappingURL=home.css.map */

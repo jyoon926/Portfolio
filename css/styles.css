@@ -175,6 +175,7 @@ a {
           align-items: center;
   padding: 0;
   margin: 0;
+  pointer-events: none;
 }
 
 #loader img {
@@ -312,12 +313,12 @@ a {
 
 #header .links ul a {
   font-size: 1em;
-  margin-left: 40px;
   text-decoration: none;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   line-height: 1;
   padding-top: 3px;
+  margin-left: 40px;
 }
 
 #header .links ul a:first-child {
@@ -463,6 +464,10 @@ a {
   }
   #header .links ul a {
     font-size: 16px;
+    margin-left: 30px;
+  }
+  #header .links ul a:first-child {
+    margin-left: 0;
   }
   #header .links .quarter {
     width: auto;
