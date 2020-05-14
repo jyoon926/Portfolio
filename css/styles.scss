@@ -138,8 +138,9 @@ a {
     width: 100%;
     background: $light;
     z-index: 98;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
     transition-timing-function: cubic-bezier(0 0 1 0);
+    transition-delay: 1s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,6 +149,8 @@ a {
         max-width: 600px;
         width: calc(100vw - 80px);
         padding: 0; margin: 0;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0 0 1 0);
     }
 }
 #cursor {

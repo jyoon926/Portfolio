@@ -12,7 +12,7 @@
 <body>
     <canvas id="canvas"></canvas>
     <div id="loader">
-        <img src="img/Logo.svg" alt="">
+        <img src="img/Logo.svg" alt="" id="loader-img">
     </div>
     <img src="img/cursor.svg" alt="" id="cursor">
 
@@ -86,9 +86,11 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
     <script language="javascript" type="text/javascript">
         $(window).load(function() {
-            $('#loader').css("top", "-100vh");
+            $('#loader-img').css("opacity", "0 ");
+            $('#loader').css("opacity", "0 ");
         });
     </script>
     <script src="js/SmoothScroll.js"></script>

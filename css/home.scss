@@ -3,7 +3,10 @@ $light: #ebeded;
 $dark: #e83c38;
 $accent: #68a7b6;
 $gap: 30px;
-
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% {opacity: 1; }
+}
 #hero {
     width: 100%;
     height: 100vh;
