@@ -388,17 +388,9 @@
             box-sizing: border-box;
     padding-bottom: 80px;
   }
-  #work .grid .parent {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
   #work .grid .parent p {
     font-size: 1.3em;
     padding: 16px 0;
-  }
-  #work .grid .parent:hover {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
   #work .more {
     font-size: 1.5em;

@@ -258,13 +258,11 @@ $gap: 30px;
         padding-bottom: 80px;
         .grid {
             .parent {
-                transform: scale(1);
                 p {
                     font-size: 1.3em;
                     padding: 16px 0;
                 }
                 &:hover {
-                    transform: scale(1);
                 }
             }
         }
