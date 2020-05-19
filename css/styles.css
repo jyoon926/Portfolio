@@ -143,7 +143,7 @@ a {
   width: 100vw;
   height: 100vh;
   opacity: .1;
-  z-index: 100;
+  z-index: 1000;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: -moz-crisp-edges;
