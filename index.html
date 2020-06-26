@@ -6,59 +6,57 @@
     <title>Jacob Yoon — Creative Works</title>
     <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/JY.svg" type="image/x-icon">
 </head>
 <body>
+    <div id="loader">
+        <img id="loading" src="img/JY.svg" alt="">
+    </div>
+    <div id="cursor">
+        <p id="click">CLICK</p>
+    </div>
     <div id="content">
         <div id="container">
             <div class="hero">
-                <h1>Jacob Yoon</h1>
-                <div class="sec">
-                    <p class="sans">A Complete Portfolio</p>
-                    <p class="sans">Independent Digital Designer,<br> Artist, and Developer</p>
-                    <p class="sans">Available for Freelance Work <a href="mailto:jacobyoon926@gmail.com" class="sans">jacobyoon926@gmail.com</a></p>
+                <img src="img/Jacob Yoon.svg" alt="">
+                <div class="info">
+                    <p>A Complete and Unfiltered Portfolio</p>
+                    <p>16-Year-Old Digital Designer,<br>Artist, and Developer</p>
+                    <p>Available for Freelance Work: <a href="mailto:jacobyoon926@gmail.com">jacobyoon926@gmail.com</a></p>
                 </div>
             </div>
             <div class="works">
-                <div class="parent left">
-                    <p class="year" data-aos="fade-up">2020</p>
-                    <a href="/" id="image_2020" class="image" data-aos="fade-up"></a>
-                </div>
-                <div class="parent right">
-                    <p class="year" data-aos="fade-up">2019</p>
-                    <a href="/" id="image_2019" class="image" data-aos="fade-up"></a>
-                </div>
-                <div class="parent left">
-                    <p class="year" data-aos="fade-up">2018</p>
-                    <a href="/" id="image_2018" class="image" data-aos="fade-up"></a>
-                </div>
-                <div class="parent right">
-                    <p class="year" data-aos="fade-up">2017</p>
-                    <a href="/" id="image_2017" class="image" data-aos="fade-up"></a>
-                </div>
-                <div class="parent left">
-                    <p class="year" data-aos="fade-up">2016</p>
-                    <a href="/" id="image_2016" class="image" data-aos="fade-up"></a>
-                </div>
+                <a href="/2020" class="parent left">
+                    <p class="year meadow">2020</p>
+                    <p class="grade">Eleventh Grade</p>
+                </a>
+                <a href="/2019" class="parent right">
+                    <p class="year meadow">2019</p>
+                    <p class="grade">Tenth Grade</p>
+                </a>
+                <a href="/2018" class="parent left">
+                    <p class="year meadow">2018</p>
+                    <p class="grade">Ninth Grade</p>
+                </a>
+                <a href="/2017" class="parent right">
+                    <p class="year meadow">2017</p>
+                    <p class="grade">Eighth Grade</p>
+                </a>
+                <a href="/2016" class="parent left">
+                    <p class="year meadow">2016</p>
+                    <p class="grade">Seventh Grade</p>
+                </a>
+            </div>
+            <div class="divider">
+                <p>About</p>
+                <hr>
             </div>
             <div class="about">
-                <p class="sans" data-aos="fade-up">I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. ♥</p>
-            </div>
-            <div class="footer" data-aos="fade-up" data-aos-offset="10">
-                <div class="div">
-                    <h1 class="sans">CONTACT</h1>
-                    <a href="mailto:jacobyoon926@gmail.com" class="sans">jacobyoon926@gmail.com</a>
-                </div>
-                <div class="div">
-                    <h1 class="sans">SOCIAL</h1>
-                    <a href="https://www.instagram.com/jaacobyoon/" target="none" class="sans">Instagram</a>
-                </div>
-                <div class="div">
-                    <h1 class="sans">TOP</h1>
-                    <a href="#" class="sans">↥</a>
-                </div>
+                <p>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. ♥</p>
             </div>
             <div class="bottom">
-                <p class="sans" data-aos="fade-up" data-aos-offset="10">Designed and Developed by Jacob Yoon © 2020</p>
+                <p>Copyright © 2020<br>All Rights Reserved<br>Designed and Developed by Jacob Yoon</p>
+                <a onclick="topFunction()">Back to Top</a>
             </div>
         </div>
     </div>
@@ -66,7 +64,6 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/jquery-inertiaScroll.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     $(function(){
         $("#container").inertiaScroll({
