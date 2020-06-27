@@ -1,4 +1,5 @@
 //Loader
+/*
 window.onload = function load() {
 }
 
@@ -23,7 +24,7 @@ onReady(function () {
     document.getElementById('loading').style.opacity = "0";
     document.getElementsByTagName('html')[0].style.overflowY = "scroll";
 });
-
+*/
 
 //Mouse Cursor
 var offset = 10;

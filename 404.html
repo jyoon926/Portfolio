@@ -19,8 +19,15 @@
         <p class="meadow">Page Not Found</p>
         <a href="/">Back To Home</a>
     </div>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            document.getElementById('loader').style.opacity = "0";
+            document.getElementById('loader').style.pointerEvents = "none";
+            document.getElementById('loading').style.opacity = "0";
+            document.getElementsByTagName('html')[0].style.overflowY = "scroll";
+        });
+    </script>
 </body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/script.js"></script>
 </html>

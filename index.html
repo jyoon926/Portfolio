@@ -14,6 +14,7 @@
     <title>Jacob Yoon — Creative Works</title>
     <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/JY.svg" type="image/x-icon">
 </head>
 <body>
@@ -26,12 +27,17 @@
     <div id="content">
         <div id="container">
             <div class="hero">
-                <img src="img/Jacob Yoon.svg" alt="">
+                <img id="oneline" src="img/Jacob Yoon.svg" alt="">
+                <img id="twolines" src="img/Jacob Yoon 2.svg" alt="">
                 <div class="info">
                     <p>A Complete and Unfiltered Portfolio</p>
                     <p>16-Year-Old Digital Designer,<br>Artist, and Developer</p>
                     <p>Available for Freelance Work: <a href="mailto:jacobyoon926@gmail.com">jacobyoon926@gmail.com</a></p>
                 </div>
+            </div>
+            <div class="divider">
+                <p>Projects</p>
+                <hr>
             </div>
             <div class="works">
                 <a href="/2020" class="parent left">
@@ -68,19 +74,27 @@
             </div>
         </div>
     </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery-inertiaScroll.js"></script>
-<script>
-    $(function(){
-        $("#container").inertiaScroll({
-            parent: $("#content")
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-inertiaScroll.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            document.getElementById('loader').style.opacity = "0";
+            document.getElementById('loader').style.pointerEvents = "none";
+            document.getElementById('loading').style.opacity = "0";
+            document.getElementsByTagName('html')[0].style.overflowY = "scroll";
         });
-    });
-    AOS.init({
-        offset: 300,
-        duration: 700
-    });
-</script>
+        $(function(){
+            if (window.innerWidth > 1000) {
+                $("#container").inertiaScroll({
+                    parent: $("#content")
+                });
+            }
+        });
+        AOS.init({
+            offset: 300,
+            duration: 700
+        });
+    </script>
+</body>
 </html>

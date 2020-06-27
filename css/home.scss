@@ -1,0 +1,387 @@
+$bg: #dedede;
+$color: #212121;
+
+@media screen and (min-width: 1150px) {
+    .hero {
+        padding: 40px 0;
+        img {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        #oneline {
+            display: flex;
+        }
+        #twolines {
+            display: none;
+        }
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 40px;
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+    .divider {
+        padding: 40px 0;
+        p {
+            font-size: 1em;
+            margin-bottom: 4px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid $color;
+        }
+    }
+    .works {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .parent {
+            text-decoration: none;
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 100%;
+            height: 500px;
+            box-sizing: border-box;
+            padding: 80px 80px;
+            background: $color;
+            border-radius: 20px;
+            transition-timing-function: ease-in-out;
+            .year {
+                font-size: 11em;
+                color: $bg;
+                line-height: 1;
+                text-shadow: 3px 3px 10px $color;
+            }
+            .grade {
+                font-size: 1.25em;
+                color: $bg;
+                text-shadow: 2px 2px 6px $color;
+            }
+            &:nth-child(1) {
+                background: url('../img/2020.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 4s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(2) {
+                background: url('../img/2019.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(3) {
+                background: url('../img/2018.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(4) {
+                background: url('../img/2017.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 2s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(5) {
+                background: url('../img/2016.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 1s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+        }
+    }
+    @keyframes scroll {
+        0% { background-position: left; }
+        50% { background-position: right; }
+        100% { background-position: left; }
+    }
+    .about {
+        padding: 40px 0;
+        p {
+            font-size: 3em;
+            line-height: 1.25;
+            text-transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    .hero {
+        padding: 40px 0;
+        img {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        #oneline {
+            display: flex;
+        }
+        #twolines {
+            display: none;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            p {
+                font-size: 1.25em;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .divider {
+        padding: 40px 0;
+        p {
+            font-size: 1em;
+            margin-bottom: 4px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid $color;
+        }
+    }
+    .works {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .parent {
+            text-decoration: none;
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 100%;
+            height: 400px;
+            box-sizing: border-box;
+            padding: 80px 80px;
+            background: $color;
+            border-radius: 20px;
+            transition-timing-function: ease-in-out;
+            .year {
+                font-size: 9em;
+                color: $bg;
+                line-height: 1;
+                text-shadow: 3px 3px 10px $color;
+            }
+            .grade {
+                font-size: 1.25em;
+                color: $bg;
+                text-shadow: 2px 2px 6px $color;
+            }
+            &:nth-child(1) {
+                background: url('../img/2020.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 4s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(2) {
+                background: url('../img/2019.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(3) {
+                background: url('../img/2018.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(4) {
+                background: url('../img/2017.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 2s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(5) {
+                background: url('../img/2016.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 1s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+        }
+    }
+    @keyframes scroll {
+        0% { background-position: left; }
+        50% { background-position: right; }
+        100% { background-position: left; }
+    }
+    .about {
+        padding: 40px 0;
+        p {
+            font-size: 2em;
+            line-height: 1.25;
+            text-transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .hero {
+        padding: 40px 0;
+        img {
+            width: 100%;
+            margin-bottom: 80px;
+        }
+        #oneline {
+            display: none;
+        }
+        #twolines {
+            display: flex;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            p {
+                font-size: 1.25em;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .divider {
+        padding: 40px 0;
+        p {
+            font-size: 1em;
+            margin-bottom: 4px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid $color;
+        }
+    }
+    .works {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .parent {
+            text-decoration: none;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+            padding: 40px 40px;
+            background: $color;
+            border-radius: 20px;
+            transition-timing-function: ease-in-out;
+            .year {
+                font-size: 7em;
+                color: $bg;
+                line-height: 1;
+                text-shadow: 3px 3px 10px $color;
+            }
+            .grade {
+                font-size: 1.25em;
+                color: $bg;
+                text-shadow: 2px 2px 6px $color;
+            }
+            &:nth-child(1) {
+                background: url('../img/2020.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 4s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(2) {
+                background: url('../img/2019.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(3) {
+                background: url('../img/2018.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 5s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(4) {
+                background: url('../img/2017.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 2s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+            &:nth-child(5) {
+                background: url('../img/2016.png');
+                background-size: cover;
+                background-position: left;
+                transition-duration: 1s;
+                &:hover {
+                    background-position: right;
+                }
+            }
+        }
+    }
+    @keyframes scroll {
+        0% { background-position: left; }
+        50% { background-position: right; }
+        100% { background-position: left; }
+    }
+    .about {
+        padding: 40px 0;
+        p {
+            font-size: 2em;
+            line-height: 1.25;
+            text-transform: none;
+        }
+    }
+}
