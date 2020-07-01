@@ -4,7 +4,7 @@
     Designed and developed by Jacob Yoon
     using vanilla html, scss, and jquery.
 
-    Last updated on 06/26/2020.
+    Last updated on 07/01/2020.
 
     jacobyoon926@gmail.com
 -->
@@ -27,43 +27,212 @@
     <div id="content">
         <div id="container">
             <div class="hero">
-                <img id="oneline" src="img/Jacob Yoon.svg" alt="">
-                <img id="twolines" src="img/Jacob Yoon 2.svg" alt="">
+                <div class="name"></div>
                 <div class="info">
                     <p>A Complete and Unfiltered Portfolio</p>
                     <p>16-Year-Old Digital Designer,<br>Artist, and Developer</p>
-                    <p>Available for Freelance Work: <a href="mailto:jacobyoon926@gmail.com">jacobyoon926@gmail.com</a></p>
+                    <p>Available for Freelance Work <a href="mailto:jacobyoon926@gmail.com">jacobyoon926@gmail.com</a></p>
                 </div>
             </div>
             <div class="divider">
-                <p>Projects</p>
                 <hr>
+                <p>Projects</p>
             </div>
             <div class="works">
-                <a href="/2020" class="parent left">
-                    <p class="year meadow">2020</p>
-                    <p class="grade">Eleventh Grade</p>
-                </a>
-                <a href="/2019" class="parent right">
-                    <p class="year meadow">2019</p>
-                    <p class="grade">Tenth Grade</p>
-                </a>
-                <a href="/2018" class="parent left">
-                    <p class="year meadow">2018</p>
-                    <p class="grade">Ninth Grade</p>
-                </a>
-                <a href="/2017" class="parent right">
-                    <p class="year meadow">2017</p>
-                    <p class="grade">Eighth Grade</p>
-                </a>
-                <a href="/2016" class="parent left">
-                    <p class="year meadow">2016</p>
-                    <p class="grade">Seventh Grade</p>
-                </a>
+                <div class="buttons">
+                    <button class="button active" onclick="set(0)" id="button0"><div class="box"></div>Show All</button>
+                    <button class="button" onclick="set(1)" id="button1"><div class="box"></div>Web Design</button>
+                    <button class="button" onclick="set(2)" id="button2"><div class="box"></div>3D Modeling</button>
+                    <button class="button" onclick="set(3)" id="button3"><div class="box"></div>Game Development</button>
+                    <button class="button" onclick="set(4)" id="button4"><div class="box"></div>Illustration</button>
+                    <button class="button" onclick="set(5)" id="button5"><div class="box"></div>Animation</button>
+                </div>
+                <div class="projects">
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/Humanities Class.jpg" alt="Humanities Class">
+                        <p class="type">Web Design</p>
+                        <p class="title">Humanities Class</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/IHSTSA.jpg" alt="IHSTSA">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHSTSA</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/Von Cramm.jpg" alt="Von Cramm">
+                        <p class="type">Web Design</p>
+                        <p class="title">Von Cramm Cooperative</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/IHS Social Justice Week.jpg" alt="IHS Social Justice Week">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHS Social Justice Week</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent modeling">
+                        <img src="img/thumbnails/3d Avatar.jpg" alt="3D Avatar">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">3D Avatar</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent modeling">
+                        <img src="img/thumbnails/Glass.jpg" alt="Glass Ball">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">Glass Ball</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent modeling">
+                        <img src="img/thumbnails/Buildings.jpg" alt="Buildings">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">Buildings</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/MAM.jpg" alt="MAW 2020">
+                        <p class="type">Illustration</p>
+                        <p class="title">IHS Math Awareness Week T-Shirt Design Winner</p>
+                        <p class="year">2020</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/John.jpg" alt="John Yoon">
+                        <p class="type">Web Design</p>
+                        <p class="title">John Yoon's Proffesional Website</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/joseph.jpg" alt="Joseph Yoon">
+                        <p class="type">Web Design</p>
+                        <p class="title">Joseph Yoon's Portfolio</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent gamedev">
+                        <img src="img/thumbnails/TSA Video Game Design.png" alt="TSA Video Game Design">
+                        <p class="type">Game Development</p>
+                        <p class="title">Past - 1st Place 2019 NYSTSA State Conference</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/Agapai.jpg" alt="Agapai">
+                        <p class="type">Web Design</p>
+                        <p class="title">AgapAI</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/Population Project.jpg" alt="Population Project">
+                        <p class="type">Web Design</p>
+                        <p class="title">Population Project</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/TSA Promotional Design.jpg" alt="TSA Promotional Design">
+                        <p class="type">Illustration</p>
+                        <p class="title">TSA Promotional Design</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Portraits 1.jpg" alt="Portraits">
+                        <p class="type">Illustration</p>
+                        <p class="title">Portraits</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg" alt="Principles of Criminal Evidence Cover Design">
+                        <p class="type">Illustration</p>
+                        <p class="title">Principles of Criminal Evidence Cover Design</p>
+                        <p class="year">2019</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/Doomscape.jpg" alt="Doomscape">
+                        <p class="type">Web Design</p>
+                        <p class="title">Doomscape</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/IHSTSA 2018.jpg" alt="IHSTSA 2018">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHSTSA 2018</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/Non-Euclidean Geometry Project.jpg" alt="Non-Euclidean Geometry Project">
+                        <p class="type">Animation</p>
+                        <p class="title">Non-Euclidean Geometry Project</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Split Head.jpg" alt="Split Head">
+                        <p class="type">Illustration</p>
+                        <p class="title">Split Head</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Levitating Man.jpg" alt="Levitating Man">
+                        <p class="type">Illustration</p>
+                        <p class="title">Levitating Man</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Weight Lifter.jpg" alt="Weight Lifter">
+                        <p class="type">Illustration</p>
+                        <p class="title">Weight Lifter</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent illustration">
+                        <img src="img/thumbnails/Corridor.jpg" alt="Corridor">
+                        <p class="type">Illustration</p>
+                        <p class="title">Corridor</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/How a Camera Works.jpg" alt="How a Camera Works">
+                        <p class="type">Animation</p>
+                        <p class="title">How a Camera Works</p>
+                        <p class="year">2018</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/Trappist-1.jpg" alt="Trappist-1">
+                        <p class="type">Animation</p>
+                        <p class="title">Trappist-1 - 7th Place 2017 National TSA Conference</p>
+                        <p class="year">2017</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/After Effects Animation Timelapse 1.jpg" alt="After Effects Animation Timelapse 1">
+                        <p class="type">Animation</p>
+                        <p class="title">After Effects Animation Timelapse #1</p>
+                        <p class="year">2017</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/After Effects Animation Timelapse 2.jpg" alt="After Effects Animation Timelapse 2">
+                        <p class="type">Animation</p>
+                        <p class="title">After Effects Animation Timelapse #2</p>
+                        <p class="year">2017</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/After Effects Animation Timelapse 3.jpg" alt="After Effects Animation Timelapse 3">
+                        <p class="type">Animation</p>
+                        <p class="title">After Effects Animation Timelapse #3</p>
+                        <p class="year">2017</p>
+                    </a>
+                    <a href="/2020" class="parent animation">
+                        <img src="img/thumbnails/Tardigrades.jpg" alt="Tardigrades">
+                        <p class="type">Animation</p>
+                        <p class="title">Tardigrades - 1st Place 2017 NYSTSA State Conference</p>
+                        <p class="year">2016</p>
+                    </a>
+                    <a href="/2020" class="parent web">
+                        <img src="img/thumbnails/DeWitt Middle School TSA.jpg" alt="DeWitt Middle School TSA">
+                        <p class="type">Web Design</p>
+                        <p class="title">DeWitt Middle School TSA</p>
+                        <p class="year">2016</p>
+                    </a>
+                </div>
             </div>
             <div class="divider">
-                <p>About</p>
                 <hr>
+                <p>About</p>
             </div>
             <div class="about">
                 <p>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy. ♥</p>
@@ -84,17 +253,13 @@
             document.getElementById('loading').style.opacity = "0";
             document.getElementsByTagName('html')[0].style.overflowY = "scroll";
         });
-        $(function(){
+        /*$(function(){
             if (window.innerWidth > 1000) {
                 $("#container").inertiaScroll({
                     parent: $("#content")
                 });
             }
-        });
-        AOS.init({
-            offset: 300,
-            duration: 700
-        });
+        });*/
     </script>
 </body>
 </html>

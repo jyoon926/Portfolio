@@ -1,143 +1,178 @@
 $bg: #dedede;
 $color: #212121;
 
-@media screen and (min-width: 1150px) {
-    .hero {
-        padding: 40px 0;
-        img {
-            width: 100%;
-            margin-bottom: 80px;
-        }
-        #oneline {
-            display: flex;
-        }
-        #twolines {
-            display: none;
-        }
-        .info {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-gap: 40px;
-            p {
-                font-size: 1.5em;
-            }
-        }
+.hero {
+    padding: 40px 0;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .name {
+        width: 100%;
+        height: 100%;
+        background: url('../img/Jacob\ Yoon.svg');
+        margin-bottom: 80px;
+        background-position: top;
+        border-bottom: 2px solid $color;
     }
-    .divider {
-        padding: 40px 0;
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
         p {
-            font-size: 1em;
-            margin-bottom: 4px;
-        }
-        hr {
-            border: none;
-            border-top: 2px solid $color;
-        }
-    }
-    .works {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        .parent {
-            text-decoration: none;
-            margin: 40px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            width: 100%;
-            height: 500px;
-            box-sizing: border-box;
-            padding: 80px 80px;
-            background: $color;
-            border-radius: 20px;
-            transition-timing-function: ease-in-out;
-            .year {
-                font-size: 11em;
-                color: $bg;
-                line-height: 1;
-                text-shadow: 3px 3px 10px $color;
-            }
-            .grade {
-                font-size: 1.25em;
-                color: $bg;
-                text-shadow: 2px 2px 6px $color;
-            }
+            font-size: 1.5em;
+            text-transform: uppercase;
             &:nth-child(1) {
-                background: url('../img/2020.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 4s;
-                &:hover {
-                    background-position: right;
-                }
+                text-align: left;
             }
             &:nth-child(2) {
-                background: url('../img/2019.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
+                text-align: center;
             }
             &:nth-child(3) {
-                background: url('../img/2018.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
+                text-align: right;
             }
-            &:nth-child(4) {
-                background: url('../img/2017.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 2s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(5) {
-                background: url('../img/2016.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 1s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-        }
-    }
-    @keyframes scroll {
-        0% { background-position: left; }
-        50% { background-position: right; }
-        100% { background-position: left; }
-    }
-    .about {
-        padding: 40px 0;
-        p {
-            font-size: 3em;
-            line-height: 1.25;
-            text-transform: none;
         }
     }
 }
-
-@media screen and (max-width: 1149px) {
-    .hero {
-        padding: 40px 0;
-        img {
-            width: 100%;
-            margin-bottom: 80px;
-        }
-        #oneline {
+.divider {
+    padding: 80px 0;
+    p {
+        font-size: 8em;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        padding-top: 80px;
+        line-height: 1;
+    }
+    hr {
+        border: none;
+        border-top: 2px solid $color;
+    }
+}
+.works {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        .button {
+            all: unset;
             display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            border: 2px solid $color;
+            padding: 10px 16px;
+            margin-right: 20px;
+            border-radius: 22px;
+            text-transform: uppercase;
+            .box {
+                height: 10px;
+                width: 10px;
+                border: 2px solid $color;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
         }
-        #twolines {
-            display: none;
+        .active {
+            .box {
+                background: $color;
+            }
+        }
+    }
+    .projects {
+        display: block;
+        width: 100%;
+        column-count: 5;
+        column-gap: 40px;
+        .parent {
+            display: inline-block;
+            //border: 2px solid $color;
+            text-decoration: none;
+            margin-bottom: 40px;
+            background: $color;
+            border-radius: 20px;
+            * {
+                color: $bg;
+            }
+            img {
+                width: 100%;
+                border: 2px solid $color;
+                box-sizing: border-box;
+                border-radius: 20px;
+                opacity: 0.3;
+                transition-duration: .4s;
+                filter: blur(5px) grayscale(1);
+            }
+            .type {
+                padding: 20px;
+                padding-bottom: 0;
+                opacity: 0.8;
+                line-height: 1;
+            }
+            .title {
+                padding: 20px;
+                padding-top: 7px;
+                padding-bottom: 0;
+                font-size: 1.75em;
+                line-height: 1;
+            }
+            .year {
+                padding: 20px;
+                padding-top: 7px;
+                font-size: 1em;
+                line-height: 1;
+            }
+            &:hover {
+                img {
+                    opacity: 1;
+                    filter: blur(0px) grayscale(0);
+                }
+            }
+        }
+    }
+}
+@keyframes scroll {
+    0% { background-position: left; }
+    50% { background-position: right; }
+    100% { background-position: left; }
+}
+.about {
+    padding: 40px 0;
+    p {
+        font-size: 3em;
+        line-height: 1.25;
+        text-transform: none;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .projects {
+        column-count: 4 !important;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .projects {
+        column-count: 3 !important;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .projects {
+        column-count: 2 !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        padding: 40px 0 !important;
+        height: calc(100vh - 40px);
+        .name {
+            width: 100%;
+            height: 100%;
+            background: url('../img/Jacob\ Yoon\ 2.svg');
+            margin-bottom: 40px;
+            background-position: top;
         }
         .info {
             display: flex;
@@ -147,6 +182,7 @@ $color: #212121;
             p {
                 font-size: 1.25em;
                 margin-bottom: 20px;
+                text-align: left !important;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -154,9 +190,9 @@ $color: #212121;
         }
     }
     .divider {
-        padding: 40px 0;
+        padding: 40px 0 !important;
         p {
-            font-size: 1em;
+            font-size: 3em !important;
             margin-bottom: 4px;
         }
         hr {
@@ -165,80 +201,8 @@ $color: #212121;
         }
     }
     .works {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         .parent {
-            text-decoration: none;
-            margin: 40px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            width: 100%;
-            height: 400px;
-            box-sizing: border-box;
-            padding: 80px 80px;
-            background: $color;
-            border-radius: 20px;
-            transition-timing-function: ease-in-out;
-            .year {
-                font-size: 9em;
-                color: $bg;
-                line-height: 1;
-                text-shadow: 3px 3px 10px $color;
-            }
-            .grade {
-                font-size: 1.25em;
-                color: $bg;
-                text-shadow: 2px 2px 6px $color;
-            }
-            &:nth-child(1) {
-                background: url('../img/2020.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 4s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(2) {
-                background: url('../img/2019.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(3) {
-                background: url('../img/2018.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(4) {
-                background: url('../img/2017.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 2s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(5) {
-                background: url('../img/2016.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 1s;
-                &:hover {
-                    background-position: right;
-                }
-            }
+
         }
     }
     @keyframes scroll {
@@ -286,95 +250,21 @@ $color: #212121;
     .divider {
         padding: 40px 0;
         p {
-            font-size: 1em;
+            font-size: 2em;
             margin-bottom: 4px;
+            padding-top: 40px;
         }
         hr {
             border: none;
             border-top: 2px solid $color;
         }
     }
-    .works {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+    .projects {
+        column-gap: 20px !important;
+        column-count: 1 !important;
         .parent {
-            text-decoration: none;
-            margin: 20px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            width: 100%;
-            height: 300px;
-            box-sizing: border-box;
-            padding: 40px 40px;
-            background: $color;
-            border-radius: 20px;
-            transition-timing-function: ease-in-out;
-            .year {
-                font-size: 7em;
-                color: $bg;
-                line-height: 1;
-                text-shadow: 3px 3px 10px $color;
-            }
-            .grade {
-                font-size: 1.25em;
-                color: $bg;
-                text-shadow: 2px 2px 6px $color;
-            }
-            &:nth-child(1) {
-                background: url('../img/2020.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 4s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(2) {
-                background: url('../img/2019.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(3) {
-                background: url('../img/2018.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 5s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(4) {
-                background: url('../img/2017.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 2s;
-                &:hover {
-                    background-position: right;
-                }
-            }
-            &:nth-child(5) {
-                background: url('../img/2016.png');
-                background-size: cover;
-                background-position: left;
-                transition-duration: 1s;
-                &:hover {
-                    background-position: right;
-                }
-            }
+            margin-bottom: 20px !important;
         }
-    }
-    @keyframes scroll {
-        0% { background-position: left; }
-        50% { background-position: right; }
-        100% { background-position: left; }
     }
     .about {
         padding: 40px 0;
