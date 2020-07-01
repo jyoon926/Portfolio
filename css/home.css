@@ -81,6 +81,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .works .buttons .button {
@@ -103,6 +105,7 @@
   margin-right: 20px;
   border-radius: 22px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .works .buttons .button .box {
@@ -124,6 +127,7 @@
           column-count: 5;
   -webkit-column-gap: 40px;
           column-gap: 40px;
+  margin-top: -20px;
 }
 
 .works .projects .parent {
