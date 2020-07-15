@@ -1,6 +1,5 @@
 .hero {
-  padding: 40px 0;
-  height: calc(100vh - 80px);
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -21,49 +20,77 @@
   background: url("../img/Jacob Yoon.svg");
   margin-bottom: 80px;
   background-position: top;
-  border-bottom: 2px solid #212121;
+  border-bottom: 2px solid #111;
+}
+
+.hero .img {
+  width: 100%;
 }
 
 .hero .info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero .info p {
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.hero .info p:nth-child(1) {
-  text-align: left;
-}
-
-.hero .info p:nth-child(2) {
+  font-size: 2em;
   text-align: center;
+  width: 100%;
+  margin-bottom: 80px;
 }
 
-.hero .info p:nth-child(3) {
-  text-align: right;
+.hero .stripes {
+  background: url("../img/pencils.jpg");
+  background-size: cover;
+  width: calc(100% - 160px);
+  margin: 0 80px;
+  height: 500px;
+  border-radius: 22px;
 }
 
-.divider {
+.about {
   padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.divider p {
-  font-size: 8em;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  padding-top: 80px;
+.about p {
+  font-size: 2em;
+  line-height: 1.25;
+  text-align: center;
+  max-width: 800px;
+}
+
+.heading {
+  padding: 80px 0 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading p {
+  font-size: 9vw;
   line-height: 1;
-}
-
-.divider hr {
-  border: none;
-  border-top: 2px solid #212121;
+  text-align: center;
 }
 
 .works .buttons {
@@ -100,288 +127,92 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #212121;
+  border: 2px solid #111;
   padding: 10px 16px;
   margin-right: 20px;
   border-radius: 22px;
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .works .buttons .button .box {
   height: 10px;
   width: 10px;
-  border: 2px solid #212121;
+  border: 2px solid #111;
   margin-right: 10px;
   border-radius: 50%;
 }
 
 .works .buttons .active .box {
-  background: #212121;
+  background: #111;
 }
 
 .works .projects {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  -webkit-column-count: 5;
-          column-count: 5;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
-  margin-top: -20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .works .projects .parent {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-decoration: none;
   margin-bottom: 40px;
-  background: #212121;
-  border-radius: 20px;
-}
-
-.works .projects .parent * {
-  color: #dedede;
-}
-
-.works .projects .parent img {
   width: 100%;
-  border: 2px solid #212121;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
-  opacity: 0.3;
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
-  -webkit-filter: blur(5px) grayscale(1);
-          filter: blur(5px) grayscale(1);
 }
 
 .works .projects .parent .type {
-  padding: 20px;
-  padding-bottom: 0;
-  opacity: 0.8;
   line-height: 1;
+  position: absolute;
+  font-size: 1em;
+  opacity: 0.8;
 }
 
 .works .projects .parent .title {
-  padding: 20px;
-  padding-top: 7px;
-  padding-bottom: 0;
-  font-size: 1.75em;
+  margin-top: 24px;
+  font-size: 2.5vw;
   line-height: 1;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .works .projects .parent .year {
-  padding: 20px;
-  padding-top: 7px;
-  font-size: 1em;
+  margin-top: 24px;
+  font-size: 2.5vw;
   line-height: 1;
 }
 
-.works .projects .parent:hover img {
-  opacity: 1;
-  -webkit-filter: blur(0px) grayscale(0);
-          filter: blur(0px) grayscale(0);
+.works .projects .parent .dots {
+  margin: 0 10px;
+  margin-top: 24px;
+  height: 2.1vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background: url("../img/dot.png");
+  background-repeat: scale;
+  background-size: contain;
 }
 
-@-webkit-keyframes scroll {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
-.about {
-  padding: 40px 0;
-}
-
-.about p {
-  font-size: 3em;
-  line-height: 1.25;
-  text-transform: none;
-}
-
-@media screen and (max-width: 1700px) {
-  .projects {
-    -webkit-column-count: 4 !important;
-            column-count: 4 !important;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .projects {
-    -webkit-column-count: 3 !important;
-            column-count: 3 !important;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .projects {
-    -webkit-column-count: 2 !important;
-            column-count: 2 !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .hero {
-    padding: 40px 0 !important;
-    height: calc(100vh - 40px);
-  }
-  .hero .name {
-    width: 100%;
-    height: 100%;
-    background: url("../img/Jacob Yoon 2.svg");
-    margin-bottom: 40px;
-    background-position: top;
-  }
-  .hero .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .hero .info p {
-    font-size: 1.25em;
-    margin-bottom: 20px;
-    text-align: left !important;
-  }
-  .hero .info p:last-child {
-    margin-bottom: 0;
-  }
-  .divider {
-    padding: 40px 0 !important;
-  }
-  .divider p {
-    font-size: 3em !important;
-    margin-bottom: 4px;
-  }
-  .divider hr {
-    border: none;
-    border-top: 2px solid #212121;
-  }
-  @-webkit-keyframes scroll {
-    0% {
-      background-position: left;
-    }
-    50% {
-      background-position: right;
-    }
-    100% {
-      background-position: left;
-    }
-  }
-  @keyframes scroll {
-    0% {
-      background-position: left;
-    }
-    50% {
-      background-position: right;
-    }
-    100% {
-      background-position: left;
-    }
-  }
-  .about {
-    padding: 40px 0;
-  }
-  .about p {
-    font-size: 2em;
-    line-height: 1.25;
-    text-transform: none;
-  }
-}
-
-@media screen and (max-width: 740px) {
-  .hero {
-    padding: 40px 0;
-  }
-  .hero img {
-    width: 100%;
-    margin-bottom: 80px;
-  }
-  .hero #oneline {
-    display: none;
-  }
-  .hero #twolines {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .hero .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .hero .info p {
-    font-size: 1.25em;
-    margin-bottom: 20px;
-  }
-  .hero .info p:last-child {
-    margin-bottom: 0;
-  }
-  .divider {
-    padding: 40px 0;
-  }
-  .divider p {
-    font-size: 2em;
-    margin-bottom: 4px;
-    padding-top: 40px;
-  }
-  .divider hr {
-    border: none;
-    border-top: 2px solid #212121;
-  }
-  .projects {
-    -webkit-column-gap: 20px !important;
-            column-gap: 20px !important;
-    -webkit-column-count: 1 !important;
-            column-count: 1 !important;
-  }
-  .projects .parent {
-    margin-bottom: 20px !important;
-  }
-  .about {
-    padding: 40px 0;
-  }
-  .about p {
-    font-size: 2em;
-    line-height: 1.25;
-    text-transform: none;
-  }
+.works .projects .parent:hover .title {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
 }
 /*# sourceMappingURL=home.css.map */
