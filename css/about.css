@@ -124,4 +124,82 @@ html {
   text-decoration: none;
   line-height: 1;
 }
+
+@media screen and (max-width: 1100px) {
+  #hero {
+    padding: 20px;
+  }
+  #hero a {
+    font-size: 1em;
+    margin: 40px 0;
+  }
+  #hero h1 {
+    font-size: 2.5em;
+    line-height: 1.15;
+  }
+  #hero img {
+    margin-top: 40px;
+    width: 100%;
+  }
+  #about {
+    padding: 20px;
+  }
+  #about p {
+    font-size: 1.15em;
+    line-height: 1.4;
+  }
+  #about h1 {
+    font-size: 2.2em;
+    line-height: 1;
+    padding: 40px 0 40px 0;
+  }
+  #about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-display: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  #about ul li {
+    width: 50%;
+    font-size: 1.15em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 20px 20px 0;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .bot {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .bot p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .bot a {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 1.5;
+  }
+}
 /*# sourceMappingURL=about.css.map */

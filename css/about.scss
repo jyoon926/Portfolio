@@ -81,3 +81,69 @@ html {
         line-height: 1;
     }
 }
+
+
+@media screen and (max-width: 1100px) {
+    #hero {
+        padding: 20px;
+        a {
+            font-size: 1em;
+            margin: 40px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.15;
+        }
+        img {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+    #about {
+        padding: 20px;
+        p {
+            font-size: 1.15em;
+            line-height: 1.4;
+        }
+        h1 {
+            font-size: 2.2em;
+            line-height: 1;
+            padding: 40px 0 40px 0;
+        }
+        ul {
+            display: flex;
+            font-display: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            li {
+                width: 50%;
+                font-size: 1.15em;
+                box-sizing: border-box;
+                padding: 0 20px 20px 0;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #about ul li {
+    }
+    .bot {
+        padding: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        a {
+            font-size: 12px;
+            padding-top: 10px;
+            line-height: 1.5;
+        }
+    }
+}

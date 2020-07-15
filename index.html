@@ -17,36 +17,36 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/JY.svg" type="image/x-icon">
 
-    <!-- prefetch Thumbnails -->
-    <link rel="prefetch" as="image" href="img/thumbnails/Humanities Class.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/IHSTSA.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Von Cramm.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/IHS Social Justice Week.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/3d Avatar.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Glass.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Buildings.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/John.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/joseph.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/TSA Video Game Design.png">
-    <link rel="prefetch" as="image" href="img/thumbnails/Agapai.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Population Project.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/TSA Promotional Design.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Portraits 1.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Doomscape.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/IHSTSA 2018.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Non-Euclidean Geometry Project.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Split Head.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Levitating Man.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Weight Lifter.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Corridor.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/How a Camera Works.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Trappist-1.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/After Effects Animation Timelapse 1.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/After Effects Animation Timelapse 2.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/After Effects Animation Timelapse 3.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/Tardigrades.jpg">
-    <link rel="prefetch" as="image" href="img/thumbnails/DeWitt Middle School TSA.jpg">
+    <!-- preload Thumbnails -->
+    <link rel="preload" as="image" href="img/thumbnails/Humanities Class.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/IHSTSA.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Von Cramm.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/IHS Social Justice Week.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/3d Avatar.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Glass.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Buildings.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/John.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/joseph.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/TSA Video Game Design.png">
+    <link rel="preload" as="image" href="img/thumbnails/Agapai.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Population Project.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/TSA Promotional Design.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Portraits 1.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Doomscape.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/IHSTSA 2018.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Non-Euclidean Geometry Project.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Split Head.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Levitating Man.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Weight Lifter.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Corridor.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/How a Camera Works.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Trappist-1.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 1.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 2.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 3.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/Tardigrades.jpg">
+    <link rel="preload" as="image" href="img/thumbnails/DeWitt Middle School TSA.jpg">
 </head>
 <body>
     <canvas id="canvas"></canvas>
@@ -62,7 +62,7 @@
     <div id="content">
         <div id="container">
             <div class="hero">
-                <img src="img/Jacob Yoon.svg" alt="">
+                <img src="img/Jacob Yoon.svg" alt="" id="name">
                 <div class="info">
                     <p>A Complete and Unfiltered Portfolio</p>
                 </div>
@@ -276,13 +276,11 @@
             document.getElementById('loading').style.opacity = "0";
             document.getElementsByTagName('html')[0].style.overflowY = "scroll";
         });
-        /*$(function(){
-            if (window.innerWidth > 1000) {
-                $("#container").inertiaScroll({
-                    parent: $("#content")
-                });
+        $(function(){
+            if (window.innerWidth < 740) {
+                document.getElementById('name').src = "img/Jacob Yoon 2.svg";
             }
-        });*/
+        });
     </script>
 </body>
 </html>

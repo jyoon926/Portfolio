@@ -170,6 +170,39 @@ body {
     #container {
         padding: 40px;
     }
+    .heading {
+        padding: 40px 0 80px 0;
+        p {
+            font-size: 16vw;
+        }
+        a {
+            font-size: 16vw;
+            margin-top: 40px;
+            border-bottom: 0.8vw solid $color;
+            &:hover {
+                border-bottom: 0.8vw solid $color;
+            }
+        }
+    }
+}
+@media screen and (max-width: 740px) {
+    #container {
+        padding: 20px;
+    }
+    .bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        a {
+            font-size: 12px;
+            padding-top: 10px;
+            line-height: 1.5;
+        }
+    }
 }
 #canvas {
     position: fixed;
