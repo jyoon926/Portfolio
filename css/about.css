@@ -1,0 +1,127 @@
+html {
+  overflow-y: scroll;
+}
+
+#hero {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+}
+
+#hero a {
+  font-size: 1.5em;
+  margin: 80px 0;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+  line-height: 1;
+}
+
+#hero a:hover {
+  border-bottom: 2px solid #444;
+}
+
+#hero h1 {
+  font-size: 6vw;
+  line-height: 1.15;
+}
+
+#hero img {
+  margin-top: 80px;
+  width: calc(50vw - 80px);
+}
+
+#about {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+}
+
+#about p {
+  font-size: 2.5em;
+  line-height: 1.25;
+}
+
+#about h1 {
+  font-size: 5em;
+  line-height: 1;
+  padding: 160px 0 40px 0;
+}
+
+#about ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: 20px;
+}
+
+#about ul li {
+  list-style: none;
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  opacity: 0.6;
+  padding: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bot p {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.bot a {
+  font-size: 24px;
+  text-decoration: none;
+  line-height: 1;
+}
+/*# sourceMappingURL=about.css.map */

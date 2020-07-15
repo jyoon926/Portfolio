@@ -1,5 +1,5 @@
-$bg: #eee;
-$color: #111;
+$bg: #fff;
+$color: #444;
 
 //Fonts
 @font-face {
@@ -16,8 +16,8 @@ $color: #111;
     background: $color;
 }
 ::selection {
-    color: $color;
-    background: $bg;
+    color: $bg;
+    background: $color;
 }
 
 //Main
@@ -25,9 +25,10 @@ $color: #111;
     margin: 0; padding: 0;
     font-weight: 400;
     font-family: "neue-haas-grotesk-text", sans-serif;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
     color: $color;
     cursor: none;
+    font-weight: 400 !important;
 }
 .meadow {
     font-family: "Meadow";
@@ -52,12 +53,12 @@ body {
     top: 0; left: 0;
     z-index: 1000;
     pointer-events: none;
-    opacity: 0.07;
+    opacity: 0.05;
 }
 #loader {
     position: fixed;
     top: 0; left: 0;
-    z-index: 1000;
+    z-index: 1001;
     height: 100vh;
     width: 100vw;
     transition-duration: 2s;
@@ -99,18 +100,41 @@ body {
     transition: transform 0.2s;
     transform: scale(0);
     transform-origin: center;
-    border-radius: 22px;
-    box-shadow: 0px 10px 30px -20px $color;
     height: 12vw;
+    box-shadow: 0px 10px 30px -20px black;
+    border-radius: 22px;
     img {
         height: 12vw;
         width: auto;
-        border-radius: 22px;
         margin: 0;
+        border-radius: 22px;
+    }
+}
+.heading {
+    padding: 80px 0 160px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 9vw;
+        line-height: 1;
+        text-align: center;
+    }
+    a {
+        font-size: 9vw;
+        line-height: 1;
+        text-align: center;
+        margin-top: 80px;
+        text-decoration: none;
+        border-bottom: .5vw solid $bg;
+        transition-duration: .5s;
+        transition-timing-function: ease-out;
+        &:hover {
+            border-bottom: .5vw solid $color;
+        }
     }
 }
 .bottom {
-    padding-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

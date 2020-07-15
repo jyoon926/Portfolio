@@ -4,22 +4,22 @@ var $win = $(window);
 
 document.addEventListener("mousemove", e => {
     if (window.innerWidth > 1000) {
-        document.getElementById('cursor').style.top = e.pageY - $win.scrollTop() - offset + "px";
-        document.getElementById('cursor').style.left = e.pageX - offset + "px";
+        document.getElementById('cursor').style.top = parseInt(e.pageY, 10) - $win.scrollTop() - offset + "px";
+        document.getElementById('cursor').style.left = parseInt(e.pageX, 10) - offset + "px";
 
-        document.getElementById('imgcursor').style.top = e.pageY - $win.scrollTop() - document.getElementById('imgcursor').offsetHeight / 2 + "px";
-        document.getElementById('imgcursor').style.left = e.pageX - document.getElementById('imgcursor').offsetWidth / 2 + "px";
+        document.getElementById('imgcursor').style.top = parseInt(e.pageY, 10) - $win.scrollTop() - document.getElementById('imgcursor').offsetHeight / 2 + "px";
+        document.getElementById('imgcursor').style.left = parseInt(e.pageX, 10) - document.getElementById('imgcursor').offsetWidth / 2 + "px";
     }
 })
 
 $("a").mouseover(function(){
-    document.getElementById('cursor').style.transform = "scale(4)";
+    document.getElementById('cursor').style.transform = "scale(5)";
 });
 $("a").mouseout(function(){
     document.getElementById('cursor').style.transform = "scale(1)";
 });
 $("button").mouseover(function(){
-    document.getElementById('cursor').style.transform = "scale(4)";
+    document.getElementById('cursor').style.transform = "scale(5)";
 });
 $("button").mouseout(function(){
     document.getElementById('cursor').style.transform = "scale(1)";
@@ -184,7 +184,7 @@ function resize() {
 resize();
 window.onresize = resize;
 
-function noise(ctx) {
+function noise() {
     
     var w = ctx.canvas.width,
         h = ctx.canvas.height,
@@ -197,17 +197,21 @@ function noise(ctx) {
         buffer32[i++] = ((255 * Math.random())|0) << 24;
     
     ctx.putImageData(idata, 0, 0);
+
+    setTimeout(noise, 70);
 }
 
-var toggle = true;
+//noise();
 
-// added toggle to get 30 FPS instead of 60 FPS
-(function loop() {
-    toggle = !toggle;
-    if (toggle) {
-        requestAnimationFrame(loop);
-        return;
-    }
-    noise(ctx);
-    requestAnimationFrame(loop);
-})();
+// var toggle = true;
+
+// // added toggle to get 30 FPS instead of 60 FPS
+// (function loop() {
+//     toggle = !toggle;
+//     if (toggle) {
+//         requestAnimationFrame(loop);
+//         return;
+//     }
+//     noise(ctx);
+//     requestAnimationFrame(loop);
+// })();

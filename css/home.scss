@@ -1,5 +1,5 @@
-$bg: #eee;
-$color: #111;
+$bg: #fff;
+$color: #444;
 
 .hero {
     padding: 0;
@@ -31,17 +31,20 @@ $color: #111;
     }
     .stripes {
         background: url("../img/pencils.jpg");
+        background-position: center center;
         background-size: cover;
         width: calc(100% - 160px);
         margin: 0 80px;
-        height: 500px;
-        border-radius: 22px;
+        height: 30vw;
         box-shadow: 0px 10px 30px -20px $color;
+        box-shadow: 0px 10px 30px -20px black;
+        border-radius: 22px;
     }
 }
 .about {
     padding: 160px 0 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     p {
@@ -50,16 +53,16 @@ $color: #111;
         text-align: center;
         max-width: 800px;
     }
-}
-.heading {
-    padding: 80px 0 160px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-        font-size: 9vw;
+    a {
+        font-size: 2em;
         line-height: 1;
-        text-align: center;
+        border-bottom: 2px solid $bg;
+        margin-top: 40px;
+        transition-duration: .4s;
+        text-decoration: none;
+        &:hover {
+            border-color: $color;
+        }
     }
 }
 .works {
@@ -68,7 +71,7 @@ $color: #111;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         flex-wrap: wrap;
         .button {
             all: unset;
@@ -79,14 +82,12 @@ $color: #111;
             border: 2px solid $color;
             padding: 10px 16px;
             margin-right: 20px;
-            border-radius: 22px;
             margin-bottom: 20px;
             .box {
                 height: 10px;
                 width: 10px;
                 border: 2px solid $color;
                 margin-right: 10px;
-                border-radius: 50%;
             }
         }
         .active {
@@ -105,43 +106,55 @@ $color: #111;
             justify-content: space-between;
             align-items: flex-start;
             text-decoration: none;
-            margin-bottom: 40px;
+            padding: 40px 0;
             width: 100%;
             .type {
                 line-height: 1;
                 position: absolute;
                 font-size: 1em;
                 opacity: 0.8;
+                transition-duration: .5s;
             }
             .title {
                 margin-top: 24px;
                 font-size: 2.5vw;
                 line-height: 1;
-                transition-duration: .3s;
-                transition-timing-function: ease-in-out;
+                transition-duration: .5s;
             }
             .year {
                 margin-top: 24px;
                 font-size: 2.5vw;
                 line-height: 1;
+                transition-duration: .5s;
             }
             .dots {
-                margin: 0 10px;
+                margin: 0 12px;
                 margin-top: 24px;
                 height: 2vw;
                 flex: 1 1 auto;
                 // background: url("../img/dot.png");
                 // background-repeat: scale;
                 // background-size: contain;
-                border-bottom: dotted $color 3px;
+                border-bottom: solid $color 2px;
+                transition-duration: .5s;
             }
             &:hover {
                 .title {
                     transform: skew(-15deg);
+                    color: black;
+                }
+                .type {
+                    color: black;
+                }
+                .dots {
+                    border-color: black;
+                }
+                .year {
+                    color: black;
                 }
             }
             &:last-child {
-                margin-bottom: 0;
+                padding: 40px 0 0 0;
             }
         }
     }
