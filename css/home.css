@@ -47,7 +47,7 @@
 
 .hero .stripes {
   background: url("../img/pencils.jpg");
-  background-position: center center;
+  background-position: top;
   background-size: cover;
   width: calc(100% - 160px);
   margin: 0 80px;
@@ -250,7 +250,7 @@
     width: 100%;
     margin: 0;
     height: 600px;
-    background-position: left center;
+    background-position: left;
     -webkit-box-shadow: none;
             box-shadow: none;
     background: url("../img/pencils.jpg");
