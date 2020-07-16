@@ -143,7 +143,7 @@ function scroll() {
         var elementPosition = elements[i].getBoundingClientRect();
         var pos = elementPosition.y + (elements[i].offsetHeight / 2);
         var frac = 1.25 - (Math.abs(window.innerHeight / 2 - pos) / (window.innerHeight / 2));
-        if (frac > -0.5) {
+        if (frac > -1) {
             if (frac < 0)
                 frac = 0;
             else if (frac > 1)
