@@ -135,6 +135,22 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function scroll() {
+    var elements = document.getElementsByClassName("thumbnail");
+
+    for(var i = 0; i < elements.length; i++)
+    {
+        var elementPosition = elements[i].getBoundingClientRect();
+        var pos = elementPosition.y + (elements[i].offsetHeight / 2);
+        var frac = 1.25 - (Math.abs(window.innerHeight / 2 - pos) / (window.innerHeight / 2));
+        if (frac < 0)
+            frac = 0;
+        else if (frac > 1)
+            frac = 1;
+        elements[i].style.filter = "brightness(" + frac + ") saturate(" + frac + ")";
+    }
+}
+
 function set(n) {
     $(".web").css("display", "none");
     $(".modeling").css("display", "none");

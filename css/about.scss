@@ -18,8 +18,17 @@ html {
         border-bottom: 2px solid $bg;
         text-decoration: none;
         line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
             border-bottom: 2px solid $color;
+        }
+        img {
+            height: 18px;
+            width: 18px;
+            margin: 0;
+            padding-right: 10px;
         }
     }
     h1 {
@@ -130,6 +139,7 @@ html {
 
 @media screen and (max-width: 740px) {
     #about ul li {
+        width: 100%;
     }
     .bot {
         padding: 20px;
