@@ -309,8 +309,6 @@
     -webkit-transition-duration: .4s;
             transition-duration: .4s;
     text-decoration: none;
-  }
-  .about a:hover {
     border-color: #444;
   }
   .works .buttons {

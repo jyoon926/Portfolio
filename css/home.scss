@@ -216,9 +216,7 @@ $color: #444;
             margin-top: 40px;
             transition-duration: .4s;
             text-decoration: none;
-            &:hover {
-                border-color: $color;
-            }
+            border-color: $color;
         }
     }
     .works {
