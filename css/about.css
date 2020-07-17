@@ -23,33 +23,13 @@ html {
 }
 
 #hero a {
-  font-size: 1.5em;
   margin: 80px 0;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  border-bottom: 2px solid #fff;
-  text-decoration: none;
-  line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#hero a:hover {
-  border-bottom: 2px solid #444;
 }
 
 #hero a img {
-  height: 18px;
-  width: 18px;
+  height: 40px;
+  width: 40px;
   margin: 0;
-  padding-right: 10px;
 }
 
 #hero h1 {
@@ -60,6 +40,9 @@ html {
 #hero img {
   margin-top: 80px;
   width: calc(50vw - 80px);
+  -webkit-box-shadow: 0px 10px 30px -20px black;
+          box-shadow: 0px 10px 30px -20px black;
+  border-radius: 22px;
 }
 
 #about {

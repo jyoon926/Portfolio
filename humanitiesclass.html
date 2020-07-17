@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Yoon — Humanities Class</title>
+    <link rel="stylesheet" href="https://use.typekit.net/wed3sza.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="shortcut icon" href="img/JY.svg" type="image/x-icon">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="loader">
+        <img id="loading" src="img/JY.svg" alt="">
+    </div>
+    <div id="cursor">
+        <p id="click">CLICK</p>
+    </div>
+    <div id="hero">
+        <a href="/"><img src="img/home.svg" alt=""></a>
+        <h2>Project Showcase</h2>
+        <h1>Humanities Class</h1>
+        <h3>Web Design | 2020</h3>
+        <a href="https://humanitiesclass.org/" target="_blank" class="visit">Visit Site <img src="img/arrow.svg" alt=""></a>
+    </div>
+    <div id="about">
+        <img src="img/showcase/Humanities Class.jpg" alt="" class="showcase">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt, veritatis est mollitia eum consequuntur quas inventore? Laboriosam, atque illo? Sequi natus aliquam dicta alias, repellat veritatis facere earum praesentium quo corporis blanditiis consequuntur quia saepe dolore explicabo iure aperiam aspernatur amet culpa ut quis tempora.</p>
+            <p>Nisi adipisci perspiciatis, culpa doloremque temporibus dolores nihil consequuntur modi minima ab necessitatibus fugiat iusto rem! Consectetur enim officia placeat ratione quasi incidunt pariatur? Quas suscipit corrupti veniam, quae et iure perferendis voluptatibus dolorum, repudiandae, eveniet laborum expedita fuga animi sapiente temporibus nulla officiis deserunt fugiat corporis illo numquam repellat delectus ab? Fugit, veritatis.</p>
+        </div>
+    </div>
+    <div class="links">
+        <div class="next">
+            <p><img src="img/arrow.svg" alt=""> Next</p>
+        </div>
+        <div class="previous">
+            <a href="/ihstsa">Previous <img src="img/arrow.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="bot">
+        <p>Copyright © 2020 - All Rights Reserved<br>Designed and Developed by Jacob Yoon<br>Ithaca High School Class of 2021</p>
+        <a href="mailto:jacobyoon926@gmail.com" target="_blank">JACOBYOON926@GMAIL.COM</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/script.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(window).load(function() {
+            document.getElementById('loader').style.opacity = "0";
+            document.getElementById('loader').style.pointerEvents = "none";
+            document.getElementById('loading').style.opacity = "0";
+            document.getElementsByTagName('html')[0].style.overflowY = "scroll";
+        });
+    </script>
+</body>
+</html>

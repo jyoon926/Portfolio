@@ -1,5 +1,5 @@
-$bg: #dedede;
-$color: #212121;
+$bg: #fff;
+$color: #444;
 
 //Fonts
 @font-face {
@@ -24,11 +24,11 @@ $color: #212121;
 * {
     margin: 0; padding: 0;
     font-weight: 400;
-    font-family: "neue-haas-grotesk-display";
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    // letter-spacing: 0.02em;
     color: $color;
     cursor: none;
+    font-weight: 400;
 }
 .meadow {
     font-family: "Meadow";
@@ -94,7 +94,7 @@ body {
 }
 
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -114,9 +114,26 @@ body {
         border: 2px solid $color;
         text-decoration: none;
         padding: 20px 40px;
-        border-radius: 20px;
         transition-duration: .3s;
         background: $color;
         color: $bg;
+    }
+}
+@media screen and (max-width: 740px) {
+    //Main
+    * {
+        cursor: auto;
+    }
+    #cursor {
+        display: none;
+    }
+    #hero {
+        p {
+            font-size: 4.2em;
+        }
+        a {
+            font-size: 1em;
+            padding: 14px 30px;
+        }
     }
 }
