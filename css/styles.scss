@@ -1,59 +1,30 @@
-$bg: #fff;
-$color: #444;
+$light: #ffffff;
+$dark: #111112;
 
-//Fonts
-@font-face {
-    font-family: "Meadow";
-    src: url("../fonts/Meadow.woff");
+* {
+    margin: 0; padding: 0;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    color: $dark;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: none;
 }
-
-//Scrollbar
 ::-webkit-scrollbar {
-    background: $bg;
+    background: $light;
     width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: $color;
-}
-::selection {
-    color: $bg;
-    background: $color;
-}
-
-//Main
-* {
-    margin: 0; padding: 0;
-    font-weight: 400;
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    // letter-spacing: 0.02em;
-    color: $color;
-    cursor: none;
-    font-weight: 400;
-}
-.meadow {
-    font-family: "Meadow";
+    background: $dark;
 }
 html {
+    background: $light;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background: $bg;
-    font-size: 16px;
     overflow-y: hidden;
 }
 body {
     overflow-x: hidden;
-}
-#container {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 80px;
-}
-#canvas {
-    position: fixed;
-    top: 0; left: 0;
-    z-index: 1000;
-    pointer-events: none;
-    opacity: 0.05;
 }
 #loader {
     position: fixed;
@@ -62,12 +33,12 @@ body {
     height: 100vh;
     width: 100vw;
     transition-duration: 2s;
-    background: $bg;
+    background: $light;
     display: flex;
     justify-content: center; align-items: center;
     transition-delay: 1s;
-    img {
-        width: 140px;
+    p {
+        font-size: 7vw;
         transition-duration: 1s;
     }
 }
@@ -75,8 +46,8 @@ body {
     position: fixed;
     z-index: 999;
     backdrop-filter: invert(1);
-    height: 20px;
-    width: 20px;
+    height: 1vw;
+    width: 1vw;
     border-radius: 50%;
     top: -200px; left: -200px;
     pointer-events: none;
@@ -84,131 +55,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    p {
-        opacity: 0;
-        position: absolute;
-        text-align: center;
-        color: $bg;
-        font-size: 0.25em;
-    }
-}
-#imgcursor {
-    position: fixed;
-    z-index: 998;
-    //top: -200px; left: -200px;
-    pointer-events: none;
-    transition: transform 0.2s;
-    transform: scale(0);
-    transform-origin: center;
-    height: 12vw;
-    box-shadow: 0px 10px 30px -20px black;
-    border-radius: 22px;
-    img {
-        height: 12vw;
-        width: auto;
-        margin: 0;
-        border-radius: 22px;
-    }
-}
-.heading {
-    padding: 80px 0 160px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-        font-size: 9vw;
-        line-height: 1;
-        text-align: center;
-    }
-    a {
-        font-size: 9vw;
-        line-height: 1;
-        text-align: center;
-        margin-top: 80px;
-        text-decoration: none;
-        border-bottom: .5vw solid $bg;
-        transition-duration: .5s;
-        transition-timing-function: ease-out;
-        &:hover {
-            border-bottom: .5vw solid $color;
-        }
-    }
-}
-.bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    opacity: 0.6;
-    p {
-        font-size: 14px;
-        line-height: 1.25;
-    }
-    a {
-        font-size: 24px;
-        text-decoration: none;
-        line-height: 1;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    #cursor {
-        display: none;
-    }
-    #imgcursor {
-        display: none;
-    }
-    * {
-        cursor: auto;
-        a:hover {
-            cursor: pointer;
-        }
-        button:hover {
-            cursor: pointer;
-        }
-    }
-    #container {
-        padding: 40px;
-    }
-    .heading {
-        padding: 40px 0 80px 0;
-        p {
-            font-size: 16vw;
-        }
-        a {
-            font-size: 16vw;
-            margin-top: 40px;
-            border-bottom: 0.8vw solid $color;
-            &:hover {
-                border-bottom: 0.8vw solid $color;
-            }
-        }
-    }
-}
-@media screen and (max-width: 740px) {
-    #container {
-        padding: 20px;
-    }
-    .bottom {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        p {
-            font-size: 12px;
-            line-height: 1.5;
-        }
-        a {
-            font-size: 12px;
-            padding-top: 10px;
-            line-height: 1.5;
-        }
-    }
 }
 #canvas {
     position: fixed;
-    z-index: 1001;
     top: 0; left: 0;
-    height: 100vh;
-    width: 100vw;
+    z-index: 1000;
     pointer-events: none;
+    opacity: 0.08;
+}
+.content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5vw;
+}
+.footer {
+    margin: 4vw 0;
+    p {
+        font-size: 1.75vw;
+        opacity: 0.5;
+        line-height: 1.15;
+    }
 }

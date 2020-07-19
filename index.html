@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-    Designed and developed by Jacob Yoon
-    using vanilla html, scss, and jquery.
-
-    Last updated on 07/15/2020.
-
-    jacobyoon926@gmail.com
--->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,339 +8,307 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="shortcut icon" href="img/JY copy.svg" type="image/x-icon">
-
-    <!-- preload Thumbnails -->
-    <link rel="preload" as="image" href="img/thumbnails/Humanities Class.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/IHSTSA.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Von Cramm.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/IHS Social Justice Week.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/3d Avatar.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Glass.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Buildings.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/John.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/joseph.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/TSA Video Game Design.png">
-    <link rel="preload" as="image" href="img/thumbnails/Agapai.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Population Project.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/TSA Promotional Design.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Portraits 1.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Doomscape.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/IHSTSA 2018.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Non-Euclidean Geometry Project.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Split Head.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Levitating Man.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Weight Lifter.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Corridor.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/How a Camera Works.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Trappist-1.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 1.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 2.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/After Effects Animation Timelapse 3.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/Tardigrades.jpg">
-    <link rel="preload" as="image" href="img/thumbnails/DeWitt Middle School TSA.jpg">
 </head>
 <body onscroll="scroll()">
-    <canvas id="canvas"></canvas>
     <div id="loader">
-        <img id="loading" src="img/JY.svg" alt="">
+        <p id="loading">Jacob Yoon</p>
     </div>
-    <div id="cursor">
-        <p id="click">CLICK</p>
-    </div>
-    <div id="imgcursor">
-        <img id="projectimg" src="img/thumbnails/Humanities Class.jpg" alt="" class="a">
-    </div>
-    <div id="content">
-        <div id="container">
-            <div class="hero">
-                <img src="img/Jacob Yoon.svg" alt="" id="name">
-                <div class="info">
-                    <p>A Complete and Unfiltered Portfolio</p>
-                </div>
-                <div class="stripes"></div>
+    <div id="cursor"></div>
+    <!-- <canvas id="canvas"></canvas> -->
+    <div class="content">
+        <div class="hero">
+            <!-- <img class="flower" src="img/Petals.svg" alt=""> -->
+            <div class="header">
+                <p>JACOB YOON</p>
+                <a href="/">ABOUT</a>
             </div>
-            <div class="about">
-                <p>I am a young designer with a passion for creating. Whether it's designing beautiful brand identities or building highly polished user experiences, good design always fills my heart with joy.</p>
-                <a href="/about">About Me <img src="img/arrow.svg" alt=""></a>
-            </div>
-            <div class="heading"><p>Works</p></div>
-            <div class="works">
-                <div class="buttons">
-                    <button class="button active" onclick="set(0)" id="button0"><div class="box"></div>Show All</button>
-                    <button class="button" onclick="set(1)" id="button1"><div class="box"></div>Web Design</button>
-                    <button class="button" onclick="set(2)" id="button2"><div class="box"></div>3D Modeling</button>
-                    <button class="button" onclick="set(3)" id="button3"><div class="box"></div>Game Development</button>
-                    <button class="button" onclick="set(4)" id="button4"><div class="box"></div>Illustration</button>
-                    <button class="button" onclick="set(5)" id="button5"><div class="box"></div>Animation</button>
-                </div>
-                <div class="projects">
-                    <a href="/humanitiesclass" class="parent web 0">
-                        <img class="thumbnail" src="img/thumbnails/Humanities Class.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">Humanities Class</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 1">
-                        <img class="thumbnail" src="img/thumbnails/IHSTSA.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">IHSTSA</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 2">
-                        <img class="thumbnail" src="img/thumbnails/Von Cramm.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">Von Cramm Cooperative</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 3">
-                        <img class="thumbnail" src="img/thumbnails/IHS Social Justice Week.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">IHS Social Justice Week</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent modeling 4">
-                        <img class="thumbnail" src="img/thumbnails/3d Avatar.jpg" alt="">
-                        <div class="text">
-                            <p class="type">3D Modeling</p>
-                            <p class="title">3D Avatar</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent modeling 5">
-                        <img class="thumbnail" src="img/thumbnails/Glass.jpg" alt="">
-                        <div class="text">
-                            <p class="type">3D Modeling</p>
-                            <p class="title">Glass Ball</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent modeling 6">
-                        <img class="thumbnail" src="img/thumbnails/Buildings.jpg" alt="">
-                        <div class="text">
-                            <p class="type">3D Modeling</p>
-                            <p class="title">Buildings</p>
-                            <div class="dots"></div>
-                            <p class="year">2020</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 7">
-                        <img class="thumbnail" src="img/thumbnails/John.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">John Yoon's Proffesional Website</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 8">
-                        <img class="thumbnail" src="img/thumbnails/joseph.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">Joseph Yoon's Portfolio</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent gamedev 9">
-                        <img class="thumbnail" src="img/thumbnails/TSA Video Game Design.png" alt="">
-                        <div class="text">
-                            <p class="type">Game Development</p>
-                            <p class="title">Past - 1st Place 2019 NYSTSA State Conference</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 10">
-                        <img class="thumbnail" src="img/thumbnails/Agapai.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">AgapAI</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 11">
-                        <img class="thumbnail" src="img/thumbnails/Population Project.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">Population Project</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 12">
-                        <img class="thumbnail" src="img/thumbnails/TSA Promotional Design.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">TSA Promotional Design</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 13">
-                        <img class="thumbnail" src="img/thumbnails/Portraits 1.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Portraits</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 14">
-                        <img class="thumbnail" src="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Principles of Criminal Evidence Cover Design</p>
-                            <div class="dots"></div>
-                            <p class="year">2019</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 15">
-                        <img class="thumbnail" src="img/thumbnails/Doomscape.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">Doomscape</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 16">
-                        <img class="thumbnail" src="img/thumbnails/IHSTSA 2018.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">IHSTSA 2018</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent animation 17">
-                        <img class="thumbnail" src="img/thumbnails/Non-Euclidean Geometry Project.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Animation</p>
-                            <p class="title">Non-Euclidean Geometry Project</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 18">
-                        <img class="thumbnail" src="img/thumbnails/Split Head.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Split Head</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 19">
-                        <img class="thumbnail" src="img/thumbnails/Levitating Man.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Levitating Man</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 20">
-                        <img class="thumbnail" src="img/thumbnails/Weight Lifter.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Weight Lifter</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent illustration 21">
-                        <img class="thumbnail" src="img/thumbnails/Corridor.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Illustration</p>
-                            <p class="title">Corridor</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent animation 22">
-                        <img class="thumbnail" src="img/thumbnails/How a Camera Works.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Animation</p>
-                            <p class="title">How a Camera Works</p>
-                            <div class="dots"></div>
-                            <p class="year">2018</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent animation 23">
-                        <img class="thumbnail" src="img/thumbnails/Trappist-1.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Animation</p>
-                            <p class="title">Trappist-1 - 7th Place 2017 National TSA Conference</p>
-                            <div class="dots"></div>
-                            <p class="year">2017</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent animation 24">
-                        <img class="thumbnail" src="img/thumbnails/After Effects Animation Timelapse 1.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Animation</p>
-                            <p class="title">After Effects Animation Timelapses</p>
-                            <div class="dots"></div>
-                            <p class="year">2017</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent animation 27">
-                        <img class="thumbnail" src="img/thumbnails/Tardigrades.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Animation</p>
-                            <p class="title">Tardigrades - 1st Place 2017 NYSTSA State Conference</p>
-                            <div class="dots"></div>
-                            <p class="year">2016</p>
-                        </div>
-                    </a>
-                    <a href="/2020" class="parent web 28">
-                        <img class="thumbnail" src="img/thumbnails/DeWitt Middle School TSA.jpg" alt="">
-                        <div class="text">
-                            <p class="type">Web Design</p>
-                            <p class="title">DeWitt Middle School TSA</p>
-                            <div class="dots"></div>
-                            <p class="year">2016</p>
-                        </div>
-                    </a>
+            <h1>A COMPLETE AND UNFILTERED PORTFOLIO</h1>
+            <a onclick="about()" class="downarrow"><img src="img/arrow down.svg" alt=""></a>
+        </div>
+        <div id="anchor"></div>
+        <div class="about">
+            <p>I AM A YOUNG DESIGNER WITH A PASSION FOR CREATING.</p>
+            <div class="row">
+                <img class="flower" src="img/Petals.svg" alt="">
+                <div class="col">
+                    <a href="/">ABOUT ME <img src="img/arrow right.svg" alt=""></a>
+                    <p>AVAILABLE FOR FREELANCE WORK</p>
                 </div>
             </div>
-            <div class="heading"><a href="/about">About</a></div>
-            <div class="bottom">
-                <p>Copyright © 2020 - All Rights Reserved<br>Designed and Developed by Jacob Yoon<br>Ithaca High School Class of 2021</p>
-                <a href="mailto:jacobyoon926@gmail.com" target="_blank">JACOBYOON926@GMAIL.COM</a>
+        </div>
+        <div class="work">
+            <h1>WORK</h1>
+            <div class="buttons">
+                <button class="button active" onclick="set(0)" id="button0">Show All</button>
+                <button class="button" onclick="set(1)" id="button1">Web Design</button>
+                <button class="button" onclick="set(2)" id="button2">3D Modeling</button>
+                <button class="button" onclick="set(3)" id="button3">Game Development</button>
+                <button class="button" onclick="set(4)" id="button4">Illustration</button>
+                <button class="button" onclick="set(5)" id="button5">Animation</button>
+            </div>
+            <div class="projects">
+                <a href="/humanitiesclass" class="parent web 0">
+                    <img class="thumbnail" src="img/thumbnails/Humanities Class.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">Humanities Class</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 1">
+                    <img class="thumbnail" src="img/thumbnails/IHSTSA.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHSTSA</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 2">
+                    <img class="thumbnail" src="img/thumbnails/Von Cramm.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">Von Cramm Cooperative</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 3">
+                    <img class="thumbnail" src="img/thumbnails/IHS Social Justice Week.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHS Social Justice Week</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent modeling 4">
+                    <img class="thumbnail" src="img/thumbnails/3d Avatar.jpg" alt="">
+                    <div class="text">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">3D Avatar</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent modeling 5">
+                    <img class="thumbnail" src="img/thumbnails/Glass.jpg" alt="">
+                    <div class="text">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">Glass Ball</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent modeling 6">
+                    <img class="thumbnail" src="img/thumbnails/Buildings.jpg" alt="">
+                    <div class="text">
+                        <p class="type">3D Modeling</p>
+                        <p class="title">Buildings</p>
+                        <div class="dots"></div>
+                        <p class="year">2020</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 7">
+                    <img class="thumbnail" src="img/thumbnails/John.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">John Yoon's Proffesional Website</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 8">
+                    <img class="thumbnail" src="img/thumbnails/joseph.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">Joseph Yoon's Portfolio</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent gamedev 9">
+                    <img class="thumbnail" src="img/thumbnails/TSA Video Game Design.png" alt="">
+                    <div class="text">
+                        <p class="type">Game Development</p>
+                        <p class="title">Past - 1st Place 2019 NYSTSA State Conference</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 10">
+                    <img class="thumbnail" src="img/thumbnails/Agapai.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">AgapAI</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 11">
+                    <img class="thumbnail" src="img/thumbnails/Population Project.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">Population Project</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 12">
+                    <img class="thumbnail" src="img/thumbnails/TSA Promotional Design.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">TSA Promotional Design</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 13">
+                    <img class="thumbnail" src="img/thumbnails/Portraits 1.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Portraits</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 14">
+                    <img class="thumbnail" src="img/thumbnails/Principles of Criminal Evidence Cover Design.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Principles of Criminal Evidence Cover Design</p>
+                        <div class="dots"></div>
+                        <p class="year">2019</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 15">
+                    <img class="thumbnail" src="img/thumbnails/Doomscape.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">Doomscape</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 16">
+                    <img class="thumbnail" src="img/thumbnails/IHSTSA 2018.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">IHSTSA 2018</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent animation 17">
+                    <img class="thumbnail" src="img/thumbnails/Non-Euclidean Geometry Project.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Animation</p>
+                        <p class="title">Non-Euclidean Geometry Project</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 18">
+                    <img class="thumbnail" src="img/thumbnails/Split Head.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Split Head</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 19">
+                    <img class="thumbnail" src="img/thumbnails/Levitating Man.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Levitating Man</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 20">
+                    <img class="thumbnail" src="img/thumbnails/Weight Lifter.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Weight Lifter</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent illustration 21">
+                    <img class="thumbnail" src="img/thumbnails/Corridor.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Illustration</p>
+                        <p class="title">Corridor</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent animation 22">
+                    <img class="thumbnail" src="img/thumbnails/How a Camera Works.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Animation</p>
+                        <p class="title">How a Camera Works</p>
+                        <div class="dots"></div>
+                        <p class="year">2018</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent animation 23">
+                    <img class="thumbnail" src="img/thumbnails/Trappist-1.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Animation</p>
+                        <p class="title">Trappist-1 - 7th Place 2017 National TSA Conference</p>
+                        <div class="dots"></div>
+                        <p class="year">2017</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent animation 24">
+                    <img class="thumbnail" src="img/thumbnails/After Effects Animation Timelapse 1.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Animation</p>
+                        <p class="title">After Effects Animation Timelapses</p>
+                        <div class="dots"></div>
+                        <p class="year">2017</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent animation 27">
+                    <img class="thumbnail" src="img/thumbnails/Tardigrades.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Animation</p>
+                        <p class="title">Tardigrades - 1st Place 2017 NYSTSA State Conference</p>
+                        <div class="dots"></div>
+                        <p class="year">2016</p>
+                    </div>
+                </a>
+                <a href="/2020" class="parent web 28">
+                    <img class="thumbnail" src="img/thumbnails/DeWitt Middle School TSA.jpg" alt="">
+                    <div class="text">
+                        <p class="type">Web Design</p>
+                        <p class="title">DeWitt Middle School TSA</p>
+                        <div class="dots"></div>
+                        <p class="year">2016</p>
+                    </div>
+                </a>
+            </div>
+            <div class="contact">
+                <h1>CONTACT</h1>
+                <p>Whether you are a small business, a student, or anyone looking for a fully customized and beautiful website, <i>get in touch</i> and we can create something great together.</p>
+                <a href="mailto:jacobyoon926@gmail.com">jacobyoon926@gmail.com</a>
+            </div>
+            <div class="footer">
+                <p>Copyright © 2020 - All Rights Reserved<br>Designed and Developed by Jacob Yoon</p>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/jquery-inertiaScroll.js"></script>
     <script language="javascript" type="text/javascript">
         $(window).load(function() {
             document.getElementById('loader').style.opacity = "0";
             document.getElementById('loader').style.pointerEvents = "none";
             document.getElementById('loading').style.opacity = "0";
             document.getElementsByTagName('html')[0].style.overflowY = "scroll";
-        });
-        $(function(){
-            if (window.innerWidth < 740) {
-                document.getElementById('name').src = "img/Jacob Yoon 2.svg";
-            }
         });
     </script>
 </body>
