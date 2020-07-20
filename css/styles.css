@@ -123,6 +123,9 @@ button:hover {
 }
 
 @media screen and (max-width: 800px) {
+  #loader p {
+    font-size: 12vw;
+  }
   #cursor {
     display: none;
   }

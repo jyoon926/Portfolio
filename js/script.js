@@ -71,14 +71,6 @@ function set(n) {
     }    
 }
 
-//Flower Rotation
-function scroll() {
-    var flowers = document.getElementsByClassName("flower");
-    for (var i = 0; i < 2; i++) {
-        flowers[i].style.transform = "rotate(" + flowers[i].getBoundingClientRect().top / -15 + "deg)";
-    }
-}
-
 //Scroll Down Link
 function about() {
     var elmnt = document.getElementById("anchor");
@@ -116,6 +108,11 @@ noise();
 
 //Mobile thumbnail morph
 function scroll() {
+    var flowers = document.getElementsByClassName("flower");
+    for (var i = 0; i < 2; i++) {
+        flowers[i].style.transform = "rotate(" + flowers[i].getBoundingClientRect().top / -15 + "deg)";
+    }
+    
     if (window.innerWidth < 800) {
         var elements = document.getElementsByClassName("thumbnail");
     
