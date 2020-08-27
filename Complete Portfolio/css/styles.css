@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'neue-haas-grotesk-display', sans-serif;
+  color: #111112;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  background: #ffffff;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111112;
+}
+
+html {
+  background: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+#loader p {
+  font-size: 7vw;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#cursor {
+  position: fixed;
+  z-index: 999;
+  -webkit-backdrop-filter: invert(1);
+          backdrop-filter: invert(1);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cursor p {
+  font-size: 3px;
+  opacity: 0;
+  color: #ffffff;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  text-align: center;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0.08;
+}
+
+.content {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 5vw;
+}
+
+.footer {
+  margin: 4vw 0;
+}
+
+.footer p {
+  font-size: 1.75vw;
+  opacity: 0.5;
+  line-height: 1.15;
+}
+
+button:hover {
+  cursor: pointer !important;
+}
+
+@media screen and (max-width: 800px) {
+  #loader p {
+    font-size: 12vw;
+  }
+  #cursor {
+    display: none;
+  }
+  .content {
+    padding: 0 5vw;
+  }
+  .footer {
+    margin: 12vw 0;
+  }
+  .footer p {
+    font-size: 4vw;
+    opacity: 0.5;
+    line-height: 1.15;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
