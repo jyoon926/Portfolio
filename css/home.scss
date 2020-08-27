@@ -1,4 +1,5 @@
 #section0 {
+    background: #fff;
     .right {
         background-image: url("../img/Photo.jpg");
         background-size: cover;
@@ -17,7 +18,8 @@
         justify-content: flex-end;
         align-items: center;
         img {
-            height: calc((100vh - 60px) * 0.7 - 30px);
+            max-height: calc((100vh - 60px) * 0.7 - 30px);
+            max-width: 100%;
             border-radius: 20px;
         }
     }

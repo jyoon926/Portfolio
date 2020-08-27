@@ -20,11 +20,13 @@
   margin: 0;
   padding: 0;
   color: #000;
+  cursor: none;
 }
 
 html {
   overflow-x: hidden;
   overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 body {
@@ -33,7 +35,20 @@ body {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 0px;
+}
+
+#cursor {
+  position: absolute;
+  z-index: 1001;
+  top: -20px;
+  left: 50vw;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  background: white;
 }
 
 #scrollbar {
@@ -44,7 +59,7 @@ body {
   right: 0;
   width: 4px;
   background: #000;
-  z-index: 1001;
+  z-index: 1002;
   height: 0px;
 }
 
@@ -54,7 +69,7 @@ body {
   left: -10rem;
   width: calc(100vw + 20rem);
   height: calc(100vh + 20rem);
-  z-index: 1000;
+  z-index: 1001;
   pointer-events: none;
   background: url("../img/noise.png");
   background-repeat: repeat;
@@ -322,7 +337,7 @@ section .left h2 {
 }
 
 section .left p {
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 1.25;
 }
@@ -393,8 +408,8 @@ section .right {
   pointer-events: all;
   position: absolute;
   top: 0;
-  right: 10px;
-  padding: 30px 20px 30px 20px;
+  right: 15px;
+  padding: 30px 15px 25px 15px;
   height: 10px;
   width: 40px;
   -webkit-backdrop-filter: blur(5px);
@@ -419,7 +434,6 @@ section .right {
 }
 
 #header #menu:hover {
-  cursor: pointer;
   background: rgba(0, 0, 0, 0.2);
 }
 

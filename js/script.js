@@ -28,11 +28,12 @@ function setOut(num) {
 }
 
 $(function() {
-    $("#container").bind("mousewheel", function(e) {
+    $("#container").on("wheel ", function(e) {
+        console.log("scroll");
         if (!animating) {
             var temp = index;
             //back
-            if (e.originalEvent.wheelDelta > 0) {
+            if (e.originalEvent.deltaY < 0) {
                 if (index > 0) {
                     setOut(index);
                     index--;
@@ -73,3 +74,17 @@ $(window).load(function() {
         document.getElementsByTagName('html')[0].style.overflowY = "scroll";
     }, 1000);
 });
+
+//Cursor
+var offset = 9;
+var offsetF = 40;
+var $win = $(window);
+
+document.addEventListener("mousemove", e => {
+    if (window.innerWidth > 1000) {
+        document.getElementById('cursor').style.top = e.pageY - offset + "px";
+        document.getElementById('cursor').style.left = e.pageX - offset + "px";
+        document.getElementById('cursorF').style.top = e.pageY - offsetF + "px";
+        document.getElementById('cursorF').style.left = e.pageX - offsetF + "px";
+    }
+})
