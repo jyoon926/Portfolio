@@ -8,6 +8,8 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
+  -webkit-box-shadow: 0 0.5vw 1vw -0.25vw #aaa;
+          box-shadow: 0 0.5vw 1vw -0.25vw #aaa;
 }
 
 .project {
@@ -36,5 +38,7 @@
   max-height: calc((100vh - 60px) * 0.7 - 30px);
   max-width: 100%;
   border-radius: 20px;
+  -webkit-box-shadow: 0 0.5vw 1vw -0.5vw #999;
+          box-shadow: 0 0.5vw 1vw -0.5vw #999;
 }
 /*# sourceMappingURL=home.css.map */

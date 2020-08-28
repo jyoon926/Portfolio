@@ -63,7 +63,7 @@ body {
     left: -10rem;
     width: calc(100vw + 20rem);
     height: calc(100vh + 20rem);
-    z-index: 1001;
+    z-index: 1003;
     pointer-events: none;
     background: url("../img/noise.png");
     background-repeat: repeat;
@@ -159,13 +159,22 @@ section {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        a {
-            animation: rotate 10s linear infinite;
-            height: 100px;
-            width: 100px;
-            transition-duration: .4s;
-            img {
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 220px;
+            a {
+                height: 100px;
+                width: 100px;
                 transition-duration: .4s;
+                border-radius: 50%;
+                box-shadow: 0 0.5vw 1vw -0.5vw #777;
+                img {
+                    transition-duration: .4s;
+                    animation: rotate 10s linear infinite;
+                }
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -273,20 +282,37 @@ section {
         z-index: 1;
         height: 100%;
         width: 100%;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         background: rgba(255, 255, 255, 0.5);
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         box-sizing: border-box;
-        padding: 20vh;
+        padding: 10vw;
         pointer-events: none;
-        a {
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .pages {
+            margin-right: 10vw;
+        }
+        p {
             font-size: 5vw;
-            transition-duration: .4s;
+            line-height: 1;
+            padding-bottom: 2vw;
+            font-weight: 700;
+        }
+        a {
+            font-size: 3vw;
+            transition-duration: .5s;
+            line-height: 1.15;
             &:hover {
                 opacity: 0.5;
+                transform: translateX(1vw);
             }
         }
     }
@@ -305,5 +331,46 @@ section {
         .bot {
             transform: rotate(-45deg);
         }
+    }
+}
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 30px;
+    grid-gap: 30px;
+    transition-duration: .5s;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+    .top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: 5vw;
+            transition-duration: .4s;
+            &:hover {
+                opacity: 0.5;
+            }
+            &:first-of-type {
+                margin-right: 5vw;
+            }
+        }
+    }
+    .bottom {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
     }
 }

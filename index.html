@@ -23,10 +23,21 @@
             <div class="line bot"></div>
         </label>
         <div id="links">
-            <a href="/">Home</a>
-            <a href="/">Projects</a>
-            <a href="/">About</a>
-            <a href="/">Contact</a>
+            <div class="pages">
+                <p>Pages</p>
+                <a href="/">Home</a>
+                <a href="/">About</a>
+                <a href="/">Contact</a>
+            </div>
+            <div class="projects">
+                <p>Projects</p>
+                <a onclick="set(1)">IHSTSA</a>
+                <a onclick="set(2)">Humanities Class</a>
+                <a onclick="set(3)">Von Cramm Cooperative</a>
+                <a onclick="set(4)">IHS Social Justice Week</a>
+                <a onclick="set(5)">John Yoon's Professional Website</a>
+                <a onclick="set(6)">Joseph Yoon's Portfolio</a>
+            </div>
         </div>
     </div>
     <div id="container">
@@ -35,7 +46,10 @@
                 <h1>Jacob Yoon<br>Web Developer</h1>
             </div>
             <div class="left">
-                <a href="/"><img src="img/about.svg" alt=""></a>
+                <div class="row">
+                    <a href="/"><img src="img/about.svg" alt=""></a>
+                    <a href="/"><img src="img/contact.svg" alt=""></a>
+                </div>
                 <h2>I am a young designer with a passion for creating.</h2>
             </div>
             <div class="right">
@@ -119,6 +133,18 @@
                 <img src="img/thumbnails/joseph.jpg" alt="">
             </div>
         </section>
+        <div class="divider out" id="divider7"></div>
+        <div class="footer out" id="section7">
+            <h1>Thank you for viewing.</h1>
+            <div class="top">
+                <a href="/">About</a>
+                <a href="/">Contact me</a>
+            </div>
+            <div class="bottom">
+                <p>© 2020 All Rights Reserved</p>
+                <p>Website by Jacob Yoon</p>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
