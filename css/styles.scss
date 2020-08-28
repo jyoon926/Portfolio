@@ -131,6 +131,9 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+.ease-out {
+    transition-timing-function: cubic-bezier(0,0,0.2,1);
+}
 section {
     position: absolute;
     left: 0;
@@ -194,7 +197,7 @@ section {
             line-height: 1;
         }
         p {
-            font-size: 1.2vw;
+            font-size: 1.1vw;
             font-weight: 400;
             line-height: 1.25;
         }

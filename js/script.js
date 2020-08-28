@@ -1,7 +1,11 @@
 var index = 0;
-var count = 8;
+var count;
 var delay = 500;
 var animating = false;
+
+function start(num) {
+    count = num;
+}
 
 for (var i = 0; i < count; i++) {
     if (i == 0) {
@@ -35,7 +39,7 @@ function set(num) {
         for (var i = 0; i < count; i++) {
             if (i > num) {
                 document.getElementById("section" + i).style.top ="100vh";
-                if (i != 7)
+                if (i != count - 1)
                     document.getElementById("divider" + (i + 1)).style.top ="100vh";
             }
             else {
@@ -75,7 +79,10 @@ $(function() {
             }
             document.getElementById("scrollbar").style.height = (index * (100 / (count - 1))) + "vh";
             console.log(index);
-            return false;
+            return;
+        }
+        else {
+            return;
         }
     });
 });

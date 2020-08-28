@@ -235,6 +235,11 @@ body {
   overflow-y: hidden;
 }
 
+.ease-out {
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 section {
   position: absolute;
   left: 0;
@@ -357,7 +362,7 @@ section .left h2 {
 }
 
 section .left p {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 400;
   line-height: 1.25;
 }
