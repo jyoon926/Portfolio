@@ -385,6 +385,10 @@ section .right {
           transition-duration: .5s;
 }
 
+.white {
+  background: #fff !important;
+}
+
 .in {
   top: 0;
 }

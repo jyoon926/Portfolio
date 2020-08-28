@@ -67,7 +67,7 @@ body {
     pointer-events: none;
     background: url("../img/noise.png");
     background-repeat: repeat;
-    animation: noise 1s steps(2) infinite
+    animation: noise 1s steps(2) infinite;
 }
 #loader {
     z-index: 999;
@@ -214,6 +214,9 @@ section {
     height: 100vh;
     background: #eee;
     transition-duration: .5s;
+}
+.white {
+    background: #fff !important;
 }
 .in {
     top: 0;
