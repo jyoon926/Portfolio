@@ -102,9 +102,9 @@ body {
 }
 
 #loader p {
-  font-size: 8vw;
+  font-size: 12vw;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   -webkit-transition-duration: 0;
           transition-duration: 0;
 }
@@ -306,7 +306,7 @@ section .left .row {
   width: 220px;
 }
 
-section .left .row a {
+section .left a {
   height: 100px;
   width: 100px;
   -webkit-transition-duration: .4s;
@@ -316,14 +316,14 @@ section .left .row a {
           box-shadow: 0 0.5vw 1vw -0.5vw #777;
 }
 
-section .left .row a img {
+section .left a img {
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
   -webkit-animation: rotate 10s linear infinite;
           animation: rotate 10s linear infinite;
 }
 
-section .left .row a:hover {
+section .left a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -618,6 +618,8 @@ section .right {
   font-size: 5vw;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
+  text-align: center;
+  line-height: 1;
 }
 
 .footer .top a:hover {
@@ -625,12 +627,26 @@ section .right {
 }
 
 .footer .top a:first-of-type {
-  margin-right: 5vw;
+  margin-right: 6vw;
 }
 
 .footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   left: 30px;
   bottom: 30px;
+  width: calc(100vw - 60px);
 }
 /*# sourceMappingURL=styles.css.map */
