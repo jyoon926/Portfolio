@@ -101,10 +101,9 @@ body {
           transition-duration: 0;
 }
 
-#loader p {
-  font-size: 12vw;
-  line-height: 1;
-  font-weight: 400;
+#loader img {
+  min-width: 25vw;
+  min-height: 25vw;
   -webkit-transition-duration: 0;
           transition-duration: 0;
 }
@@ -308,12 +307,12 @@ section .left .row {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 220px;
+  width: 16vw;
 }
 
 section .left a {
-  height: 100px;
-  width: 100px;
+  height: 7vw;
+  width: 7vw;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
   border-radius: 50%;

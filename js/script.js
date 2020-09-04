@@ -17,6 +17,40 @@ for (var i = 0; i < count; i++) {
     }
 }
 
+var slides = document.getElementsByClassName("right");
+var right = "linear-gradient(to right, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.75))";
+var bottom = "linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5))";
+for (var i = 1; i < slides.length; i++) {
+    var item = slides.item(i);
+    var image = String(getComputedStyle(item).backgroundImage);
+    if (item.offsetWidth / item.offsetHeight > 16 / 9) {
+        item.style.backgroundImage = bottom + ", " + image;
+    }
+    else {
+        item.style.backgroundImage = right + ", " + image;
+    }
+    item.style.backgroundSize = "cover";
+}
+function resize() {
+    for (var i = 1; i < slides.length; i++) {
+        var item = slides.item(i);
+        var image = String(getComputedStyle(item).backgroundImage);
+        if (item.offsetWidth / item.offsetHeight > 16 / 9) {
+            if (String(getComputedStyle(item).backgroundImage).charAt(16) == "t") {
+                console.log(bottom + ", " + image.substring(70));
+                item.style.backgroundImage = bottom + ", " + image.substring(70);
+            }
+        }
+        else {
+            if (String(getComputedStyle(item).backgroundImage).charAt(16) == "r") {
+                console.log(right + ", " + image.substring(59));
+                item.style.backgroundImage = right + ", " + image.substring(59);
+            }
+        }
+        item.style.backgroundSize = "cover";
+    }
+}
+
 function set(num) {
     document.getElementById("checkbox").checked = false;
     if (num > index) {
@@ -115,3 +149,5 @@ document.addEventListener("mousemove", e => {
         document.getElementById('cursorF').style.left = e.pageX - offsetF + "px";
     }
 })
+
+//Firefox
