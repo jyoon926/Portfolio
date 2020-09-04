@@ -31,6 +31,10 @@ html {
 body {
     overflow-x: hidden;
     overflow-y: hidden;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100vw;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -47,6 +51,11 @@ body {
     mix-blend-mode: exclusion;
     background: white;
 }
+@media screen and (max-width: 1100px) {
+    #cursor {
+        display: none;
+    }
+}
 #scrollbar {
     transition-duration: .4s;
     position: fixed;
@@ -62,7 +71,7 @@ body {
     top: -10rem;
     left: -10rem;
     width: calc(100vw + 20rem);
-    height: calc(100vh + 20rem);
+    height: calc(100% + 20rem);
     z-index: 1003;
     pointer-events: none;
     background: url("../img/noise.png");
@@ -103,19 +112,19 @@ body {
 /*
 #wrapper {
     z-index: 0;
-    transform: rotate(-90deg) translateX(-100vh);
+    transform: rotate(-90deg) translateX(-100%);
     transform-origin: top left;
     position: absolute;
-    width: 100vh;
+    width: 100%;
     height: 100vw;
     overflow-x: hidden; overflow-y: scroll;
 
 }
 #container {
-    transform: rotate(90deg) translateY(-100vh);
+    transform: rotate(90deg) translateY(-100%);
     transform-origin: top left;
     width: 700vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -124,7 +133,7 @@ body {
 */
 #container {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     top: 0; left: 0;
     overflow-x: hidden;
@@ -140,7 +149,7 @@ section {
     grid-template-rows: 3fr 7fr;
     grid-template-columns: 1fr 2fr;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     padding: 30px;
     grid-gap: 30px;
@@ -210,7 +219,7 @@ section {
     position: absolute;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: #eee;
     transition-duration: .5s;
 }
@@ -221,7 +230,7 @@ section {
     top: 0;
 }
 .out {
-    top: 100vh;
+    top: 100%;
 }
 .sectiontitle {
     display: flex;
@@ -239,7 +248,7 @@ section {
     position: fixed;
     top: 0; left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
     pointer-events: none;
     #checkbox {
@@ -342,7 +351,7 @@ section {
     position: absolute;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
     padding: 30px;
     grid-gap: 30px;
