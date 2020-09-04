@@ -24,11 +24,13 @@ $black: #000;
     cursor: none;
 }
 html {
+    overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: hidden;
     scrollbar-width: none;
 }
 body {
+    overscroll-behavior: none;
     overflow-x: hidden;
     overflow-y: hidden;
     position: fixed;
