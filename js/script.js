@@ -28,7 +28,7 @@ document.addEventListener("mousemove", e => {
 });
 $('a').mouseenter(
     function() {
-        document.getElementById('cursor').style.transform = "scale(5)";
+        document.getElementById('cursor').style.transform = "scale(7)";
     }
 );
 $('a').mouseout(
@@ -36,11 +36,21 @@ $('a').mouseout(
         document.getElementById('cursor').style.transform = "scale(1)";
     }
 );
+$('label').mouseenter(
+    function() {
+        document.getElementById('cursor').style.transform = "scale(7)";
+    }
+);
+$('label').mouseout(
+    function() {
+        document.getElementById('cursor').style.transform = "scale(1)";
+    }
+);
 function hoverIn(i) {
     if (i == "left" && index > 1)
-        document.getElementById('cursor').style.transform = "scale(5)";
+        document.getElementById('cursor').style.transform = "scale(7)";
     else if (i == "right" && index < 4)
-        document.getElementById('cursor').style.transform = "scale(5)";
+        document.getElementById('cursor').style.transform = "scale(7)";
     else
         document.getElementById('cursor').style.transform = "scale(1)";
 }
