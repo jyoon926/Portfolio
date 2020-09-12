@@ -1,0 +1,36 @@
+#top {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    p {
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+    span {
+        font-size: 7vw;
+        font-weight: normal;
+        line-height: 1;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #top {
+        p {
+            font-size: 24px;
+            padding-bottom: 40px;
+        }
+        span {
+            font-size: 40px;
+            word-break: break-all;
+            font-weight: normal;
+        }
+    }
+}
