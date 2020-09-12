@@ -81,6 +81,12 @@
   #showcase p {
     display: none;
   }
+  #showcase h2 {
+    display: none;
+  }
+  #showcase .button {
+    display: none;
+  }
   .rightarrow {
     z-index: 2;
     position: fixed;
@@ -185,7 +191,7 @@
   }
   #showcase p {
     font-size: 24px;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 0px 20px;
   }
   #showcase h2 {
     font-size: 40px;
@@ -194,7 +200,7 @@
   }
   #showcase .button {
     font-size: 24px;
-    margin: 0 20px 80px 20px;
+    margin: 20px 20px 80px 20px;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     padding: 13px 40px 15px 40px;

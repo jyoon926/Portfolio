@@ -20,8 +20,8 @@ var $win = $(window);
 
 document.addEventListener("mousemove", e => {
     if (window.innerWidth > 850) {
-        document.getElementById('cursor').style.top = e.pageY - offset + "px";
-        document.getElementById('cursor').style.left = e.pageX - offset + "px";
+        document.getElementById('cursor').style.top = e.clientY - offset + "px";
+        document.getElementById('cursor').style.left = e.clientX - offset + "px";
         // document.getElementById('cursorF').style.top = e.pageY - offsetF + "px";
         // document.getElementById('cursorF').style.left = e.pageX - offsetF + "px";
     }

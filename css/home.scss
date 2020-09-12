@@ -51,6 +51,12 @@ $black: #000;
         p {
             display: none;
         }
+        h2 {
+            display: none;
+        }
+        .button {
+            display: none;
+        }
     }
     .rightarrow {
         z-index: 2;
@@ -118,7 +124,7 @@ $black: #000;
         }
         p {
             font-size: 24px;
-            margin: 0 20px 20px 20px;
+            margin: 0 20px 0px 20px;
         }
         h2 {
             font-size: 40px;
@@ -127,7 +133,7 @@ $black: #000;
         }
         .button {
             font-size: 24px;
-            margin: 0 20px 80px 20px;
+            margin: 20px 20px 80px 20px;
             box-sizing: content-box;
             padding: 13px 40px 15px 40px;
             border-radius: 100%;
