@@ -120,6 +120,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 200px;
+    margin-bottom: 100px;
   }
   #showcase .slide {
     display: -webkit-box;

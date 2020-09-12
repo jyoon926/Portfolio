@@ -272,7 +272,7 @@ body {
   }
   label .line {
     height: 2px;
-    width: 30px;
+    width: 34px;
     background: #000;
     position: absolute;
   }
@@ -282,7 +282,7 @@ body {
     top: 0px;
   }
   label .bot {
-    top: 6px;
+    top: 8px;
     -webkit-transition-duration: .4s;
             transition-duration: .4s;
   }
@@ -292,7 +292,7 @@ body {
   }
   #checkbox:checked ~ label .line {
     margin: 0;
-    top: 3px;
+    top: 4px;
   }
   #checkbox:checked ~ label .top {
     -webkit-transform: rotate(45deg);
