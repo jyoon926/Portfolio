@@ -175,8 +175,6 @@
     transition: -webkit-transform .4s;
     transition: transform .4s;
     transition: transform .4s, -webkit-transform .4s;
-    -webkit-filter: saturate(0.3);
-            filter: saturate(0.3);
   }
   #showcase .slide .profile:hover {
     -webkit-transform: scale(1.05);

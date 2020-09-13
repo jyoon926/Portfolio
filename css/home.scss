@@ -109,7 +109,6 @@
             }
             .profile {
                 transition: transform .4s;
-                filter: saturate(0.3);
                 &:hover {
                     transform: scale(1.05);
                 }
