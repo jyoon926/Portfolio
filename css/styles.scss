@@ -53,6 +53,7 @@ body {
     background: url("../img/noise.png");
     background-repeat: repeat;
     animation: noise 1s steps(2) infinite;
+    display: none;
 }
 #loader {
     z-index: 999;

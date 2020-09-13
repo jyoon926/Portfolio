@@ -39,9 +39,10 @@
     padding-bottom: 40px;
   }
   #top span {
-    font-size: 40px;
+    font-size: 8vw;
     word-break: break-all;
     font-weight: normal;
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

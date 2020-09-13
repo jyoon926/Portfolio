@@ -60,6 +60,7 @@ body {
   background-repeat: repeat;
   -webkit-animation: noise 1s steps(2) infinite;
           animation: noise 1s steps(2) infinite;
+  display: none;
 }
 
 #loader {

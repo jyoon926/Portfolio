@@ -1,9 +1,19 @@
+h1 {
+  background: #fff;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 200px 14vw 0 14vw;
+  font-size: 8vw;
+  font-weight: normal;
+}
+
 #grid {
   background: #fff;
   width: 100vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 140px 14vw;
+  padding: 100px 14vw 200px 14vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,8 +65,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  h1 {
+    padding: 160px 20px 0 20px;
+    font-size: 18vw;
+  }
   #grid {
-    padding: 160px 40px;
+    padding: 40px 20px 160px 20px;
     row-gap: 40px;
   }
   #grid a {
