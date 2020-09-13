@@ -1,0 +1,131 @@
+#top {
+  background: #fff;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 200px 14vw 100px 14vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#top h2 {
+  font-weight: normal;
+  font-size: 8vw;
+  opacity: 0.5;
+}
+
+#top h1 {
+  font-weight: normal;
+  font-size: 8vw;
+}
+
+#top .button {
+  font-size: 24px;
+  margin: 40px 0 0 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 20px 40px 22px 40px;
+  border-radius: 100%;
+  border: 2px solid #0044ff;
+  line-height: 1;
+}
+
+#top img {
+  width: 100%;
+  -webkit-box-shadow: 0 0.75vw 2vw -0.5vw rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.75vw 2vw -0.5vw rgba(0, 0, 0, 0.5);
+  margin: 100px 0;
+}
+
+#top p {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.bottom {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 160px;
+  background: #fff;
+}
+
+.bottom .nextproject {
+  text-align: center;
+  font-size: 5vw;
+  color: #0044ff;
+}
+
+@media screen and (max-width: 1100px) {
+  #top {
+    padding: 160px 60px 80px 60px;
+  }
+  #top h2 {
+    font-size: 120px;
+  }
+  #top h1 {
+    font-size: 120px;
+  }
+  .bottom {
+    padding-bottom: 140px;
+  }
+  .bottom .nextproject {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #top {
+    padding: 160px 20px 80px 20px;
+  }
+  #top h2 {
+    font-size: 24vw;
+  }
+  #top h1 {
+    font-size: 24vw;
+  }
+  #top img {
+    -webkit-box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.65);
+            box-shadow: 0 5px 20px -8px rgba(0, 0, 0, 0.65);
+    margin: 60px 0;
+  }
+  #top p {
+    font-size: 20px;
+  }
+  #top .button {
+    font-size: 20px;
+    margin: 30px 0 0 0;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 20px 40px 22px 40px;
+    border-radius: 100%;
+    border: 2px solid #0044ff;
+    line-height: 1;
+  }
+  .bottom {
+    padding-top: 40px;
+    padding-bottom: 140px;
+  }
+  .bottom .nextproject {
+    font-size: 14vw;
+  }
+}
+/*# sourceMappingURL=project.css.map */

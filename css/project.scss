@@ -1,0 +1,102 @@
+@import 'colors';
+#top {
+    background: $white;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 200px 14vw 100px 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h2 {
+        font-weight: normal;
+        font-size: 8vw;
+        opacity: 0.5;
+    }
+    h1 {
+        font-weight: normal;
+        font-size: 8vw;
+    }
+    .button {
+        font-size: 24px;
+        margin: 40px 0 0 0;
+        box-sizing: content-box;
+        padding: 20px 40px 22px 40px;
+        border-radius: 100%;
+        border: 2px solid $blue;
+        line-height: 1;
+    }
+    img {
+        width: 100%;
+        box-shadow: 0 0.75vw 2vw -0.5vw rgba(0,0,0,0.5);
+        margin: 100px 0;
+    }
+    p {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+}
+.bottom {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 160px;
+    background: $white;
+    .nextproject {
+        text-align: center;
+        font-size: 5vw;
+        color: $blue;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #top {
+        padding: 160px 60px 80px 60px;
+        h2 {
+            font-size: 120px;
+        }
+        h1 {
+            font-size: 120px;
+        }
+    }
+    .bottom {
+        padding-bottom: 140px;
+        .nextproject {
+            font-size: 80px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #top {
+        padding: 160px 20px 80px 20px;
+        h2 {
+            font-size: 24vw;
+        }
+        h1 {
+            font-size: 24vw;
+        }
+        img {
+            box-shadow: 0 5px 20px -8px rgba(0,0,0,0.65);
+            margin: 60px 0;
+        }
+        p {
+            font-size: 20px;
+        }
+        .button {
+            font-size: 20px;
+            margin: 30px 0 0 0;
+            box-sizing: content-box;
+            padding: 20px 40px 22px 40px;
+            border-radius: 100%;
+            border: 2px solid $blue;
+            line-height: 1;
+        }
+    }
+    .bottom {
+        padding-top: 40px;
+        padding-bottom: 140px;
+        .nextproject {
+            font-size: 14vw;
+        }
+    }
+}

@@ -46,6 +46,28 @@ $('label').mouseout(
         document.getElementById('cursor').style.transform = "scale(1)";
     }
 );
+$('#about').mouseenter(
+    function() {
+        document.getElementById('cursort').style.opacity = "1";
+        document.getElementById('cursort').innerHTML = "About";
+    }
+);
+$('#about').mouseout(
+    function() {
+        document.getElementById('cursort').style.opacity = "0";
+    }
+);
+$('.view').mouseenter(
+    function() {
+        document.getElementById('cursort').style.opacity = "1";
+        document.getElementById('cursort').innerHTML = "View";
+    }
+);
+$('.view').mouseout(
+    function() {
+        document.getElementById('cursort').style.opacity = "0";
+    }
+);
 function hoverIn(i) {
     if (i == "left" && index > 1)
         document.getElementById('cursor').style.transform = "scale(7)";
