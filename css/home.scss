@@ -1,5 +1,4 @@
-$white: #fff;
-$black: #000;
+@import 'colors';
 
 @media screen and (min-width: 800px) {
     #showcase {
@@ -84,7 +83,7 @@ $black: #000;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 200px;
+        margin-top: 140px;
         margin-bottom: 100px;
         .slide {
             display: flex;
@@ -137,7 +136,7 @@ $black: #000;
             box-sizing: content-box;
             padding: 13px 40px 15px 40px;
             border-radius: 100%;
-            border: 2px solid $black;
+            border: 2px solid $blue;
             line-height: 1;
         }
     }

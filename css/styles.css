@@ -41,7 +41,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: exclusion;
-  background: #fff;
+  background: #0044ff;
   -webkit-transition: -webkit-transform .4s;
   transition: -webkit-transform .4s;
   transition: transform .4s;
@@ -88,8 +88,9 @@ body {
 }
 
 #loader img {
+  max-width: 50vw;
   min-width: 25vw;
-  min-height: 25vw;
+  max-height: 50vh;
   -webkit-transition-duration: 0;
           transition-duration: 0;
 }

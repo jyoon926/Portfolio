@@ -1,5 +1,4 @@
-$white: #fff;
-$black: #000;
+@import 'colors';
 #top {
     display: flex;
     z-index: 0;
@@ -51,7 +50,7 @@ section {
             box-sizing: content-box;
             padding: 20px 40px 25px 40px;
             border-radius: 100%;
-            border: 2px solid $black;
+            border: 2px solid $blue;
             line-height: 1;
             margin-top: 20px;
             text-align: center;

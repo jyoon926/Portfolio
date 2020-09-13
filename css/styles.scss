@@ -1,5 +1,4 @@
-$white: #fff;
-$black: #000;
+@import 'colors';
 @font-face {
     font-family: 'Radio Grotesk';
     src: url('../fonts/RadioGrotesk-Regular.eot'); /* IE9 Compat Modes */
@@ -39,7 +38,7 @@ body {
     border-radius: 50%;
     pointer-events: none;
     mix-blend-mode: exclusion;
-    background: $white;
+    background: $blue;
     transition: transform .4s;
 }
 #canvas {
@@ -68,8 +67,9 @@ body {
     padding: 30px;
     transition-duration: 0;
     img {
+        max-width: 50vw;
         min-width: 25vw;
-        min-height: 25vw;
+        max-height: 50vh;
         transition-duration: 0;
     }
 }

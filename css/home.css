@@ -125,7 +125,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 200px;
+    margin-top: 140px;
     margin-bottom: 100px;
   }
   #showcase .slide {
@@ -205,7 +205,7 @@
             box-sizing: content-box;
     padding: 13px 40px 15px 40px;
     border-radius: 100%;
-    border: 2px solid #000;
+    border: 2px solid #0044ff;
     line-height: 1;
   }
   .rightarrow {
