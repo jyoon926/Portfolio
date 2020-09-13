@@ -125,8 +125,8 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 140px;
-    margin-bottom: 100px;
+    margin-top: 180px;
+    margin-bottom: 0px;
   }
   #showcase .slide {
     display: -webkit-box;
@@ -200,7 +200,7 @@
   }
   #showcase .button {
     font-size: 24px;
-    margin: 20px 20px 80px 20px;
+    margin: 20px 20px 140px 20px;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     padding: 13px 40px 15px 40px;
