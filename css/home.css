@@ -50,7 +50,7 @@
   }
   #showcase a img {
     max-width: calc(100vw - 400px);
-    max-height: calc(100vh - 400px);
+    max-height: 70vh;
     margin: 0;
     padding: 0;
   }
