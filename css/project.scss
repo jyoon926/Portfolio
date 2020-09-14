@@ -47,6 +47,7 @@
         text-align: center;
         font-size: 5vw;
         color: $blue;
+        max-width: calc(100vw - 120px);
     }
 }
 @media screen and (max-width: 1100px) {
@@ -97,6 +98,7 @@
         padding-bottom: 140px;
         .nextproject {
             font-size: 14vw;
+            max-width: calc(100vw - 40px);
         }
     }
 }
