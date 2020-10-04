@@ -1,10 +1,28 @@
+.current {
+  color: #3F5D70;
+}
+
+#backgroundimage {
+  position: fixed;
+  top: -10vw;
+  left: -10vw;
+  width: 120vw;
+  height: calc(100vh + 20vw);
+  background: url("../img/bg/blue_blue.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  -webkit-filter: blur(6vw);
+          filter: blur(6vw);
+}
+
 #top {
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

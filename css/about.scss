@@ -1,9 +1,22 @@
 @import 'colors';
+$accent: #e37d00;
+#backgroundimage {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url('../img/bg/grey_yellow.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.current {
+    color: $accent;
+}
 #top {
     display: flex;
     z-index: 0;
     width: 100vw;
-    background: $white;
     box-sizing: border-box;
     padding: 160px 14vw;
     display: flex;
@@ -23,7 +36,6 @@ section {
     display: flex;
     z-index: 0;
     width: 100vw;
-    background: $white;
     box-sizing: border-box;
     padding: 0 14vw 160px 14vw;
     display: flex;
@@ -50,7 +62,7 @@ section {
             box-sizing: content-box;
             padding: 20px 40px 25px 40px;
             border-radius: 100%;
-            border: 2px solid $blue;
+            border: 2px solid $accent;
             line-height: 1;
             margin-top: 20px;
             text-align: center;

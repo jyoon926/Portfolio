@@ -1,6 +1,22 @@
+.current {
+  color: #1c00ba;
+}
+
+#backgroundimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg/pink_blue.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 @media screen and (min-width: 800px) {
   #showcase {
-    background: #fff;
     z-index: 1;
     position: fixed;
     display: -webkit-box;
@@ -203,7 +219,7 @@
             box-sizing: content-box;
     padding: 13px 40px 15px 40px;
     border-radius: 100%;
-    border: 2px solid #0044ff;
+    border: 2px solid #1c00ba;
     line-height: 1;
   }
   .rightarrow {

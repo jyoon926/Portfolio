@@ -1,8 +1,21 @@
 @import 'colors';
+$accent: #1c00ba;
+.current {
+    color: $accent;
+}
+#backgroundimage {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url('../img/bg/pink_blue.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 
 @media screen and (min-width: 800px) {
     #showcase {
-        background: $white;
         z-index: 1;
         position: fixed;
         display: flex;
@@ -135,7 +148,7 @@
             box-sizing: content-box;
             padding: 13px 40px 15px 40px;
             border-radius: 100%;
-            border: 2px solid $blue;
+            border: 2px solid $accent;
             line-height: 1;
         }
     }

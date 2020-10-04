@@ -1,6 +1,19 @@
 @import 'colors';
+$accent: #145063;
+.current {
+    color: $accent;
+}
+#backgroundimage {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url('../img/bg/green_green.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 h1 {
-    background: $white;
     width: 100vw;
     box-sizing: border-box;
     padding: 200px 14vw 0 14vw;
@@ -8,7 +21,6 @@ h1 {
     font-weight: normal;
 }
 #grid {
-    background: $white;
     width: 100vw;
     box-sizing: border-box;
     padding: 100px 14vw 200px 14vw;

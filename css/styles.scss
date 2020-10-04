@@ -25,13 +25,6 @@ html {
 body {
     overflow-x: hidden;
 }
-::-webkit-scrollbar {
-    width: 6px;
-    background: $white;
-}
-::-webkit-scrollbar-thumb {
-    background: $black;
-}
 #cursor {
     position: fixed;
     z-index: 1001;
@@ -41,14 +34,14 @@ body {
     width: 18px;
     border-radius: 50%;
     pointer-events: none;
-    mix-blend-mode: exclusion;
-    background: $blue;
-    transition: transform .3s;
+    //mix-blend-mode: exclusion;
+    background: $black;
+    transition: transform .3s, opacity .3s;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
-        color: $yellow;
+        color: $black;
         text-align: center;
         font-size: 5px;
         opacity: 0;
@@ -151,9 +144,6 @@ label {
         right: 30px;
         opacity: 0.5;
     }
-}
-.current {
-    color: $blue;
 }
 
 @media screen and (max-width: 800px) {

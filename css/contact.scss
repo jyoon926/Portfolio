@@ -1,9 +1,23 @@
 @import 'colors';
+$accent: #3F5D70;
+.current {
+    color: $accent;
+}
+#backgroundimage {
+    position: fixed;
+    top: -10vw; left: -10vw;
+    width: 120vw; height: calc(100vh + 20vw);
+    background: url('../img/bg/blue_blue.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(6vw);
+}
 #top {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background: $white;
     flex-direction: column;
     justify-content: center;
     align-items: center;

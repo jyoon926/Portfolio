@@ -29,36 +29,43 @@ document.addEventListener("mousemove", e => {
 $('a').mouseenter(
     function() {
         document.getElementById('cursor').style.transform = "scale(7)";
+        document.getElementById('cursor').style.opacity = "0.3";
     }
 );
 $('a').mouseout(
     function() {
         document.getElementById('cursor').style.transform = "scale(1)";
+        document.getElementById('cursor').style.opacity = "1";
     }
 );
 $('label').mouseenter(
     function() {
         document.getElementById('cursor').style.transform = "scale(7)";
+        document.getElementById('cursor').style.opacity = "0.3";
     }
 );
 $('label').mouseout(
     function() {
         document.getElementById('cursor').style.transform = "scale(1)";
+        document.getElementById('cursor').style.opacity = "1";
     }
 );
 $('#about').mouseenter(
     function() {
         document.getElementById('cursort').style.opacity = "1";
         document.getElementById('cursort').innerHTML = "About";
+        document.getElementById('cursor').style.opacity = "0.3";
     }
 );
 $('#about').mouseout(
     function() {
         document.getElementById('cursort').style.opacity = "0";
+        document.getElementById('cursor').style.opacity = "1";
     }
 );
 $('.view').mouseenter(
     function() {
+        document.getElementById('cursor').style.opacity = "0.3";
         document.getElementById('cursort').style.opacity = "1";
         document.getElementById('cursort').innerHTML = "View";
     }
@@ -66,18 +73,25 @@ $('.view').mouseenter(
 $('.view').mouseout(
     function() {
         document.getElementById('cursort').style.opacity = "0";
+        document.getElementById('cursor').style.opacity = "1";
     }
 );
 function hoverIn(i) {
-    if (i == "left" && index > 1)
+    if (i == "left" && index > 1) {
         document.getElementById('cursor').style.transform = "scale(7)";
-    else if (i == "right" && index < 4)
+        document.getElementById('cursor').style.opacity = "0.3";
+    }
+    else if (i == "right" && index < 4) {
         document.getElementById('cursor').style.transform = "scale(7)";
-    else
+        document.getElementById('cursor').style.opacity = "0.3";
+    }
+    else {
         document.getElementById('cursor').style.transform = "scale(1)";
+    }
 }
 function hoverOut() {
     document.getElementById('cursor').style.transform = "scale(1)";
+    document.getElementById('cursor').style.opacity = "1";
 }
 
 //Home slideshow
