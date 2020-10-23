@@ -40,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateZ(0);
     p {
         color: $black;
         text-align: center;
