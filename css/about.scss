@@ -4,11 +4,16 @@ $accent: #e37d00;
     position: fixed;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background: url('../img/bg/grey_yellow.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    // background: url('../img/bg/pink_blue.png');
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
     z-index: -1;
+    background: radial-gradient(circle at top,#F0D79F, transparent 50%),
+    radial-gradient(circle at bottom, #ffcb55, transparent 75%);
+}
+html {
+    background: #e3e3e3;
 }
 .current {
     color: $accent;

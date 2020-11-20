@@ -5,14 +5,18 @@ $accent: #3F5D70;
 }
 #backgroundimage {
     position: fixed;
-    top: -10vw; left: -10vw;
-    width: 120vw; height: calc(100vh + 20vw);
-    background: url('../img/bg/blue_blue.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    // background: url('../img/bg/pink_blue.png');
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
     z-index: -1;
-    filter: blur(6vw);
+    background: radial-gradient(ellipse at top, #cdecff, transparent),
+    radial-gradient(ellipse at bottom, #cdecff, transparent);
+}
+html {
+    background: #466477;
 }
 #top {
     width: 100vw;

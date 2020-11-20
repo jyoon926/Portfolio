@@ -7,11 +7,16 @@ $accent: #145063;
     position: fixed;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background: url('../img/bg/green_green.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    // background: url('../img/bg/pink_blue.png');
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
     z-index: -1;
+    background: radial-gradient(circle at top, #3C7B85, transparent 50%),
+    radial-gradient(circle at bottom, #225F6F, transparent 75%);
+}
+html {
+    background: #a0e7da;
 }
 h1 {
     width: 100vw;
