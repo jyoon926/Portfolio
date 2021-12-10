@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Yoon — Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="img/icon.svg">
+</head>
+<body>
+    <div id="cursor">
+        <p id="cursort"></p>
+    </div>
+    <div id="canvas"></div>
+    <div id="loader">
+        <img src="img/icon.svg" alt="" id="loadertext">
+    </div>
+    <a class="home" href="/">Jacob Yoon / Web Design</a>
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox">
+        <div class="line top"></div>
+        <div class="line bot"></div>
+    </label>
+    <div id="header">
+        <a class="h current" href="/">Home</a>
+        <a class="work" href="/work">Work</a>
+        <a class="about" href="/about">About</a>
+        <p class="copyright">©2020</p>
+        <a class="contact" href="/contact">Contact</a>
+    </div>
+
+    <div id="backgroundimage"></div>
+
+    <div id="showcase">
+        <div class="slide me">
+            <a href="/about" id="about">
+                <img src="img/profile.jpg" alt="" class="profile">
+            </a>
+        </div>
+        <p>I am a young designer with a passion for creating.</p>
+        <a href="/about" class="button">About Me</a>
+        <h2>Selected Works</h2>
+        <div class="slide">
+            <a href="/work/ihstsa" class="view">
+                <img src="img/thumbnails/IHSTSA.jpg" alt="" class="project">
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/work/humanities-class" class="view">
+                <img src="img/thumbnails/Humanities Class.jpg" alt="" class="project">
+            </a>
+        </div>
+        <div class="slide">
+            <a href="/work/von-cramm" class="view">
+                <img src="img/thumbnails/Von Cramm.jpg" alt="" class="project">
+            </a>
+        </div>
+        <a href="/work" class="button">View All</a>
+    </div>
+
+    <img src="img/arrow right.svg" alt="" class="rightarrow" onclick="next()" onmouseover="hoverIn('right')" onmouseout="hoverOut()">
+    <img src="img/arrow right.svg" alt="" class="leftarrow" onclick="previous()" onmouseover="hoverIn('left')" onmouseout="hoverOut()">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

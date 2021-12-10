@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24922dc5.chunk.css",
+    "main.js": "/static/js/main.50be0fa0.chunk.js",
+    "main.js.map": "/static/js/main.50be0fa0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.861543f2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.861543f2.js.map",
+    "static/js/2.02600278.chunk.js": "/static/js/2.02600278.chunk.js",
+    "static/js/2.02600278.chunk.js.map": "/static/js/2.02600278.chunk.js.map",
+    "static/js/3.0e390c16.chunk.js": "/static/js/3.0e390c16.chunk.js",
+    "static/js/3.0e390c16.chunk.js.map": "/static/js/3.0e390c16.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.24922dc5.chunk.css.map": "/static/css/main.24922dc5.chunk.css.map",
+    "static/js/2.02600278.chunk.js.LICENSE.txt": "/static/js/2.02600278.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/dahlia-regular.a02a0d28.woff",
+    "static/media/headshot.bf1af01c.jpg": "/static/media/headshot.bf1af01c.jpg",
+    "static/media/noise.9a7df33a.png": "/static/media/noise.9a7df33a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.861543f2.js",
+    "static/js/2.02600278.chunk.js",
+    "static/css/main.24922dc5.chunk.css",
+    "static/js/main.50be0fa0.chunk.js"
+  ]
+}
