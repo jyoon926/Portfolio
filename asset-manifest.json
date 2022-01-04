@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.984ee748.chunk.css",
-    "main.js": "/Portfolio/static/js/main.ad2af55d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.ad2af55d.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.0a561ed6.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.0a561ed6.js.map",
-    "static/js/2.02600278.chunk.js": "/Portfolio/static/js/2.02600278.chunk.js",
-    "static/js/2.02600278.chunk.js.map": "/Portfolio/static/js/2.02600278.chunk.js.map",
-    "static/js/3.0e390c16.chunk.js": "/Portfolio/static/js/3.0e390c16.chunk.js",
-    "static/js/3.0e390c16.chunk.js.map": "/Portfolio/static/js/3.0e390c16.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.ff4c3440.chunk.css",
+    "main.js": "/Portfolio/static/js/main.db9572b3.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.db9572b3.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.86ea8487.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.86ea8487.js.map",
+    "static/js/2.47a6b300.chunk.js": "/Portfolio/static/js/2.47a6b300.chunk.js",
+    "static/js/2.47a6b300.chunk.js.map": "/Portfolio/static/js/2.47a6b300.chunk.js.map",
+    "static/js/3.dfc14060.chunk.js": "/Portfolio/static/js/3.dfc14060.chunk.js",
+    "static/js/3.dfc14060.chunk.js.map": "/Portfolio/static/js/3.dfc14060.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.984ee748.chunk.css.map": "/Portfolio/static/css/main.984ee748.chunk.css.map",
-    "static/js/2.02600278.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.02600278.chunk.js.LICENSE.txt",
+    "static/css/main.ff4c3440.chunk.css.map": "/Portfolio/static/css/main.ff4c3440.chunk.css.map",
+    "static/js/2.47a6b300.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.47a6b300.chunk.js.LICENSE.txt",
+    "static/media/Humanities Class.9d448292.jpg": "/Portfolio/static/media/Humanities Class.9d448292.jpg",
+    "static/media/IHSTSA.63b7da3c.jpg": "/Portfolio/static/media/IHSTSA.63b7da3c.jpg",
+    "static/media/Population Project.2390e73f.jpg": "/Portfolio/static/media/Population Project.2390e73f.jpg",
     "static/media/App.scss": "/Portfolio/static/media/dahlia-regular.a02a0d28.woff",
-    "static/media/noise.9a7df33a.png": "/Portfolio/static/media/noise.9a7df33a.png"
+    "static/media/Von Cramm.bd2ef7b2.jpg": "/Portfolio/static/media/Von Cramm.bd2ef7b2.jpg",
+    "static/media/leahhenseler.c92eddee.jpg": "/Portfolio/static/media/leahhenseler.c92eddee.jpg",
+    "static/media/noise.9a7df33a.png": "/Portfolio/static/media/noise.9a7df33a.png",
+    "static/media/photo.9e7b8a7f.jpg": "/Portfolio/static/media/photo.9e7b8a7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a561ed6.js",
-    "static/js/2.02600278.chunk.js",
-    "static/css/main.984ee748.chunk.css",
-    "static/js/main.ad2af55d.chunk.js"
+    "static/js/runtime-main.86ea8487.js",
+    "static/js/2.47a6b300.chunk.js",
+    "static/css/main.ff4c3440.chunk.css",
+    "static/js/main.db9572b3.chunk.js"
   ]
 }
