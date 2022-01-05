@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.07c778f9.chunk.css",
+    "main.css": "/Portfolio/static/css/main.ced4afc7.chunk.css",
     "main.js": "/Portfolio/static/js/main.84425390.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.84425390.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.86ea8487.js",
@@ -10,7 +10,7 @@
     "static/js/3.dfc14060.chunk.js": "/Portfolio/static/js/3.dfc14060.chunk.js",
     "static/js/3.dfc14060.chunk.js.map": "/Portfolio/static/js/3.dfc14060.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.07c778f9.chunk.css.map": "/Portfolio/static/css/main.07c778f9.chunk.css.map",
+    "static/css/main.ced4afc7.chunk.css.map": "/Portfolio/static/css/main.ced4afc7.chunk.css.map",
     "static/js/2.47a6b300.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.47a6b300.chunk.js.LICENSE.txt",
     "static/media/Humanities Class.9d448292.jpg": "/Portfolio/static/media/Humanities Class.9d448292.jpg",
     "static/media/IHSTSA.63b7da3c.jpg": "/Portfolio/static/media/IHSTSA.63b7da3c.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.86ea8487.js",
     "static/js/2.47a6b300.chunk.js",
-    "static/css/main.07c778f9.chunk.css",
+    "static/css/main.ced4afc7.chunk.css",
     "static/js/main.84425390.chunk.js"
   ]
 }
